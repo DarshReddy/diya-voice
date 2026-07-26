@@ -36,6 +36,15 @@ export default function PreviewCard() {
   const [imageBase64, setImageBase64] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
+  // Bring the preview into view when generation starts (it lives at the end
+  // of the page, below the pickers).
+  const sectionRef = useRef<HTMLElement>(null);
+  useEffect(() => {
+    if (state === 'loading') {
+      sectionRef.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  }, [state]);
+
   // Tracks the brief we last kicked off a generation for (manual or auto),
   // so a repeat auto-trigger for the same unchanged brief is a no-op.
   const lastHandledHashRef = useRef<string | null>(null);
@@ -84,8 +93,9 @@ export default function PreviewCard() {
 
   return (
     <section
+      ref={sectionRef}
       aria-label="Design preview"
-      className="w-full rounded-xl border border-gold-500/40 bg-cream-50 p-4 shadow-md flex flex-col items-center gap-4"
+      className="w-full rounded-xl border border-gold-500/40 bg-cream-50 p-4 shadow-md flex flex-col items-center gap-4 scroll-mt-4"
     >
       <h2 className="font-display text-sm uppercase tracking-[0.18em] text-maroon-700/70">Your Design Preview</h2>
 
@@ -93,7 +103,7 @@ export default function PreviewCard() {
         <button
           type="button"
           onClick={generate}
-          className="rounded-full bg-gradient-to-br from-maroon-800 to-maroon-900 px-6 py-3 text-sm font-semibold text-cream-50 shadow-lg active:scale-95 transition-transform"
+          className="rounded-full bg-gradient-to-br from-maroon-600 to-gold-500 px-6 py-3 text-sm font-semibold text-cream-50 shadow-lg active:scale-95 transition-transform"
         >
           Create my preview
         </button>

@@ -1,7 +1,9 @@
 'use client';
 
+import { useRef } from 'react';
 import Image from 'next/image';
 import { useBriefStore } from '@/lib/store/briefStore';
+import { useFocusOnFirstSet } from '@/lib/useFocusOnFirstSet';
 import { FABRIC_FOLDERS, getSwatchesByFolder, fabricSwatchUrl } from '@/lib/catalog';
 
 export default function FabricPicker() {
@@ -9,8 +11,12 @@ export default function FabricPicker() {
   const fabricFile = useBriefStore((s) => s.brief.fabricFile);
   const applyPatch = useBriefStore((s) => s.applyPatch);
 
+  // When voice first sets the fabric family, bring the swatches into focus.
+  const sectionRef = useRef<HTMLElement>(null);
+  useFocusOnFirstSet(fabricFolder, sectionRef);
+
   return (
-    <section aria-label="Fabric picker" className="w-full">
+    <section ref={sectionRef} aria-label="Fabric picker" className="w-full scroll-mt-4">
       <h2 className="font-display text-sm uppercase tracking-[0.18em] text-maroon-700/70 mb-3">
         Fabric
       </h2>

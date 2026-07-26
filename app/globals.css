@@ -1,19 +1,24 @@
 @import "tailwindcss";
 
 :root {
-  --background: #fdf8f1;
-  --foreground: #2a1210;
-  --maroon-950: #200608;
-  --maroon-900: #3a0d10;
-  --maroon-800: #5c1216;
-  --maroon-700: #7a1a1f;
-  --maroon-600: #8f2228;
-  --maroon-500: #a8323a;
-  --cream-50: #fffdf9;
-  --cream-100: #fdf8f1;
-  --cream-200: #f7ecdd;
-  --cream-300: #efe0c9;
-  --gold-500: #b78a3a;
+  /* DIYO pink fashion palette — values matched to diyo-app/app/globals.css.
+     The original token NAMES (maroon, cream, gold) are kept so no component
+     class needed renaming: the maroon ladder now maps to DIYO's pink ladder,
+     cream to DIYO's blush surfaces, and gold-500 to the rose accent — the
+     far end of DIYO's primary gradient #EC4899 to #F43F5E. */
+  --background: #fff5f7;
+  --foreground: #1c1917;
+  --maroon-950: #831843;
+  --maroon-900: #9d174d;
+  --maroon-800: #be185d;
+  --maroon-700: #db2777;
+  --maroon-600: #ec4899;
+  --maroon-500: #f472b6;
+  --cream-50: #ffffff;
+  --cream-100: #fff5f7;
+  --cream-200: #ffe0ee;
+  --cream-300: #ffc0dc;
+  --gold-500: #f43f5e;
 }
 
 @theme inline {
@@ -42,10 +47,10 @@ body {
 
 @keyframes pulse-ring {
   0% {
-    box-shadow: 0 0 0 0 rgba(122, 26, 31, 0.45);
+    box-shadow: 0 0 0 0 rgba(236, 72, 153, 0.45);
   }
   100% {
-    box-shadow: 0 0 0 22px rgba(122, 26, 31, 0);
+    box-shadow: 0 0 0 22px rgba(236, 72, 153, 0);
   }
 }
 

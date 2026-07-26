@@ -65,6 +65,16 @@ const AGENT_STATE_LABEL: Record<AgentState, string> = {
   [AgentState.ERROR]: 'Error',
 };
 
+/** Compact FAB labels while a call is live. */
+const AGENT_STATE_FAB_LABEL: Record<AgentState, string> = {
+  [AgentState.IDLE]: 'Live',
+  [AgentState.CONNECTING]: 'Connecting…',
+  [AgentState.CONNECTED]: 'Connected',
+  [AgentState.LISTENING]: 'Listening…',
+  [AgentState.SPEAKING]: 'Diya is speaking…',
+  [AgentState.ERROR]: 'Error',
+};
+
 /** Rolling accumulation of user utterances into a free-text styleDetails string, capped ~200 chars. */
 const STYLE_DETAILS_CHAR_CAP = 200;
 
@@ -95,18 +105,41 @@ export default function VoiceSession() {
   const [level, setLevel] = useState(0);
   const [error, setError] = useState<string | null>(null);
 
+  // Floating chat panel state: auto-opens with a call, collapsible; while
+  // collapsed, turns that arrived since the last collapse show an unread
+  // pulse. The seen-count is stamped in the collapse handler (not an
+  // effect) to satisfy react-hooks/set-state-in-effect.
+  const transcript = useBriefStore((s) => s.transcript);
+  const [chatOpen, setChatOpen] = useState(false);
+  const [seenAtCollapse, setSeenAtCollapse] = useState(0);
+  const chatEndRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (chatOpen) {
+      chatEndRef.current?.scrollIntoView({ behavior: 'smooth', block: 'end' });
+    }
+  }, [chatOpen, transcript.length]);
+
+  const collapseChat = useCallback(() => {
+    setSeenAtCollapse(transcript.length);
+    setChatOpen(false);
+  }, [transcript.length]);
+
+  const unread = !chatOpen && transcript.length > seenAtCollapse;
+
   const start = useCallback(async () => {
     if (sessionState === 'connecting' || sessionState === 'live') return;
 
     const apiKey = process.env.NEXT_PUBLIC_SARVAM_API_KEY;
     if (!apiKey) {
-      setError('Voice session is not configured (missing NEXT_PUBLIC_SARVAM_API_KEY). Use push-to-talk fallback below.');
+      setError('Voice session is not configured (missing NEXT_PUBLIC_SARVAM_API_KEY).');
       setSessionState('error');
       return;
     }
 
     setError(null);
     setSessionState('connecting');
+    setChatOpen(true);
 
     // Every new live call starts from a clean brief. Without this, a second
     // live call in the same page session inherited the first call's fully
@@ -219,39 +252,135 @@ export default function VoiceSession() {
   const isLive = sessionState === 'live';
   const busy = sessionState === 'connecting';
 
-  const buttonLabel =
+  const fabLabel =
     sessionState === 'idle'
       ? 'Talk to Diya'
       : sessionState === 'connecting'
         ? 'Connecting…'
         : sessionState === 'live'
-          ? 'End conversation'
-          : 'Retry live call';
+          ? AGENT_STATE_FAB_LABEL[agentState]
+          : 'Retry call';
 
   return (
-    <section aria-label="Talk to Diya (live call)" className="w-full flex flex-col items-center gap-3">
-      <h2 className="font-display text-sm uppercase tracking-[0.18em] text-maroon-700/70">Talk to Diya</h2>
+    <div className="fixed bottom-5 right-5 z-50 flex flex-col items-end gap-3">
+      {/* Floating conversation panel */}
+      {chatOpen && (
+        <section
+          aria-label="Conversation with Diya"
+          className="w-[min(360px,calc(100vw-40px))] rounded-2xl border border-maroon-900/10 bg-cream-50/95 backdrop-blur shadow-xl overflow-hidden flex flex-col"
+        >
+          <header className="flex items-center justify-between gap-2 px-4 py-2.5 bg-gradient-to-r from-maroon-600 to-gold-500 text-cream-50">
+            <div className="min-w-0">
+              <p className="text-sm font-semibold leading-tight truncate">Diya — your DIYO designer</p>
+              {isLive && <p className="text-[11px] opacity-80 leading-tight">{AGENT_STATE_LABEL[agentState]}</p>}
+            </div>
+            <button
+              type="button"
+              onClick={collapseChat}
+              aria-label="Collapse conversation"
+              className="shrink-0 rounded-full p-1 hover:bg-white/15 transition-colors"
+            >
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M6 9l6 6 6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
+              </svg>
+            </button>
+          </header>
 
-      <button
-        type="button"
-        onClick={isLive ? stop : start}
-        disabled={busy}
-        className={`relative rounded-full px-8 py-4 text-base font-semibold shadow-lg transition-transform active:scale-95 disabled:opacity-70 ${
-          isLive ? 'bg-maroon-700 text-cream-50' : 'bg-gradient-to-br from-maroon-800 to-maroon-900 text-cream-50'
-        }`}
-        style={{ transform: `scale(${1 + Math.min(level, 1) * 0.12})` }}
-      >
-        {isLive && <span className="absolute inset-0 rounded-full mic-pulse pointer-events-none" />}
-        <span className="relative">{buttonLabel}</span>
-      </button>
+          <div className="h-72 overflow-y-auto p-3 flex flex-col gap-2">
+            {transcript.length === 0 && (
+              <p className="text-sm text-maroon-950/40 m-auto text-center px-4">
+                Tap “Talk to Diya” and describe the outfit you have in mind — in any language.
+              </p>
+            )}
+            {transcript.map((turn) => (
+              <div
+                key={turn.id}
+                className={`max-w-[85%] rounded-lg px-3 py-2 text-sm leading-snug ${
+                  turn.speaker === 'user'
+                    ? 'self-end bg-maroon-800 text-cream-50'
+                    : 'self-start bg-cream-200 text-maroon-950'
+                }`}
+              >
+                <span className="block text-[10px] uppercase tracking-wide opacity-60 mb-0.5">
+                  {turn.speaker === 'user' ? 'You' : 'Diya'}
+                </span>
+                {turn.text}
+              </div>
+            ))}
+            <div ref={chatEndRef} />
+          </div>
+        </section>
+      )}
 
-      {isLive && <p className="text-sm font-medium text-maroon-800/80">{AGENT_STATE_LABEL[agentState]}</p>}
-
-      {error && (
-        <p className="text-xs text-maroon-600 text-center max-w-xs">
-          {error} Push-to-talk fallback is available below.
+      {/* Error toast above the FAB */}
+      {error && !chatOpen && (
+        <p className="max-w-[280px] rounded-xl border border-maroon-900/10 bg-cream-50 px-3 py-2 text-xs text-maroon-600 shadow-md text-right">
+          {error}
         </p>
       )}
-    </section>
+
+      <div className="flex items-center gap-2">
+        {/* Reopen-chat pill (visible when there is a conversation but the panel is collapsed) */}
+        {!chatOpen && transcript.length > 0 && (
+          <button
+            type="button"
+            onClick={() => setChatOpen(true)}
+            aria-label="Open conversation"
+            className="relative rounded-full bg-cream-50 border border-maroon-900/15 p-3 shadow-lg hover:border-maroon-600/40 transition-colors"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="text-maroon-700">
+              <path
+                d="M21 12a8 8 0 0 1-8 8H4l1.6-3.2A8 8 0 1 1 21 12z"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+            </svg>
+            {unread && <span className="absolute -top-0.5 -right-0.5 h-2.5 w-2.5 rounded-full bg-gold-500 mic-pulse" />}
+          </button>
+        )}
+
+        {/* The floating Talk-to-Diya button */}
+        <button
+          type="button"
+          onClick={isLive ? stop : start}
+          disabled={busy}
+          aria-label={isLive ? 'End the call with Diya' : 'Talk to Diya (live call)'}
+          className={`relative flex items-center gap-2.5 rounded-full px-5 py-3.5 text-sm font-semibold text-cream-50 shadow-xl transition-transform active:scale-95 disabled:opacity-70 ${
+            isLive ? 'bg-maroon-700' : 'bg-gradient-to-br from-maroon-600 to-gold-500'
+          }`}
+          style={{ transform: `scale(${1 + Math.min(level, 1) * 0.1})` }}
+        >
+          {isLive && <span className="absolute inset-0 rounded-full mic-pulse pointer-events-none" />}
+          {isLive ? (
+            <span className="relative flex items-center gap-2.5">
+              <span className="flex items-end gap-[3px] h-4" aria-hidden="true">
+                <span className="w-[3px] h-full bg-cream-50/90 rounded-full speak-bar" />
+                <span className="w-[3px] h-full bg-cream-50/90 rounded-full speak-bar [animation-delay:0.15s]" />
+                <span className="w-[3px] h-full bg-cream-50/90 rounded-full speak-bar [animation-delay:0.3s]" />
+              </span>
+              {fabLabel}
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="opacity-80">
+                <path d="M6 6l12 12M18 6L6 18" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+              </svg>
+            </span>
+          ) : (
+            <span className="relative flex items-center gap-2">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path
+                  d="M12 15a3 3 0 0 0 3-3V6a3 3 0 1 0-6 0v6a3 3 0 0 0 3 3zM19 11a7 7 0 0 1-14 0M12 18v3"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              {fabLabel}
+            </span>
+          )}
+        </button>
+      </div>
+    </div>
   );
 }

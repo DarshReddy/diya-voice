@@ -3,6 +3,7 @@
 import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { useBriefStore } from '@/lib/store/briefStore';
+import { useFocusOnFirstSet } from '@/lib/useFocusOnFirstSet';
 import {
   OUTFIT_CATEGORIES,
   OUTFIT_CATEGORY_LABELS,
@@ -20,8 +21,12 @@ export default function SketchPicker() {
   const suggestedSketchId = useBriefStore((s) => s.brief.suggestedSketchId);
   const applyPatch = useBriefStore((s) => s.applyPatch);
 
+  // When voice first sets the outfit type, bring the sketches into focus.
+  const sectionRef = useRef<HTMLElement>(null);
+  useFocusOnFirstSet(outfitType, sectionRef);
+
   return (
-    <section aria-label="Outfit style picker" className="w-full">
+    <section ref={sectionRef} aria-label="Outfit style picker" className="w-full scroll-mt-4">
       <h2 className="font-display text-sm uppercase tracking-[0.18em] text-maroon-700/70 mb-3">
         Outfit Style
       </h2>
@@ -105,7 +110,7 @@ function SketchStrip({
             }`}
           >
             {isSuggested && (
-              <span className="absolute top-1 left-1 z-10 rounded-full bg-gold-500 px-1.5 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-maroon-950">
+              <span className="absolute top-1 left-1 z-10 rounded-full bg-gold-500 px-1.5 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-cream-50">
                 Suggested
               </span>
             )}
