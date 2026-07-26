@@ -183,6 +183,16 @@ Fill in the three fields now.`;
  * a full LLM failure falls back to empty fields rather than blocking the
  * preview) + a fixed rendering-rules suffix.
  */
+/**
+ * Hard wall-clock budget for the LLM flourish fields. sarvam-30b's hidden
+ * reasoning is stochastic — with salvage retries a single fields call was
+ * observed taking 2m+ end-to-end, which is unusable while a customer stares
+ * at "bringing your design to life…". Past the deadline we proceed with the
+ * template-only prompt (fully factual, verified to render well) and let the
+ * LLM call die in the background. COMPOSE_FIELDS=off skips the LLM entirely.
+ */
+const COMPOSE_FIELDS_TIMEOUT_MS = Number(process.env.COMPOSE_FIELDS_TIMEOUT_MS || 15000);
+
 export async function composeImagePrompt(
   brief: Partial<Brief>,
   transcript: TranscriptLine[]
@@ -190,12 +200,26 @@ export async function composeImagePrompt(
   const facts = gatherHardFacts(brief);
   const model = process.env.SARVAM_COMPOSE_MODEL || 'sarvam-30b';
 
-  let fields: PromptFields;
-  try {
-    fields = await generatePromptFields(facts, brief, transcript, model);
-  } catch (err) {
-    console.warn('[composePrompt] LLM prompt-fields call failed, falling back to template-only prompt:', err);
-    fields = { ...EMPTY_PROMPT_FIELDS };
+  let fields: PromptFields = { ...EMPTY_PROMPT_FIELDS };
+  if (process.env.COMPOSE_FIELDS !== 'off') {
+    try {
+      const deadline = new Promise<null>((resolve) =>
+        setTimeout(() => resolve(null), COMPOSE_FIELDS_TIMEOUT_MS)
+      );
+      const result = await Promise.race([
+        generatePromptFields(facts, brief, transcript, model),
+        deadline,
+      ]);
+      if (result) {
+        fields = result;
+      } else {
+        console.warn(
+          `[composePrompt] LLM prompt-fields call exceeded ${COMPOSE_FIELDS_TIMEOUT_MS}ms — using template-only prompt`
+        );
+      }
+    } catch (err) {
+      console.warn('[composePrompt] LLM prompt-fields call failed, falling back to template-only prompt:', err);
+    }
   }
 
   const prompt = buildFinalPrompt(facts, fields, brief);
