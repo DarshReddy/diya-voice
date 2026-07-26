@@ -77,6 +77,18 @@ export function isOutfitCategory(value: string): value is OutfitCategory {
   return (OUTFIT_CATEGORIES as readonly string[]).includes(value);
 }
 
+/** Singular, sentence-friendly form of each category — used by lib/composePrompt.ts's template when no matched sketch supplies its own `garment` string. */
+export const OUTFIT_CATEGORY_SINGULAR: Record<OutfitCategory, string> = {
+  'maxi-dresses': 'maxi dress',
+  'short-dresses': 'short dress',
+  jumpsuits: 'jumpsuit',
+  skirts: 'skirt',
+  tops: 'top',
+  pants: 'pants',
+  shorts: 'shorts',
+  'coord-sets': 'co-ord set',
+};
+
 // ---------------------------------------------------------------------------
 // Fabric folders (9 slugs) — recreated from diyo-app's lib/constants/fabrics.ts
 // FABRIC_FOLDERS, dropping the fields (visualGradient) this app doesn't need.

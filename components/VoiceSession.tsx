@@ -42,7 +42,7 @@ import type { ServerTranscriptMsg } from 'sarvam-conv-ai-sdk/browser';
 import { useBriefStore } from '@/lib/store/briefStore';
 import { keywordMatchBrief } from '@/lib/keywordMatch';
 import { enrichPatchWithCatalogMatches } from '@/lib/enrichPatch';
-import { EMPTY_BRIEF, Brief } from '@/lib/brief';
+import { EMPTY_BRIEF, Brief, isBriefComplete } from '@/lib/brief';
 
 /** Static per-app config for this DIYO Sarvam Agents workspace. */
 const SARVAM_CONFIG = {
@@ -77,6 +77,7 @@ export default function VoiceSession() {
   const applyPatch = useBriefStore((s) => s.applyPatch);
   const pushTurn = useBriefStore((s) => s.pushTurn);
   const resetBrief = useBriefStore((s) => s.reset);
+  const requestAutoPreview = useBriefStore((s) => s.requestAutoPreview);
 
   const briefRef = useRef(brief);
   useEffect(() => {
@@ -174,6 +175,10 @@ export default function VoiceSession() {
         setSessionState('idle');
         setAgentState(AgentState.IDLE);
         setLevel(0);
+        // Auto-trigger the preview once the call ends, if the conversation
+        // reached a complete brief. PreviewCard hashes the brief itself so
+        // this never double-fires a generation for the same design.
+        if (isBriefComplete(briefRef.current)) requestAutoPreview();
       },
     });
 
@@ -190,7 +195,7 @@ export default function VoiceSession() {
       setSessionState('error');
       agentRef.current = null;
     }
-  }, [applyPatch, pushTurn, resetBrief, sessionState]);
+  }, [applyPatch, pushTurn, resetBrief, requestAutoPreview, sessionState]);
 
   const stop = useCallback(async () => {
     try {

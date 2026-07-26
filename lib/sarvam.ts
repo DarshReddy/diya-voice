@@ -64,7 +64,8 @@ const MAX_RETRIES_ON_TRUNCATION = 4;
 export async function chatCompletionJson<T>(
   messages: ChatMessage[],
   jsonSchema: JsonSchemaSpec,
-  maxTokens = MAX_TOKENS_CEILING
+  maxTokens = MAX_TOKENS_CEILING,
+  model = 'sarvam-30b'
 ): Promise<T> {
   let lastError: Error | null = null;
 
@@ -76,7 +77,7 @@ export async function chatCompletionJson<T>(
         'content-type': 'application/json',
       },
       body: JSON.stringify({
-        model: 'sarvam-30b',
+        model,
         reasoning_effort: 'low',
         // Lower temperature measurably shortens the hidden reasoning trace on
         // this model for complex schemas (observed truncation on the full

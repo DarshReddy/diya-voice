@@ -1,7 +1,7 @@
 import { chatCompletionJson } from './sarvam';
 import { Brief } from './brief';
 import {
-  OUTFIT_CATEGORY_LABELS,
+  OUTFIT_CATEGORY_SINGULAR,
   getFabricFolder,
   findSwatch,
   findSketch,
@@ -14,71 +14,114 @@ export interface TranscriptLine {
   text: string;
 }
 
-interface RawComposePromptResponse {
-  prompt: string;
+/**
+ * The only three things the LLM is allowed to contribute — short creative
+ * fields, not the final prompt. A static template (buildFinalPrompt below)
+ * assembles the actual Gemini prompt from hard facts (garment category,
+ * exact silhouette from sketch-labels, exact fabric + color from
+ * swatch-labels) plus these three fields plus a fixed rendering-rules
+ * suffix. This way a full LLM failure (even after JSON salvage) can never
+ * block the preview — the template still produces a complete, sensible
+ * prompt with the three fields simply empty.
+ */
+export interface PromptFields {
+  fabricRendering: string;
+  silhouetteFlourish: string;
+  moodStyling: string;
 }
 
-const COMPOSE_PROMPT_JSON_SCHEMA = {
-  name: 'compose_prompt',
+const EMPTY_PROMPT_FIELDS: PromptFields = {
+  fabricRendering: '',
+  silhouetteFlourish: '',
+  moodStyling: '',
+};
+
+const PROMPT_FIELDS_JSON_SCHEMA = {
+  name: 'prompt_fields',
   strict: true,
   schema: {
     type: 'object',
     properties: {
-      prompt: { type: 'string' },
+      fabricRendering: { type: 'string', maxLength: 160 },
+      silhouetteFlourish: { type: 'string', maxLength: 160 },
+      moodStyling: { type: 'string', maxLength: 120 },
     },
-    required: ['prompt'],
+    required: ['fabricRendering', 'silhouetteFlourish', 'moodStyling'],
     additionalProperties: false,
   },
 } as const;
 
-/** Fallback used if JSON salvage recovers a response missing `prompt` entirely (rare). */
-function fallbackPrompt(brief: Partial<Brief>): string {
-  const parts = [
-    brief.color,
-    brief.fabricFolder ? getFabricFolder(brief.fabricFolder)?.label : undefined,
-    brief.outfitType ? OUTFIT_CATEGORY_LABELS[brief.outfitType] : 'western-wear outfit',
-  ].filter(Boolean);
-  return `A ${parts.join(' ')} for a ${brief.occasion ?? 'special'} occasion.`;
+const RENDERING_RULES =
+  'Render a clean, professional product-style photograph of the complete garment alone on a plain light background — no real person, no face, no model wearing it. Stay true to the described silhouette structure and the exact fabric color and texture';
+
+/** Hard, structured facts about the matched garment — pulled directly from sketch-labels/swatch-labels/coord-set-labels, never from the LLM. */
+interface HardFacts {
+  garmentLabel: string;
+  silhouetteDescription: string | null;
+  fabricLabel: string | null;
+  exactColor: string | null;
 }
 
-/** Builds a structured description of the matched garment (sketch/coord-set + fabric) for the compose prompt. */
-function describeGarment(brief: Partial<Brief>): string {
-  const lines: string[] = [];
-
-  if (brief.outfitType) {
-    lines.push(`Garment category: ${OUTFIT_CATEGORY_LABELS[brief.outfitType]}.`);
-  }
-
+function gatherHardFacts(brief: Partial<Brief>): HardFacts {
   const chosenSketchId = brief.sketchId ?? brief.suggestedSketchId;
-  if (chosenSketchId && brief.outfitType && brief.outfitType !== 'coord-sets') {
-    const sketch = findSketch(chosenSketchId);
-    if (sketch) {
-      lines.push(
-        `Silhouette reference: ${sanitizeDisplayText(sketch.suggestedName)} — neckline: ${sketch.neckline}; sleeves: ${sketch.sleeves}; length: ${sketch.length}; silhouette: ${sketch.silhouette}; waist: ${sketch.waist}; back: ${sketch.back}; details: ${sketch.details.join(', ')}.`
-      );
-    }
-  } else if (brief.outfitType === 'coord-sets' && chosenSketchId) {
-    const coordSet = findCoordSet(Number(chosenSketchId));
-    if (coordSet) {
-      lines.push(
-        `Co-ord set reference: ${sanitizeDisplayText(coordSet.top)} paired with ${sanitizeDisplayText(coordSet.bottom)}; print: ${coordSet.print}; vibe: ${coordSet.vibe}.`
-      );
-    }
+  const sketch =
+    chosenSketchId && brief.outfitType && brief.outfitType !== 'coord-sets' ? findSketch(chosenSketchId) : null;
+  const coordSet =
+    chosenSketchId && brief.outfitType === 'coord-sets' ? findCoordSet(Number(chosenSketchId)) : null;
+
+  const garmentLabel =
+    sketch?.garment ?? (brief.outfitType ? OUTFIT_CATEGORY_SINGULAR[brief.outfitType] : 'western-wear garment');
+
+  let silhouetteDescription: string | null = null;
+  if (sketch) {
+    silhouetteDescription = `${sketch.neckline}, ${sketch.sleeves}, ${sketch.length} length, ${sketch.silhouette} silhouette${
+      sketch.details.length ? `, featuring ${sketch.details.join(', ')}` : ''
+    }`;
+  } else if (coordSet) {
+    silhouetteDescription = `pairing ${sanitizeDisplayText(coordSet.top)} with ${sanitizeDisplayText(coordSet.bottom)}, ${coordSet.print} print`;
   }
 
-  if (brief.fabricFolder) {
-    const folder = getFabricFolder(brief.fabricFolder);
-    const swatch = brief.fabricFile ? findSwatch(brief.fabricFolder, brief.fabricFile) : null;
-    lines.push(
-      `Fabric: ${folder?.promptDescriptor ?? brief.fabricFolder}${swatch?.pattern ? ` — pattern: ${swatch.pattern}` : ''}.`
-    );
+  const fabricLabel = brief.fabricFolder ? (getFabricFolder(brief.fabricFolder)?.label ?? brief.fabricFolder) : null;
+  const swatch = brief.fabricFolder && brief.fabricFile ? findSwatch(brief.fabricFolder, brief.fabricFile) : null;
+  const exactColor = swatch?.color ?? brief.color ?? null;
+
+  return { garmentLabel, silhouetteDescription, fabricLabel, exactColor };
+}
+
+/** The static template — hard facts + the LLM's three fields + fixed rendering rules. Never depends on the LLM succeeding. */
+function buildFinalPrompt(facts: HardFacts, fields: PromptFields, brief: Partial<Brief>): string {
+  const sentences: string[] = [];
+
+  sentences.push(`A ${facts.garmentLabel}${facts.silhouetteDescription ? ` with ${facts.silhouetteDescription}` : ''}`);
+
+  if (facts.fabricLabel || facts.exactColor) {
+    sentences.push(`crafted from ${[facts.exactColor, facts.fabricLabel].filter(Boolean).join(' ')}`);
   }
 
-  if (brief.color) lines.push(`Color: ${brief.color}.`);
-  if (brief.styleDetails) lines.push(`Style notes from the conversation: ${brief.styleDetails}.`);
-  if (brief.occasion) lines.push(`Occasion mood: ${brief.occasion}.`);
-  if (brief.size) lines.push(`Size: ${brief.size}.`);
+  if (fields.fabricRendering) sentences.push(fields.fabricRendering);
+  if (fields.silhouetteFlourish) sentences.push(fields.silhouetteFlourish);
+  if (fields.moodStyling) sentences.push(fields.moodStyling);
+  else if (brief.occasion) sentences.push(`Styled for a ${brief.occasion.toLowerCase()} occasion`);
 
+  sentences.push(RENDERING_RULES);
+
+  const prompt = sentences
+    .filter(Boolean)
+    .map((s) => s.trim().replace(/\.$/, ''))
+    .join('. ');
+
+  return sanitizeDisplayText(`${prompt}.`);
+}
+
+function describeHardFacts(facts: HardFacts, brief: Partial<Brief>): string {
+  const lines = [
+    `Garment: ${facts.garmentLabel}`,
+    facts.silhouetteDescription ? `Silhouette: ${facts.silhouetteDescription}` : null,
+    facts.fabricLabel ? `Fabric: ${facts.fabricLabel}` : null,
+    facts.exactColor ? `Color: ${facts.exactColor}` : null,
+    brief.occasion ? `Occasion: ${brief.occasion}` : null,
+    brief.styleDetails ? `Conversation style notes: ${brief.styleDetails}` : null,
+  ].filter(Boolean);
   return lines.join('\n');
 }
 
@@ -89,49 +132,75 @@ function describeTranscript(transcript: TranscriptLine[]): string {
 }
 
 /**
- * Composes a rich, single-paragraph English image-generation prompt
- * describing the garment — the only place sarvam-30b is still called from
- * the live-call (Plan A) flow, once at the end of a conversation rather than
- * per utterance. Feeds a downstream image-generation step (Gemini compose,
- * added later) with a structured natural-language description assembled
- * from the matched sketch/coord-set details, fabric family + color, and
- * occasion mood, plus the tail of the conversation for extra nuance.
+ * Asks the LLM for ONLY the three short creative fields (never the full
+ * prompt). `model` defaults to sarvam-30b; SARVAM_COMPOSE_MODEL can override
+ * it (e.g. to sarvam-105b) — see .env.local.
  */
-export async function composeImagePrompt(
+async function generatePromptFields(
+  facts: HardFacts,
   brief: Partial<Brief>,
-  transcript: TranscriptLine[]
-): Promise<{ prompt: string }> {
-  const garmentDescription = describeGarment(brief);
-  const transcriptDescription = describeTranscript(transcript);
+  transcript: TranscriptLine[],
+  model: string
+): Promise<PromptFields> {
+  const systemPrompt = `You help write an image-generation brief for a custom western-wear garment at DIYO, a women's fashion design studio. You do NOT write the final prompt — a code template assembles that from hard facts (exact garment type, silhouette, fabric, color) plus three short creative fields you provide.
 
-  const systemPrompt = `You write a single, rich, English-language image-generation prompt describing a custom western-wear garment for DIYO, a women's fashion design studio. The prompt will be fed directly into an image generator, so it must be vivid, concrete, and self-contained — a fashion photograph brief in one paragraph.
+Fields:
+- fabricRendering (max 160 chars): how this fabric's color and texture should look when rendered — sheen, drape, weight, how it catches light. Specific and sensory, not generic.
+- silhouetteFlourish (max 160 chars): a styling flourish or emphasis consistent with the garment's ALREADY-GIVEN silhouette/details below — describe how to render what's given, never invent new structural elements.
+- moodStyling (max 120 chars): occasion-appropriate mood, lighting, and setting for the shot.
 
-Rules:
-- Output ONE paragraph, 2-4 sentences, no line breaks, no bullet points, no markdown.
-- Describe: the garment category and silhouette (neckline, sleeves, length, details), the fabric (material feel/texture + exact color), and the overall mood/occasion.
-- Write as a photography/illustration brief — e.g. "A flowing maxi dress in deep wine-maroon lustrous satin, featuring a V-neckline and flutter sleeves with a pleated skirt, styled for an elegant evening wedding look, softly lit studio photograph."
-- Never mention brand names, prices, or delivery. Describe fit/construction with words like "structured", "fitted", or "custom-designed" only.
-- Never mention lehengas, sarees, kurtas, or other ethnic wear — DIYO is western-wear only.
-- If some details are missing, write a plausible, tasteful default rather than leaving gaps or hedging ("possibly", "maybe") — commit to a concrete description.`;
+Never mention brand names, prices, delivery, ethnic wear (lehenga/saree/kurta), or any real person/model/face — this is a product-style shot of the garment alone.
+Respond with strict JSON matching the schema. No markdown, no commentary.`;
 
-  const userPrompt = `Structured design brief:
-${garmentDescription || '(brief is mostly empty — infer a tasteful default western-wear look)'}
+  const userPrompt = `Hard facts (already fixed — do not contradict or restate structural details, just complement them):
+${describeHardFacts(facts, brief)}
 
 Recent conversation (for tone/nuance only):
-${transcriptDescription}
+${describeTranscript(transcript)}
 
-Write the single-paragraph image-generation prompt now.`;
+Fill in the three fields now.`;
 
-  const raw = await chatCompletionJson<RawComposePromptResponse>(
+  const raw = await chatCompletionJson<PromptFields>(
     [
       { role: 'system', content: systemPrompt },
       { role: 'user', content: userPrompt },
     ],
-    COMPOSE_PROMPT_JSON_SCHEMA
+    PROMPT_FIELDS_JSON_SCHEMA,
+    undefined,
+    model
   );
 
-  // Belt-and-suspenders: launder the model's free-text output through the
-  // same sanitizer used for copied catalog data, regardless of how well it
-  // followed the system prompt's fit/construction wording rule above.
-  return { prompt: sanitizeDisplayText(raw?.prompt || fallbackPrompt(brief)) };
+  return {
+    fabricRendering: (raw?.fabricRendering ?? '').slice(0, 160),
+    silhouetteFlourish: (raw?.silhouetteFlourish ?? '').slice(0, 160),
+    moodStyling: (raw?.moodStyling ?? '').slice(0, 120),
+  };
 }
+
+/**
+ * Builds the final Gemini image-generation prompt: hard facts (always
+ * present, deterministic) + LLM-contributed creative fields (best-effort —
+ * a full LLM failure falls back to empty fields rather than blocking the
+ * preview) + a fixed rendering-rules suffix.
+ */
+export async function composeImagePrompt(
+  brief: Partial<Brief>,
+  transcript: TranscriptLine[]
+): Promise<{ prompt: string; promptFields: PromptFields }> {
+  const facts = gatherHardFacts(brief);
+  const model = process.env.SARVAM_COMPOSE_MODEL || 'sarvam-30b';
+
+  let fields: PromptFields;
+  try {
+    fields = await generatePromptFields(facts, brief, transcript, model);
+  } catch (err) {
+    console.warn('[composePrompt] LLM prompt-fields call failed, falling back to template-only prompt:', err);
+    fields = { ...EMPTY_PROMPT_FIELDS };
+  }
+
+  const prompt = buildFinalPrompt(facts, fields, brief);
+  return { prompt, promptFields: fields };
+}
+
+/** Exposed for direct testing/verification of the LLM fields call in isolation (e.g. trying an alternate model). Not used by the main pipeline. */
+export const __internal = { generatePromptFields, gatherHardFacts, buildFinalPrompt };

@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# local scratch area for verification artifacts (generated preview images, etc.) — never committed
+/scratch/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts

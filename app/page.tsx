@@ -4,7 +4,7 @@ import TalkControl from '@/components/TalkControl';
 import TranscriptPane from '@/components/TranscriptPane';
 import FabricPicker from '@/components/FabricPicker';
 import SketchPicker from '@/components/SketchPicker';
-import SummaryCard from '@/components/SummaryCard';
+import PreviewCard from '@/components/PreviewCard';
 
 export default function Home() {
   return (
@@ -30,7 +30,7 @@ export default function Home() {
 
         <TranscriptPane />
 
-        <SummaryCard />
+        <PreviewCard />
 
         <div className="border-t border-maroon-900/10 pt-6 flex flex-col gap-8">
           <SketchPicker />
