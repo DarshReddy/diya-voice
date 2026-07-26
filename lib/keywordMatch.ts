@@ -173,6 +173,92 @@ const COLOR_KEYWORDS: KeywordEntry<string>[] = [
 ];
 
 /**
+ * Style vocabulary for the styleDetails accumulator. Each entry's `value` is
+ * clean English (it feeds the image prompt and the summary card); keywords
+ * cover English plus Indic-script transliterations of the common spoken
+ * forms (Saaras returns English fashion words in Devanagari/Telugu/Kannada
+ * script when pronounced Indian-style, e.g. స్లీవ్ లెస్ for "sleeveless").
+ * Only lines containing one of these produce styleDetails — call-control
+ * chatter ("end the call", "yes correct") accumulates nothing.
+ */
+const STYLE_TERM_KEYWORDS: KeywordEntry<string>[] = [
+  // necklines
+  { value: 'sweetheart neckline', keywords: ['sweetheart', 'स्वीटहार्ट', 'స్వీట్ హార్ట్', 'ಸ್ವೀಟ್ ಹಾರ್ಟ್'] },
+  { value: 'V-neck', keywords: ['v-neck', 'v neck', 'वी नेक', 'వీ నెక్', 'ವಿ ನೆಕ್'] },
+  { value: 'halter neck', keywords: ['halter', 'हॉल्टर', 'హాల్టర్', 'ಹಾಲ್ಟರ್'] },
+  { value: 'off-shoulder', keywords: ['off shoulder', 'off-shoulder', 'ऑफ शोल्डर', 'ఆఫ్ షోల్డర్', 'ಆಫ್ ಶೋಲ್ಡರ್'] },
+  { value: 'square neckline', keywords: ['square neck', 'स्क्वायर नेक', 'స్క్వేర్ నెక్'] },
+  { value: 'round neckline', keywords: ['round neck', 'राउंड नेक', 'రౌండ్ నెక్', 'ರೌಂಡ್ ನೆಕ್'] },
+  { value: 'boat neckline', keywords: ['boat neck'] },
+  { value: 'collared', keywords: ['collar', 'कॉलर', 'కాలర్', 'ಕಾಲರ್'] },
+  { value: 'backless', keywords: ['backless', 'बैकलेस', 'బ్యాక్ లెస్'] },
+  // sleeves
+  {
+    value: 'sleeveless',
+    keywords: ['sleeveless', 'sleeve less', 'स्लीवलेस', 'స్లీవ్ లెస్', 'స్లీవ్‌లెస్', 'ಸ್ಲೀವ್ ಲೆಸ್', 'ಸ್ಲೀವ್‌ಲೆಸ್'],
+  },
+  { value: 'puff sleeves', keywords: ['puff sleeve', 'puff sleeves', 'पफ स्लीव', 'పఫ్ స్లీవ్', 'ಪಫ್ ಸ್ಲೀವ್'] },
+  { value: 'balloon sleeves', keywords: ['balloon sleeve', 'balloon sleeves', 'बैलून स्लीव', 'బెలూన్ స్లీవ్'] },
+  { value: 'long sleeves', keywords: ['long sleeve', 'long sleeves', 'full sleeve', 'full sleeves', 'फुल स्लीव', 'ఫుల్ స్లీవ్'] },
+  { value: 'short sleeves', keywords: ['short sleeve', 'short sleeves', 'half sleeve', 'हाफ स्लीव', 'హాఫ్ స్లీవ్', 'ಹಾಫ್ ಸ್ಲೀವ್'] },
+  { value: 'bell sleeves', keywords: ['bell sleeve', 'bell sleeves'] },
+  { value: 'cap sleeves', keywords: ['cap sleeve', 'cap sleeves'] },
+  { value: 'spaghetti straps', keywords: ['spaghetti', 'स्पेगेटी', 'స్పగెట్టి'] },
+  // lengths
+  { value: 'knee length', keywords: ['knee length', 'knee-length', 'नी लेंथ', 'నీ లెంగ్త్', 'ನೀ ಲೆಂತ್'] },
+  { value: 'midi length', keywords: ['midi', 'मिडी', 'మిడీ', 'ಮಿಡಿ'] },
+  { value: 'mini length', keywords: ['mini', 'मिनी', 'మినీ', 'ಮಿನಿ'] },
+  { value: 'floor length', keywords: ['floor length', 'floor-length', 'फ्लोर लेंथ', 'ఫ్లోర్ లెంగ్త్'] },
+  { value: 'ankle length', keywords: ['ankle length', 'ankle-length'] },
+  // silhouettes
+  { value: 'A-line', keywords: ['a-line', 'a line', 'ए लाइन', 'ఏ లైన్', 'ఎ లైన్', 'ಎ ಲೈನ್'] },
+  { value: 'fit and flare', keywords: ['fit and flare', 'फिट एंड फ्लेयर', 'ఫిట్ అండ్ ఫ్లేర్'] },
+  { value: 'bodycon', keywords: ['bodycon', 'बॉडीकॉन', 'బాడీకాన్'] },
+  { value: 'wrap style', keywords: ['wrap', 'रैप', 'ర్యాప్'] },
+  { value: 'tiered', keywords: ['tiered', 'tiers', 'टियर', 'టైర్డ్'] },
+  { value: 'empire waist', keywords: ['empire waist', 'empire'] },
+  { value: 'peplum', keywords: ['peplum', 'పెప్లం'] },
+  { value: 'flowy', keywords: ['flowy', 'flowing', 'फ्लोई', 'ఫ్లోయీ'] },
+  // details
+  { value: 'ruffles', keywords: ['ruffle', 'ruffles', 'रफल', 'रफल्स', 'రఫుల్', 'రఫుల్స్', 'ರಫಲ್', 'ರಫಲ್ಸ್'] },
+  { value: 'side slit', keywords: ['slit', 'स्लिट', 'స్లిట్', 'ಸ್ಲಿಟ್'] },
+  { value: 'bow detail', keywords: ['bow', 'बो', 'బో'] },
+  { value: 'pockets', keywords: ['pocket', 'pockets', 'पॉकेट', 'పాకెట్', 'ಪಾಕೆಟ್'] },
+  { value: 'belted waist', keywords: ['belt', 'belted', 'बेल्ट', 'బెల్ట్', 'ಬೆಲ್ಟ್'] },
+  { value: 'pleats', keywords: ['pleated', 'pleats', 'प्लीट', 'ప్లీట్'] },
+  { value: 'lace detail', keywords: ['lace', 'लेस', 'లేస్', 'ಲೇಸ್'] },
+  { value: 'embroidery', keywords: ['embroidery', 'embroidered', 'कढ़ाई', 'ఎంబ్రాయిడరీ', 'ಕಸೂತಿ'] },
+  { value: 'cut-out detail', keywords: ['cut out', 'cutout', 'cut-out'] },
+  { value: 'gathered', keywords: ['gathered', 'gathering'] },
+  { value: 'scalloped hem', keywords: ['scalloped', 'scallop'] },
+  { value: 'frills', keywords: ['frill', 'frills', 'फ्रिल', 'ఫ్రిల్'] },
+  { value: 'floral', keywords: ['floral', 'flowers', 'फ्लोरल', 'फूल', 'ఫ్లోరల్', 'పూల', 'ಹೂವಿನ', 'ಫ್ಲೋರಲ್'] },
+  // vibe adjectives (safe to render — they only add mood)
+  { value: 'elegant', keywords: ['elegant', 'एलिगेंट', 'ఎలిగెంట్', 'ಎಲಿಗెಂಟ್'] },
+  { value: 'playful', keywords: ['playful'] },
+  { value: 'classy', keywords: ['classy', 'क्लासी', 'క్లాసీ', 'ಕ್ಲಾಸಿ'] },
+  { value: 'chic', keywords: ['chic'] },
+  { value: 'romantic', keywords: ['romantic'] },
+  { value: 'cute', keywords: ['cute', 'क्यूट', 'క్యూట్'] },
+  { value: 'comfortable', keywords: ['comfortable', 'comfy', 'कम्फर्टेबल', 'కంఫర్టబుల్'] },
+];
+
+/**
+ * Extracts clean English style terms from a (possibly Indic-script,
+ * code-mixed) transcript line. Returns [] for lines with no style content —
+ * the accumulator in VoiceSession only grows when this finds something.
+ */
+export function extractStyleTerms(text: string): string[] {
+  if (!text) return [];
+  const hay = text.toLowerCase();
+  const terms: string[] = [];
+  for (const entry of STYLE_TERM_KEYWORDS) {
+    if (entry.keywords.some((k) => containsKeyword(hay, k))) terms.push(entry.value);
+  }
+  return terms;
+}
+
+/**
  * Runs all keyword tables against a transcript and returns whatever slots it
  * is confident about. Never guesses — an unmatched slot is simply absent
  * from the returned patch (not null), so callers can safely merge it in

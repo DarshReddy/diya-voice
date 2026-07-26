@@ -51,8 +51,45 @@ const PROMPT_FIELDS_JSON_SCHEMA = {
   },
 } as const;
 
-const RENDERING_RULES =
-  'Render a clean, professional product-style photograph of the complete garment alone on a plain light background — no real person, no face, no model wearing it. Stay true to the described silhouette structure and the exact fabric color and texture';
+/**
+ * Per-category output-scope rules, ported from diyo-app's battle-tested
+ * promptBuilder (outfit-only flow) — they stop the model from inventing
+ * extra garments, and give tops/bottoms an understated black placeholder
+ * counterpart so the hero garment stays the focus.
+ */
+function buildGarmentScope(outfitType: string | null | undefined): string[] {
+  switch (outfitType) {
+    case 'maxi-dresses':
+    case 'short-dresses':
+      return ['Output scope: single dress garment only. Do not add separate tops, bottoms, jackets, or unrelated layers.'];
+    case 'jumpsuits':
+      return ['Output scope: jumpsuit only. Do not split into separate top and bottom garments or add jackets.'];
+    case 'coord-sets':
+      return ['Output scope: matching co-ord set only. Do not add unrelated extra garments or random layering pieces.'];
+    case 'tops':
+      return [
+        'Output scope: top only. Do not generate skirts, pants, shorts, jackets, or layered lower garments.',
+        'If a lower garment is needed for completeness, use only a simple plain black fitted bottom as a placeholder — understated, so the selected top remains the clear focus.',
+      ];
+    case 'skirts':
+      return [
+        'Output scope: skirt only. Do not generate tops, pants, shorts, dresses, or layered upper garments.',
+        'If an upper garment is needed for completeness, use only a simple plain black fitted top as a placeholder — no prints, logos, or embellishments.',
+      ];
+    case 'pants':
+      return [
+        'Output scope: pants only. Do not generate tops, skirts, shorts, dresses, or layered upper garments.',
+        'If an upper garment is needed for completeness, use only a simple plain black fitted top as a placeholder — no prints, logos, or embellishments.',
+      ];
+    case 'shorts':
+      return [
+        'Output scope: shorts only. Do not generate tops, skirts, pants, dresses, or layered upper garments.',
+        'If an upper garment is needed for completeness, use only a simple plain black fitted top as a placeholder — no prints, logos, or embellishments.',
+      ];
+    default:
+      return ['Garment scope: generate only one coherent garment and avoid adding extra clothing items.'];
+  }
+}
 
 /** Hard, structured facts about the matched garment — pulled directly from sketch-labels/swatch-labels/coord-set-labels, never from the LLM. */
 interface HardFacts {
@@ -88,29 +125,49 @@ function gatherHardFacts(brief: Partial<Brief>): HardFacts {
   return { garmentLabel, silhouetteDescription, fabricLabel, exactColor };
 }
 
-/** The static template — hard facts + the LLM's three fields + fixed rendering rules. Never depends on the LLM succeeding. */
+/**
+ * The static template — hard facts + the LLM's three fields, assembled in
+ * the magazine-editorial-flatlay structure ported from diyo-app's
+ * promptBuilder outfit-only flow (which reliably produces realistic,
+ * magazine-style product shots). Never depends on the LLM succeeding.
+ */
 function buildFinalPrompt(facts: HardFacts, fields: PromptFields, brief: Partial<Brief>): string {
-  const sentences: string[] = [];
+  const hasSketchImage = Boolean((brief.sketchId ?? brief.suggestedSketchId) && brief.outfitType);
+  const hasSwatchImage = Boolean(brief.fabricFolder && brief.fabricFile);
+  const fabricMeta = brief.fabricFolder ? getFabricFolder(brief.fabricFolder) : null;
 
-  sentences.push(`A ${facts.garmentLabel}${facts.silhouetteDescription ? ` with ${facts.silhouetteDescription}` : ''}`);
+  const fabricLine = [facts.exactColor, facts.fabricLabel].filter(Boolean).join(' ');
 
-  if (facts.fabricLabel || facts.exactColor) {
-    sentences.push(`crafted from ${[facts.exactColor, facts.fabricLabel].filter(Boolean).join(' ')}`);
-  }
+  const parts: (string | null)[] = [
+    'Create a high-quality photorealistic editorial flatlay of the garment. No mannequin, no model, no body.',
+    'Output must look like a real DSLR fashion studio photograph — not an illustration, sketch, 3D render, or CGI.',
+    'Use realistic fabric micro-wrinkles, natural shadow gradients, and accurate textile surface depth.',
+    `The garment: a ${facts.garmentLabel}${facts.silhouetteDescription ? ` with ${facts.silhouetteDescription}` : ''}.`,
+    hasSketchImage
+      ? 'Shape source: the GARMENT SKETCH guides construction only — shape, seam flow, cut lines, and proportions. Render it as a fully photorealistic garment with no line-art edges, flat fills, or drawn-line appearance.'
+      : null,
+    fabricLine ? `Fabric: ${fabricLine}${fabricMeta ? ` — ${fabricMeta.promptDescriptor}` : ''}.` : null,
+    hasSwatchImage
+      ? 'COLOUR AND TEXTURE RULE: the FABRIC SWATCH is the only permitted colour, print, and texture source for the garment. Apply it faithfully across the whole garment surface, and do not derive colour from any other image.'
+      : facts.exactColor
+        ? `Maintain the exact ${facts.exactColor} garment colour throughout.`
+        : null,
+    fields.fabricRendering || null,
+    fields.silhouetteFlourish || null,
+    ...buildGarmentScope(brief.outfitType),
+    'Lay the garment flat on a clean softly-lit surface (white marble, linen, or muted pastel paper).',
+    'Style with a small number of complementary accessories (jewellery, a bag, footwear) — the garment is the clear hero.',
+    fields.moodStyling || (brief.occasion ? `Mood: styled for a ${brief.occasion.toLowerCase()} occasion.` : null),
+    'Magazine-worthy composition with intentional overlaps and soft even studio lighting. Aspect ratio 3:4, no text or watermarks.',
+    'Commercially usable fashion output with clean stitching and realistic fabric construction.',
+  ];
 
-  if (fields.fabricRendering) sentences.push(fields.fabricRendering);
-  if (fields.silhouetteFlourish) sentences.push(fields.silhouetteFlourish);
-  if (fields.moodStyling) sentences.push(fields.moodStyling);
-  else if (brief.occasion) sentences.push(`Styled for a ${brief.occasion.toLowerCase()} occasion`);
+  const prompt = parts
+    .filter((p): p is string => Boolean(p))
+    .map((s) => s.trim().replace(/\.?$/, '.'))
+    .join(' ');
 
-  sentences.push(RENDERING_RULES);
-
-  const prompt = sentences
-    .filter(Boolean)
-    .map((s) => s.trim().replace(/\.$/, ''))
-    .join('. ');
-
-  return sanitizeDisplayText(`${prompt}.`);
+  return sanitizeDisplayText(prompt);
 }
 
 function describeHardFacts(facts: HardFacts, brief: Partial<Brief>): string {

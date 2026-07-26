@@ -66,8 +66,10 @@ export interface ImageInput {
   base64: string;
 }
 
-const RENDERING_INSTRUCTIONS =
-  'Render a clean, professional product-style photograph of only this garment — a flat-lay or ghost-mannequin style product shot on a plain neutral background. No real person, no face, no model wearing it.';
+// Composition/style lives in the composed prompt (magazine editorial
+// flatlay, ported from diyo-app's promptBuilder); this suffix is only the
+// non-negotiable safety floor.
+const RENDERING_INSTRUCTIONS = 'No real person, no face, no model wearing it. No text or watermarks.';
 
 /**
  * Generates a garment preview image. `images` may be empty (proceeds from

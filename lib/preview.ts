@@ -36,8 +36,13 @@ export async function generatePreview(brief: Partial<Brief>, transcript: Transcr
           : `outfits/${brief.outfitType}/${chosenSketchId}/sketch.webp`;
       const sketch = await fetchAssetBase64(path);
       images.push({
+        // Role labels ported from diyo-app's buildImageLabels — named roles
+        // (GARMENT SKETCH / FABRIC SWATCH) anchor instructions to the right
+        // image far more reliably than positional references.
         label:
-          "This is the garment's sketch/reference image — use it for the garment's structure, silhouette, neckline, sleeves, and construction details (not for color).",
+          brief.outfitType === 'coord-sets'
+            ? "GARMENT DESIGN REFERENCE — use this ONLY for the garment's silhouette, cut, and construction. If a person appears in this image, ignore them entirely; they are NOT the subject and must not appear in the output."
+            : "GARMENT SKETCH — a line drawing of the garment. Use it only for the garment's shape, cut lines, and proportions, and render it as a fully photorealistic garment.",
         ...sketch,
       });
     } catch (err) {
@@ -50,7 +55,7 @@ export async function generatePreview(brief: Partial<Brief>, transcript: Transcr
       const swatch = await fetchAssetBase64(`fabrics/${brief.fabricFolder}/${brief.fabricFile}`);
       images.push({
         label:
-          'This is the fabric swatch — use it for the exact fabric color, sheen, and texture (not for the shape of the garment).',
+          'FABRIC SWATCH — the ONLY source of colour, print, and texture for the new garment. Apply it across the whole garment surface.',
         ...swatch,
       });
     } catch (err) {

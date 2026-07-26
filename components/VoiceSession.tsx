@@ -40,7 +40,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import { ConversationAgent, BrowserAudioInterface, InteractionType, AgentState } from 'sarvam-conv-ai-sdk/browser';
 import type { ServerTranscriptMsg } from 'sarvam-conv-ai-sdk/browser';
 import { useBriefStore } from '@/lib/store/briefStore';
-import { keywordMatchBrief } from '@/lib/keywordMatch';
+import { keywordMatchBrief, extractStyleTerms } from '@/lib/keywordMatch';
 import { enrichPatchWithCatalogMatches } from '@/lib/enrichPatch';
 import { EMPTY_BRIEF, Brief, isBriefComplete } from '@/lib/brief';
 
@@ -94,10 +94,11 @@ export default function VoiceSession() {
     briefRef.current = brief;
   }, [brief]);
 
-  // Rolling window of recent user utterances, joined into a styleDetails
-  // free-text string (see the module doc comment — this replaces the
-  // per-line LLM extract call that used to feed styleDetails).
-  const recentLinesRef = useRef<string[]>([]);
+  // Accumulated clean style TERMS (not raw utterances). A raw rolling window
+  // was tried first and a real call polluted styleDetails with call-control
+  // chatter ("Yes correct… End the call. Hello.") while pushing the actual
+  // style words out of the cap — so only vocabulary hits accumulate now.
+  const styleTermsRef = useRef<Set<string>>(new Set());
 
   const agentRef = useRef<ConversationAgent | null>(null);
   const [sessionState, setSessionState] = useState<SessionState>('idle');
@@ -151,7 +152,7 @@ export default function VoiceSession() {
     // is too late for the agent_variables built just below.
     resetBrief();
     briefRef.current = { ...EMPTY_BRIEF };
-    recentLinesRef.current = [];
+    styleTermsRef.current = new Set();
 
     const agent = new ConversationAgent({
       apiKey,
@@ -183,17 +184,15 @@ export default function VoiceSession() {
         // module doc comment for why sarvam-30b is no longer in this loop.
         const fastPatch = keywordMatchBrief(msg.content);
 
-        recentLinesRef.current = [...recentLinesRef.current, msg.content.trim()].filter(Boolean);
-        while (
-          recentLinesRef.current.length > 1 &&
-          recentLinesRef.current.join(' ').length > STYLE_DETAILS_CHAR_CAP
-        ) {
-          recentLinesRef.current.shift();
-        }
-        const styleDetails = recentLinesRef.current.join(' ').slice(-STYLE_DETAILS_CHAR_CAP);
+        // Only style-vocabulary hits accumulate (deduped); lines with no
+        // style content leave styleDetails untouched.
+        const newTerms = extractStyleTerms(msg.content);
+        newTerms.forEach((t) => styleTermsRef.current.add(t));
 
         const patch: Partial<Brief> = { ...fastPatch };
-        if (styleDetails) patch.styleDetails = styleDetails;
+        if (newTerms.length > 0) {
+          patch.styleDetails = Array.from(styleTermsRef.current).join(', ').slice(0, STYLE_DETAILS_CHAR_CAP);
+        }
 
         const enriched = enrichPatchWithCatalogMatches(patch, briefRef.current);
         applyPatch(enriched);
