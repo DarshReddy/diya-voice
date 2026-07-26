@@ -1,8 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { speechToText, textToSpeech } from '@/lib/sarvam';
-import { extractBriefPatch } from '@/lib/extract';
-import { composeReply } from '@/lib/reply';
-import { Brief, EMPTY_BRIEF, mergeBrief, isBriefComplete } from '@/lib/brief';
+import { speechToText, textToSpeech, toTtsLanguageCode } from '@/lib/sarvam';
+import { runTurnPipeline } from '@/lib/turn';
+import { keywordMatchBrief } from '@/lib/keywordMatch';
+import { detectScriptLanguage } from '@/lib/language';
+import { Brief } from '@/lib/brief';
 
 interface TurnRequestBody {
   text?: string;
@@ -13,7 +14,7 @@ export async function POST(request: NextRequest) {
   const contentType = request.headers.get('content-type') ?? '';
 
   let transcript: string;
-  let languageCode: string | undefined;
+  let sttLanguageCode: string | undefined;
   let brief: Partial<Brief> = {};
 
   try {
@@ -34,7 +35,7 @@ export async function POST(request: NextRequest) {
 
       const stt = await speechToText(audio, 'audio.webm');
       transcript = stt.transcript;
-      languageCode = stt.languageCode;
+      sttLanguageCode = stt.languageCode;
     } else {
       const body: TurnRequestBody = await request.json();
       if (!body.text?.trim()) {
@@ -53,16 +54,20 @@ export async function POST(request: NextRequest) {
   }
 
   try {
-    const { patch, redirect } = await extractBriefPatch(transcript, brief);
-    const mergedBrief = mergeBrief(mergeBrief(EMPTY_BRIEF, brief), patch);
-    const status = isBriefComplete(mergedBrief) ? 'complete' : 'collecting';
+    const languageCode = sttLanguageCode ? toTtsLanguageCode(sttLanguageCode) : detectScriptLanguage(transcript);
 
-    const { say, languageCode: replyLanguageCode } = await composeReply(transcript, mergedBrief, languageCode);
-    const audioBase64 = await textToSpeech(say, replyLanguageCode);
+    // Instant deterministic pre-match — seeds the single LLM call below so its
+    // reasoning trace is shorter (it's confirming/overriding a hint rather
+    // than extracting cold), which is most of why turns are now ~10-18s
+    // instead of the old two-call ~45-90s.
+    const keywordPatch = keywordMatchBrief(transcript);
+
+    const { patch, redirect, say, status } = await runTurnPipeline(transcript, brief, languageCode, keywordPatch);
+    const audioBase64 = await textToSpeech(say, languageCode);
 
     return NextResponse.json({
       transcript,
-      languageCode: replyLanguageCode,
+      languageCode,
       say,
       audioBase64,
       patch,

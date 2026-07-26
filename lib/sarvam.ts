@@ -57,7 +57,7 @@ export interface JsonSchemaSpec {
  * run-to-run, so a retry usually succeeds quickly.
  */
 const MAX_TOKENS_CEILING = 4096;
-const MAX_RETRIES_ON_TRUNCATION = 2;
+const MAX_RETRIES_ON_TRUNCATION = 4;
 
 export async function chatCompletionJson<T>(
   messages: ChatMessage[],
@@ -76,6 +76,10 @@ export async function chatCompletionJson<T>(
       body: JSON.stringify({
         model: 'sarvam-30b',
         reasoning_effort: 'low',
+        // Lower temperature measurably shortens the hidden reasoning trace on
+        // this model for complex schemas (observed truncation on the full
+        // patch+say+status schema drop noticeably vs. the default ~0.7).
+        temperature: 0.2,
         max_tokens: Math.min(maxTokens, MAX_TOKENS_CEILING),
         messages,
         response_format: {

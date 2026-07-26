@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useBriefStore } from '@/lib/store/briefStore';
+import { keywordMatchBrief } from '@/lib/keywordMatch';
 
 interface TurnResponse {
   transcript: string;
@@ -51,7 +52,15 @@ export function useDesignerTurn() {
 
       setError(null);
       pushTurn('user', data.transcript);
+
+      // Instant keyword patch first (no-op if submitText already applied it),
+      // then the LLM's patch on top — mergeBrief only overwrites non-null
+      // values, so the LLM patch wins on any conflict but never nulls out a
+      // slot the keyword matcher already filled.
+      const fastPatch = keywordMatchBrief(data.transcript);
+      if (Object.keys(fastPatch).length > 0) applyPatch(fastPatch);
       applyPatch(data.patch ?? {});
+
       setStatus(data.status);
       pushTurn('diya', data.say);
 
@@ -64,6 +73,12 @@ export function useDesignerTurn() {
 
   const submitText = useCallback(
     async (text: string) => {
+      // Instant, deterministic chip-fill — lights up before the network
+      // round trip even starts. The (slower, more thorough) LLM patch lands
+      // in handleResponse once /api/designer/turn responds.
+      const fastPatch = keywordMatchBrief(text);
+      if (Object.keys(fastPatch).length > 0) applyPatch(fastPatch);
+
       setTalkState('thinking');
       try {
         const res = await fetch('/api/designer/turn', {
@@ -77,7 +92,7 @@ export function useDesignerTurn() {
         setTalkState('idle');
       }
     },
-    [handleResponse, setTalkState]
+    [applyPatch, handleResponse, setTalkState]
   );
 
   const submitAudio = useCallback(
