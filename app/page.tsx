@@ -1,4 +1,5 @@
 import BriefPanel from '@/components/BriefPanel';
+import VoiceSession from '@/components/VoiceSession';
 import TalkControl from '@/components/TalkControl';
 import TranscriptPane from '@/components/TranscriptPane';
 import FabricPicker from '@/components/FabricPicker';
@@ -20,7 +21,12 @@ export default function Home() {
 
         <BriefPanel />
 
-        <TalkControl />
+        <VoiceSession />
+
+        <div className="flex flex-col items-center gap-1 -mt-2">
+          <p className="text-[11px] uppercase tracking-wider text-maroon-950/35">Push-to-talk fallback</p>
+          <TalkControl />
+        </div>
 
         <TranscriptPane />
 

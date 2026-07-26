@@ -5,7 +5,7 @@ import { useBriefStore } from '@/lib/store/briefStore';
 import { useDesignerTurn } from '@/lib/useDesignerTurn';
 
 const STATE_LABEL: Record<string, string> = {
-  idle: 'Hold to talk to Diya',
+  idle: 'Hold to talk (push-to-talk)',
   listening: 'Listening…',
   thinking: 'Diya is thinking…',
   speaking: 'Diya is speaking…',
@@ -73,7 +73,7 @@ export default function TalkControl() {
   const busy = talkState === 'thinking' || talkState === 'speaking';
 
   return (
-    <section aria-label="Talk to Diya" className="w-full flex flex-col items-center gap-4">
+    <section aria-label="Push-to-talk fallback" className="w-full flex flex-col items-center gap-4">
       <div className="relative flex items-center justify-center">
         {talkState === 'listening' && (
           <span className="absolute inline-flex h-24 w-24 rounded-full bg-maroon-700 mic-pulse" />
