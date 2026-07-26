@@ -1,4 +1,4 @@
-# Bolke Design Karo — DIYO Voice Designer
+# Diya Voice — DIYO Voice Designer
 
 A voice-driven custom western-wear design consultation for DIYO, built for the
 Sarvam buildathon. Diya, DIYO's voice designer, collects a design brief

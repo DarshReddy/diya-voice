@@ -14,7 +14,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Bolke Design Karo — DIYO Voice Designer",
+  title: "Diya Voice — Your Personal DIYO Designer",
   description:
     "Speak your design. Diya, your DIYO designer, brings it to life — a voice-driven custom western-wear design consultation.",
 };

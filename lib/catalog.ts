@@ -1,5 +1,5 @@
 /**
- * Catalog data plumbing for Bolke Design Karo.
+ * Catalog data plumbing for Diya Voice.
  *
  * All three JSON files under lib/data/ are copied verbatim from diyo-app
  * (lib/data/*.json) — they are NOT imported across repos, just duplicated,
@@ -189,7 +189,7 @@ export function findCoordSet(id: number): CoordSetLabel | null {
 /**
  * The copied coord-set-labels.json data (garment descriptions like "bottom")
  * occasionally uses the word "tailored" as a plain fashion adjective (e.g.
- * "tailored shorts"). Bolke Design Karo's branding must never surface the
+ * "tailored shorts"). Diya Voice's branding must never surface the
  * word "tailor" anywhere, including in copied-data display text, so this
  * swaps it for a neutral synonym before anything reaches the UI.
  */

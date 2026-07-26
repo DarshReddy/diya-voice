@@ -12,7 +12,7 @@ export default function Home() {
       <main className="flex flex-1 w-full max-w-2xl flex-col gap-8 px-5 py-10 sm:px-8">
         <header className="text-center flex flex-col items-center gap-1.5">
           <h1 className="font-display text-3xl sm:text-4xl font-semibold text-maroon-900">
-            Bolke Design Karo
+            Diya Voice
           </h1>
           <p className="text-sm sm:text-base text-maroon-800/70 max-w-md">
             Speak your design. Diya, your DIYO designer, brings it to life.

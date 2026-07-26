@@ -1,7 +1,7 @@
 'use client';
 
 // Plan A: live browser voice call via the Sarvam Agents SDK, wired against
-// bolke-design-karo's real brief store, keyword pre-matcher, and /api/extract
+// diya-voice's real brief store, keyword pre-matcher, and /api/extract
 // route. Loaded via next/dynamic({ ssr: false }) from app/page.tsx so the SDK
 // never touches the server-render / prerender path (see the guard note near
 // the export at the bottom of this file too).
