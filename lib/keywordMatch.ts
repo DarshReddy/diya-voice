@@ -48,7 +48,22 @@ function firstMatch<T extends string>(hay: string, entries: KeywordEntry<T>[]): 
 const OUTFIT_TYPE_KEYWORDS: KeywordEntry<OutfitCategory>[] = [
   {
     value: 'maxi-dresses',
-    keywords: ['maxi dress', 'maxi', 'मैक्सी ड्रेस', 'मैक्सी', 'మాక్సీ డ్రెస్', 'మాక్సీ', 'ಮ್ಯಾಕ್ಸಿ ಡ್ರೆಸ್', 'ಮ್ಯಾಕ್ಸಿ'],
+    keywords: [
+      'maxi dress',
+      'maxi',
+      'gown',
+      'मैक्सी ड्रेस',
+      'मैक्सी',
+      'म्याक्सी',
+      'गाउन',
+      'మాక్సీ డ్రెస్',
+      'మాక్సీ',
+      'మ్యాక్సీ',
+      'గౌన్',
+      'ಮ್ಯಾಕ್ಸಿ ಡ್ರೆಸ್',
+      'ಮ್ಯಾಕ್ಸಿ',
+      'ಗೌನ್',
+    ],
   },
   {
     // Checked before "shorts" — "short dress" / "షార్ట్ డ్రెస్" must not fall through to shorts.
@@ -59,8 +74,11 @@ const OUTFIT_TYPE_KEYWORDS: KeywordEntry<OutfitCategory>[] = [
       'frock',
       'शॉर्ट ड्रेस',
       'छोटी ड्रेस',
+      'फ्रॉक',
       'షార్ట్ డ్రెస్',
+      'ఫ్రాక్',
       'ಶಾರ್ಟ್ ಡ್ರೆಸ್',
+      'ಫ್ರಾಕ್',
     ],
   },
   {
@@ -98,15 +116,34 @@ const OUTFIT_TYPE_KEYWORDS: KeywordEntry<OutfitCategory>[] = [
 ];
 
 const FABRIC_FOLDER_KEYWORDS: KeywordEntry<string>[] = [
-  { value: 'satin', keywords: ['satin', 'सैटिन', 'साटन', 'సాటిన్', 'ಸ್ಯಾಟಿನ್'] },
-  { value: 'organza', keywords: ['organza', 'ऑर्गेंज़ा', 'आर्गंजा', 'ఆర్గంజా', 'ಆರ್ಗಂಜಾ'] },
-  { value: 'georgette-floral', keywords: ['georgette', 'जॉर्जेट', 'జార్జెట్', 'ಜಾರ್ಜೆಟ್'] },
-  { value: 'checks', keywords: ['checks', 'checked', 'चेक्स', 'चेक', 'చెక్స్', 'ಚೆಕ್ಸ್'] },
+  // Indic keyword lists deliberately include STT spelling variants (Saaras is
+  // not consistent about e.g. సా vs శా, or where the nukta lands in Hindi).
+  { value: 'satin', keywords: ['satin', 'सैटिन', 'साटन', 'साटिन', 'సాటిన్', 'శాటిన్', 'సాటన్', 'ಸ್ಯಾಟಿನ್', 'ಸ್ಯಾಟಿನ್'] },
+  {
+    value: 'organza',
+    keywords: ['organza', 'ऑर्गेंज़ा', 'ऑर्गन्ज़ा', 'ओरगंजा', 'आर्गंजा', 'ఆర్గంజా', 'ఆర్గన్జా', 'ಆರ್ಗಂಜಾ', 'ಆರ್ಗನ್ಜಾ'],
+  },
+  { value: 'georgette-floral', keywords: ['georgette', 'जॉर्जेट', 'जोर्जेट', 'జార్జెట్', 'జార్జట్', 'ಜಾರ್ಜೆಟ್'] },
+  { value: 'checks', keywords: ['checks', 'checked', 'gingham', 'चेक्स', 'चेक', 'చెక్స్', 'ಚೆಕ್ಸ್'] },
   { value: 'stripes', keywords: ['stripes', 'striped', 'स्ट्राइप्स', 'స్ట్రైప్స్', 'ಸ್ಟ್ರೈಪ್ಸ್'] },
   { value: 'plain', keywords: ['plain', 'solid color', 'solid colour', 'प्लेन', 'ప్లెయిన్', 'ಪ್ಲೇನ್'] },
   {
+    // Bare "cotton" maps here too — floral-cotton is the only cotton family
+    // in the catalog, so the mapping is safe (their call proved the gap:
+    // «కాటన్ దీనికంటే బెటరా?» matched nothing).
     value: 'floral-cotton',
-    keywords: ['floral cotton', 'cotton floral', 'फ्लोरल कॉटन', 'ఫ్లోరల్ కాటన్', 'ಫ್ಲೋರಲ್ ಕಾಟನ್'],
+    keywords: [
+      'floral cotton',
+      'cotton floral',
+      'cotton',
+      'फ्लोरल कॉटन',
+      'कॉटन',
+      'सूती',
+      'ఫ్లోరల్ కాటన్',
+      'కాటన్',
+      'ಫ್ಲೋರಲ್ ಕಾಟನ್',
+      'ಕಾಟನ್',
+    ],
   },
   {
     value: 'small-prints',
@@ -115,8 +152,13 @@ const FABRIC_FOLDER_KEYWORDS: KeywordEntry<string>[] = [
 ];
 
 const OCCASION_KEYWORDS: KeywordEntry<Occasion>[] = [
-  { value: 'Wedding', keywords: ['wedding', 'शादी', 'विवाह', 'పెళ్లి', 'ಮದುವೆ'] },
-  { value: 'Festive', keywords: ['festive', 'festival', 'त्योहार', 'పండుగ', 'ಹಬ್ಬ'] },
+  // Romanized forms included — code-mixed speech and text-mode input arrive
+  // in Latin script ("shaadi ke liye"), not always Devanagari.
+  {
+    value: 'Wedding',
+    keywords: ['wedding', 'shaadi', 'shadi', 'sangeet', 'reception', 'pelli', 'maduve', 'शादी', 'विवाह', 'संगीत', 'పెళ్లి', 'ಮದುವೆ'],
+  },
+  { value: 'Festive', keywords: ['festive', 'festival', 'diwali', 'त्योहार', 'दिवाली', 'పండుగ', 'ಹಬ್ಬ'] },
   {
     value: 'Party',
     keywords: [

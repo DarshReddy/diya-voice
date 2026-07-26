@@ -42,7 +42,7 @@ import type { ServerTranscriptMsg } from 'sarvam-conv-ai-sdk/browser';
 import { useBriefStore } from '@/lib/store/briefStore';
 import { keywordMatchBrief, extractStyleTerms } from '@/lib/keywordMatch';
 import { enrichPatchWithCatalogMatches } from '@/lib/enrichPatch';
-import { EMPTY_BRIEF, Brief, isBriefComplete } from '@/lib/brief';
+import { EMPTY_BRIEF, Brief, isBriefComplete, mergeBrief } from '@/lib/brief';
 
 /** Static per-app config for this DIYO Sarvam Agents workspace. */
 const SARVAM_CONFIG = {
@@ -196,6 +196,12 @@ export default function VoiceSession() {
 
         const enriched = enrichPatchWithCatalogMatches(patch, briefRef.current);
         applyPatch(enriched);
+        // Merge into the ref SYNCHRONOUSLY — the store effect only updates
+        // briefRef after a re-render, but the platform fires transcript
+        // lines milliseconds apart (partial-then-final). Without this,
+        // "satin" in one line and "maroon" in the next were cross-referenced
+        // against a stale brief, so fabricFile/suggestedSketchId were missed.
+        briefRef.current = mergeBrief(briefRef.current, enriched);
       },
       stateCallback: (newState) => {
         setAgentState(newState);
