@@ -270,7 +270,7 @@ export default function VoiceSession() {
         >
           <header className="flex items-center justify-between gap-2 px-4 py-2.5 bg-gradient-to-r from-maroon-600 to-gold-500 text-cream-50">
             <div className="min-w-0">
-              <p className="text-sm font-semibold leading-tight truncate">Diya — your DIYO designer</p>
+              <p className="text-sm font-semibold leading-tight truncate">Diya — your DIY Outfit designer</p>
               {isLive && <p className="text-[11px] opacity-80 leading-tight">{AGENT_STATE_LABEL[agentState]}</p>}
             </div>
             <button
