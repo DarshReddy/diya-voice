@@ -86,7 +86,29 @@ export default function PreviewCard() {
     // eslint-disable-next-line react-hooks/exhaustive-deps -- generate/brief intentionally re-read fresh on each signal bump, not on every brief change
   }, [autoTriggerSignal]);
 
-  if (status !== 'complete') return null;
+  // Before the brief is complete, show a dimmed placeholder that says
+  // exactly what's still missing — so the finish line is always visible.
+  if (status !== 'complete') {
+    const missing = [
+      !brief.occasion && 'occasion',
+      !brief.outfitType && 'outfit',
+      !brief.fabricFolder && 'fabric',
+      !brief.color && 'color',
+    ].filter(Boolean) as string[];
+    return (
+      <section
+        aria-label="Design preview (locked)"
+        className="w-full rounded-xl border border-dashed border-maroon-900/15 bg-cream-50/60 p-5 flex flex-col items-center gap-1.5"
+      >
+        <h2 className="font-display text-sm uppercase tracking-[0.18em] text-maroon-700/40">Your Design Preview</h2>
+        <p className="text-sm text-maroon-950/40 text-center">
+          {missing.length > 0
+            ? `Unlocks when your brief has ${missing.join(', ')} — just tell Diya or tap your picks above.`
+            : 'Almost there…'}
+        </p>
+      </section>
+    );
+  }
 
   const outfitLabel = brief.outfitType ? OUTFIT_CATEGORY_LABELS[brief.outfitType] : 'outfit';
   const fabricLabel = brief.fabricFolder ? (getFabricFolder(brief.fabricFolder)?.label ?? brief.fabricFolder) : 'fabric';
