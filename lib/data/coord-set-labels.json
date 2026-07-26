@@ -1,0 +1,2641 @@
+{
+  "generatedAt": "2026-07-26",
+  "source": "claude-sonnet vision labeling of outfits/coord-sets images",
+  "coordSets": [
+    {
+      "id": 1,
+      "top": "peplum cami top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "cream",
+        "black"
+      ],
+      "print": "solid with scalloped trim",
+      "vibe": "chic resort casual",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 2,
+      "top": "peplum tank top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "cream"
+      ],
+      "print": "solid",
+      "vibe": "elegant resort chic",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 3,
+      "top": "lace-trim tank top",
+      "bottom": "shorts",
+      "colors": [
+        "cream",
+        "lilac"
+      ],
+      "print": "floral lace",
+      "vibe": "romantic feminine boho",
+      "occasions": [
+        "Vacation",
+        "Festive"
+      ]
+    },
+    {
+      "id": 4,
+      "top": "wrap crop top",
+      "bottom": "ruffle mini skirt",
+      "colors": [
+        "orange",
+        "white"
+      ],
+      "print": "geometric scallop",
+      "vibe": "playful flirty summer",
+      "occasions": [
+        "Party",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 5,
+      "top": "scalloped cami top",
+      "bottom": "shorts",
+      "colors": [
+        "yellow"
+      ],
+      "print": "solid",
+      "vibe": "cheerful breezy summer",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 6,
+      "top": "sleeveless crop top",
+      "bottom": "a-line midi skirt",
+      "colors": [
+        "cream",
+        "pink",
+        "yellow"
+      ],
+      "print": "floral",
+      "vibe": "romantic garden stroll",
+      "occasions": [
+        "Festive",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 7,
+      "top": "sleeveless crop top",
+      "bottom": "a-line midi skirt",
+      "colors": [
+        "cream",
+        "pink",
+        "yellow"
+      ],
+      "print": "floral",
+      "vibe": "romantic garden stroll",
+      "occasions": [
+        "Festive",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 8,
+      "top": "tiered ruffle cami top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "rust orange",
+        "beige"
+      ],
+      "print": "solid",
+      "vibe": "tiered ruffle boho chic",
+      "occasions": [
+        "Party",
+        "Festive"
+      ]
+    },
+    {
+      "id": 9,
+      "top": "off-shoulder puff-sleeve top",
+      "bottom": "shorts",
+      "colors": [
+        "cream",
+        "gold",
+        "pink"
+      ],
+      "print": "monogram logo print",
+      "vibe": "flirty resort statement",
+      "occasions": [
+        "Vacation",
+        "Party"
+      ]
+    },
+    {
+      "id": 10,
+      "top": "cami top",
+      "bottom": "shorts",
+      "colors": [
+        "white",
+        "pink",
+        "green"
+      ],
+      "print": "cross-stitch floral",
+      "vibe": "folk embroidered playful",
+      "occasions": [
+        "Festive",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 11,
+      "top": "cami top",
+      "bottom": "shorts",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "print": "gingham check",
+      "vibe": "cute picnic gingham",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 12,
+      "top": "sleeveless tie-back top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "cream"
+      ],
+      "print": "solid textured",
+      "vibe": "polished street style",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 13,
+      "top": "tiered ruffle cami top",
+      "bottom": "wide-leg palazzo pants",
+      "colors": [
+        "olive green"
+      ],
+      "print": "solid",
+      "vibe": "elegant sophisticated evening",
+      "occasions": [
+        "Party",
+        "Festive"
+      ]
+    },
+    {
+      "id": 14,
+      "top": "ruffle peplum cami top",
+      "bottom": "tie-waist trousers",
+      "colors": [
+        "white",
+        "cream"
+      ],
+      "print": "solid",
+      "vibe": "airy relaxed vacation",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 15,
+      "top": "smocked ruffle-sleeve top",
+      "bottom": "wide-leg cropped pants",
+      "colors": [
+        "cream",
+        "pink",
+        "orange"
+      ],
+      "print": "ditsy floral",
+      "vibe": "romantic feminine floral",
+      "occasions": [
+        "Festive",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 16,
+      "top": "puff-sleeve crop top",
+      "bottom": "flowy mini skirt",
+      "colors": [
+        "pink"
+      ],
+      "print": "swiss dot",
+      "vibe": "sweet flirty romantic",
+      "occasions": [
+        "Party",
+        "Festive"
+      ]
+    },
+    {
+      "id": 17,
+      "top": "sleeveless crop top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "cream",
+        "yellow",
+        "green"
+      ],
+      "print": "daisy floral",
+      "vibe": "elegant garden vacation",
+      "occasions": [
+        "Festive",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 18,
+      "top": "scalloped button-front crop top",
+      "bottom": "tailored shorts",
+      "colors": [
+        "lime green"
+      ],
+      "print": "solid with scalloped trim",
+      "vibe": "fresh vibrant citrus",
+      "occasions": [
+        "Party",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 19,
+      "top": "sleeveless crop top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "pale yellow",
+        "green"
+      ],
+      "print": "daisy floral",
+      "vibe": "elegant garden vacation",
+      "occasions": [
+        "Festive",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 20,
+      "top": "sleeveless crop top",
+      "bottom": "maxi skirt",
+      "colors": [
+        "cream",
+        "black"
+      ],
+      "print": "block-print motif",
+      "vibe": "boho artisanal chic",
+      "occasions": [
+        "Festive",
+        "Wedding"
+      ]
+    },
+    {
+      "id": 21,
+      "top": "halter crop top",
+      "bottom": "tiered ruffle mini skirt",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "print": "ditsy floral",
+      "vibe": "romantic flirty date-night",
+      "occasions": [
+        "Party",
+        "Festive"
+      ]
+    },
+    {
+      "id": 22,
+      "top": "puff-sleeve eyelet crop top",
+      "bottom": "tiered ruffle mini skirt",
+      "colors": [
+        "white",
+        "pink",
+        "green"
+      ],
+      "print": "floral eyelet lace",
+      "vibe": "flirty romantic party",
+      "occasions": [
+        "Party",
+        "Festive"
+      ]
+    },
+    {
+      "id": 23,
+      "top": "cami crop top",
+      "bottom": "maxi skirt",
+      "colors": [
+        "white",
+        "navy"
+      ],
+      "print": "botanical line art",
+      "vibe": "artsy relaxed vacation",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 24,
+      "top": "halter cami top",
+      "bottom": "shorts",
+      "colors": [
+        "white",
+        "navy"
+      ],
+      "print": "floral embroidered stripe",
+      "vibe": "boho breezy summer",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 25,
+      "top": "v-neck peplum crop top",
+      "bottom": "tailored shorts",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "print": "stripe",
+      "vibe": "nautical casual chic",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 26,
+      "top": "halter top",
+      "bottom": "wide-leg linen pants",
+      "colors": [
+        "white"
+      ],
+      "print": "solid",
+      "vibe": "minimal clean linen",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 27,
+      "top": "ruffle-strap crop top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "green",
+        "white"
+      ],
+      "print": "tropical leaf floral",
+      "vibe": "tropical resort vacation",
+      "occasions": [
+        "Vacation",
+        "Party"
+      ]
+    },
+    {
+      "id": 28,
+      "top": "wrap crop top",
+      "bottom": "tailored shorts",
+      "colors": [
+        "teal",
+        "mustard",
+        "cream"
+      ],
+      "print": "abstract tropical leaf",
+      "vibe": "chic tropical resort",
+      "occasions": [
+        "Vacation",
+        "Party"
+      ]
+    },
+    {
+      "id": 29,
+      "top": "tank top",
+      "bottom": "wrap mini skirt",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "print": "floral border (skirt)",
+      "vibe": "modern mix-and-match chic",
+      "occasions": [
+        "Party",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 30,
+      "top": "ruched peplum cami top",
+      "bottom": "tailored shorts",
+      "colors": [
+        "grey",
+        "lavender"
+      ],
+      "print": "solid",
+      "vibe": "polished summer evening",
+      "occasions": [
+        "Party",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 31,
+      "top": "flutter-sleeve crop top",
+      "bottom": "tiered wide-leg pants",
+      "colors": [
+        "beige"
+      ],
+      "print": "solid",
+      "vibe": "boho breezy vacation",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 32,
+      "top": "short-sleeve crop top",
+      "bottom": "shorts",
+      "colors": [
+        "cream",
+        "navy blue"
+      ],
+      "print": "toile scenic print",
+      "vibe": "vintage chic countryside",
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ]
+    },
+    {
+      "id": 33,
+      "top": "puff-sleeve crop top",
+      "bottom": "tiered ruffle mini skirt",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "print": "gingham check",
+      "vibe": "cute flirty summer",
+      "occasions": [
+        "Party",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 34,
+      "top": "strapless smocked top",
+      "bottom": "tiered mini skirt",
+      "colors": [
+        "beige",
+        "cream"
+      ],
+      "print": "gingham check",
+      "vibe": "sweet romantic summer",
+      "occasions": [
+        "Party",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 35,
+      "top": "sleeveless crop top",
+      "bottom": "wrap maxi skirt",
+      "colors": [
+        "white",
+        "black"
+      ],
+      "print": "botanical block print border",
+      "vibe": "artisanal boho elegant",
+      "occasions": [
+        "Festive",
+        "Wedding"
+      ]
+    },
+    {
+      "id": 36,
+      "top": "tie-waist sleeveless top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "rust orange"
+      ],
+      "print": "solid textured",
+      "vibe": "sophisticated evening chic",
+      "occasions": [
+        "Party",
+        "Festive"
+      ]
+    },
+    {
+      "id": 37,
+      "top": "sweetheart-neck crop top",
+      "bottom": "full circle maxi skirt",
+      "colors": [
+        "ivory",
+        "yellow",
+        "green"
+      ],
+      "print": "floral",
+      "vibe": "romantic garden elegance",
+      "occasions": [
+        "Festive",
+        "Party"
+      ]
+    },
+    {
+      "id": 38,
+      "top": "puff-sleeve V-neck crop top",
+      "bottom": "scalloped-hem shorts",
+      "colors": [
+        "sage green",
+        "white"
+      ],
+      "print": "floral jacquard",
+      "vibe": "romantic garden day-out",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 39,
+      "top": "puff-sleeve V-neck crop top",
+      "bottom": "scalloped-hem shorts",
+      "colors": [
+        "sage green",
+        "white"
+      ],
+      "print": "floral jacquard",
+      "vibe": "romantic garden day-out",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 40,
+      "top": "sleeveless button-front vest",
+      "bottom": "wide-leg linen pants",
+      "colors": [
+        "blush pink"
+      ],
+      "print": "floral embroidery",
+      "vibe": "breezy vacation romantic",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 41,
+      "top": "sleeveless button-front vest",
+      "bottom": "wide-leg linen pants",
+      "colors": [
+        "blush pink"
+      ],
+      "print": "floral embroidery",
+      "vibe": "breezy vacation romantic",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 42,
+      "top": "square-neck cami crop top",
+      "bottom": "asymmetric wrap mini skirt",
+      "colors": [
+        "sage green"
+      ],
+      "print": "solid",
+      "vibe": "chic minimalist everyday",
+      "occasions": [
+        "Everyday",
+        "Party"
+      ]
+    },
+    {
+      "id": 43,
+      "top": "tie-front bell-sleeve blouse",
+      "bottom": "matching shorts",
+      "colors": [
+        "white",
+        "blue",
+        "pink"
+      ],
+      "print": "floral border print",
+      "vibe": "boho vacation chic",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 44,
+      "top": "bow-strap corset crop top",
+      "bottom": "gathered shorts",
+      "colors": [
+        "beige",
+        "tan"
+      ],
+      "print": "solid",
+      "vibe": "chic vacation minimalist",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 45,
+      "top": "tiered ruffle cami top",
+      "bottom": "matching shorts",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "print": "gingham with cherry print",
+      "vibe": "playful summer picnic",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 46,
+      "top": "collared button-front top",
+      "bottom": "matching mini skort",
+      "colors": [
+        "lime green",
+        "white"
+      ],
+      "print": "solid with wave trim",
+      "vibe": "fresh sporty chic",
+      "occasions": [
+        "Everyday",
+        "Party"
+      ]
+    },
+    {
+      "id": 47,
+      "top": "puff-sleeve square-neck crop top",
+      "bottom": "tiered ruffle mini skirt",
+      "colors": [
+        "white",
+        "orange",
+        "blue"
+      ],
+      "print": "floral embroidery",
+      "vibe": "playful garden brunch",
+      "occasions": [
+        "Festive",
+        "Party"
+      ]
+    },
+    {
+      "id": 48,
+      "top": "boxy crop top",
+      "bottom": "tailored button shorts",
+      "colors": [
+        "pink",
+        "cream"
+      ],
+      "print": "floral jacquard",
+      "vibe": "sharp feminine runway chic",
+      "occasions": [
+        "Party",
+        "Festive"
+      ]
+    },
+    {
+      "id": 49,
+      "top": "sleeveless collared blouse",
+      "bottom": "A-line midi skirt",
+      "colors": [
+        "cream",
+        "black"
+      ],
+      "print": "floral line-art print",
+      "vibe": "elegant monochrome floral",
+      "occasions": [
+        "Party",
+        "Festive"
+      ]
+    },
+    {
+      "id": 50,
+      "top": "puff-sleeve crop top",
+      "bottom": "cuffed tailored shorts",
+      "colors": [
+        "cream",
+        "pink",
+        "orange"
+      ],
+      "print": "floral",
+      "vibe": "romantic tailored vacation",
+      "occasions": [
+        "Vacation",
+        "Party"
+      ]
+    },
+    {
+      "id": 51,
+      "top": "embroidered cami crop top",
+      "bottom": "high-waist embroidered shorts",
+      "colors": [
+        "orange",
+        "multicolor"
+      ],
+      "print": "folk floral embroidery",
+      "vibe": "bohemian summer festival",
+      "occasions": [
+        "Festive",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 52,
+      "top": "puff-sleeve corset top",
+      "bottom": "wide-leg culottes",
+      "colors": [
+        "pale yellow"
+      ],
+      "print": "solid",
+      "vibe": "romantic garden vacation",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 53,
+      "top": "scalloped-trim cami crop top",
+      "bottom": "pleated high-waist shorts",
+      "colors": [
+        "navy blue",
+        "cream"
+      ],
+      "print": "floral embroidery",
+      "vibe": "nautical chic summer",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 54,
+      "top": "sleeveless mock-neck flowy top",
+      "bottom": "wide-leg palazzo pants",
+      "colors": [
+        "beige",
+        "tan"
+      ],
+      "print": "solid",
+      "vibe": "minimalist relaxed neutral",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 55,
+      "top": "off-shoulder ruffle crop top",
+      "bottom": "tiered mini skirt",
+      "colors": [
+        "white"
+      ],
+      "print": "eyelet lace",
+      "vibe": "romantic summer feminine",
+      "occasions": [
+        "Vacation",
+        "Party"
+      ]
+    },
+    {
+      "id": 56,
+      "top": "cutout sleeveless top",
+      "bottom": "matching shorts",
+      "colors": [
+        "sage green",
+        "white"
+      ],
+      "print": "abstract swirl print",
+      "vibe": "modern breezy vacation",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 57,
+      "top": "tiered ruffle cami crop top",
+      "bottom": "wide-leg medallion-print pants",
+      "colors": [
+        "green",
+        "orange",
+        "cream"
+      ],
+      "print": "mandala print",
+      "vibe": "bohemian festival vacation",
+      "occasions": [
+        "Festive",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 58,
+      "top": "halter scallop-trim top",
+      "bottom": "pleated midi skirt",
+      "colors": [
+        "cream",
+        "olive green"
+      ],
+      "print": "solid with scalloped trim",
+      "vibe": "elegant scalloped minimal",
+      "occasions": [
+        "Everyday",
+        "Party"
+      ]
+    },
+    {
+      "id": 59,
+      "top": "halter scallop-trim top",
+      "bottom": "pleated midi skirt",
+      "colors": [
+        "cream",
+        "olive green"
+      ],
+      "print": "solid with scalloped trim",
+      "vibe": "elegant scalloped minimal",
+      "occasions": [
+        "Everyday",
+        "Party"
+      ]
+    },
+    {
+      "id": 60,
+      "top": "peplum ruffle top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "green",
+        "white"
+      ],
+      "print": "gingham check",
+      "vibe": "preppy checked vacation",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 61,
+      "top": "one-shoulder crop top",
+      "bottom": "cuffed shorts",
+      "colors": [
+        "sage green",
+        "white"
+      ],
+      "print": "abstract leaf print",
+      "vibe": "chic street vacation",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 62,
+      "top": "buttoned sleeveless vest",
+      "bottom": "ric-rac trim shorts",
+      "colors": [
+        "cream",
+        "orange",
+        "multicolor"
+      ],
+      "print": "floral embroidery",
+      "vibe": "vintage-inspired boho chic",
+      "occasions": [
+        "Festive",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 63,
+      "top": "pintuck pleated sleeveless top",
+      "bottom": "tiered maxi skirt",
+      "colors": [
+        "ivory"
+      ],
+      "print": "solid textured",
+      "vibe": "elegant minimalist resort",
+      "occasions": [
+        "Party",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 64,
+      "top": "tie-strap cami crop top",
+      "bottom": "pencil midi skirt",
+      "colors": [
+        "ivory",
+        "gold"
+      ],
+      "print": "floral embroidery",
+      "vibe": "glamorous evening chic",
+      "occasions": [
+        "Party",
+        "Wedding"
+      ]
+    },
+    {
+      "id": 65,
+      "top": "collared lace crop top",
+      "bottom": "matching lace shorts",
+      "colors": [
+        "white"
+      ],
+      "print": "eyelet floral lace",
+      "vibe": "fresh lace vacation",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 66,
+      "top": "oversized balloon-sleeve shirt",
+      "bottom": "matching shorts",
+      "colors": [
+        "white",
+        "tan"
+      ],
+      "print": "floral",
+      "vibe": "relaxed romantic vacation",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 67,
+      "top": "ruffled asymmetric wrap top",
+      "bottom": "tailored shorts",
+      "colors": [
+        "cream",
+        "beige"
+      ],
+      "print": "solid",
+      "vibe": "chic office-casual romantic",
+      "occasions": [
+        "Everyday",
+        "Party"
+      ]
+    },
+    {
+      "id": 68,
+      "top": "puff-sleeve sweetheart crop top",
+      "bottom": "ruffled tiered mini skirt",
+      "colors": [
+        "white",
+        "yellow"
+      ],
+      "print": "daisy floral",
+      "vibe": "sweet feminine vacation",
+      "occasions": [
+        "Vacation",
+        "Party"
+      ]
+    },
+    {
+      "id": 69,
+      "top": "halter ruffle cutout crop top",
+      "bottom": "pleated shorts",
+      "colors": [
+        "yellow",
+        "white"
+      ],
+      "print": "floral",
+      "vibe": "sunny flirty summer",
+      "occasions": [
+        "Party",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 70,
+      "top": "sleeveless peplum top",
+      "bottom": "wide-leg trousers",
+      "colors": [
+        "pale yellow"
+      ],
+      "print": "solid jacquard texture",
+      "vibe": "elegant evening chic",
+      "occasions": [
+        "Party",
+        "Wedding"
+      ]
+    },
+    {
+      "id": 71,
+      "top": "tie-neck halter top",
+      "bottom": "matching shorts",
+      "colors": [
+        "peach",
+        "white"
+      ],
+      "print": "gingham check",
+      "vibe": "soft summer vacation",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 72,
+      "top": "tie-neck halter top",
+      "bottom": "matching shorts",
+      "colors": [
+        "peach",
+        "white"
+      ],
+      "print": "gingham check",
+      "vibe": "soft summer vacation",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 73,
+      "top": "halter ruffle top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "cream",
+        "beige"
+      ],
+      "print": "solid",
+      "vibe": "breezy vacation casual",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 74,
+      "top": "cropped shirt",
+      "bottom": "mini skirt",
+      "colors": [
+        "rust orange",
+        "white"
+      ],
+      "print": "floral embroidery",
+      "vibe": "sultry vacation chic",
+      "occasions": [
+        "Vacation",
+        "Party"
+      ]
+    },
+    {
+      "id": 75,
+      "top": "cape-sleeve crop top",
+      "bottom": "ruffled mini skirt",
+      "colors": [
+        "peach",
+        "coral",
+        "cream"
+      ],
+      "print": "floral",
+      "vibe": "romantic garden party",
+      "occasions": [
+        "Party",
+        "Festive"
+      ]
+    },
+    {
+      "id": 76,
+      "top": "sleeveless top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "blush pink",
+        "blue"
+      ],
+      "print": "floral",
+      "vibe": "boho vacation stroll",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 77,
+      "top": "crop top",
+      "bottom": "asymmetric mini skirt",
+      "colors": [
+        "hot pink",
+        "magenta"
+      ],
+      "print": "solid",
+      "vibe": "bold party glam",
+      "occasions": [
+        "Party",
+        "Festive"
+      ]
+    },
+    {
+      "id": 78,
+      "top": "square-neck crop top",
+      "bottom": "high-waist shorts",
+      "colors": [
+        "sage green",
+        "white"
+      ],
+      "print": "floral applique",
+      "vibe": "resort chic vacation",
+      "occasions": [
+        "Vacation",
+        "Party"
+      ]
+    },
+    {
+      "id": 79,
+      "top": "peplum top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "cream",
+        "taupe"
+      ],
+      "print": "floral stripe",
+      "vibe": "boho ethnic breezy",
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ]
+    },
+    {
+      "id": 80,
+      "top": "sleeveless top",
+      "bottom": "straight pants",
+      "colors": [
+        "navy",
+        "white"
+      ],
+      "print": "floral embroidery",
+      "vibe": "sharp office chic",
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ]
+    },
+    {
+      "id": 81,
+      "top": "peplum tunic top",
+      "bottom": "straight pants",
+      "colors": [
+        "beige",
+        "navy"
+      ],
+      "print": "tribal abstract",
+      "vibe": "artsy boho statement",
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ]
+    },
+    {
+      "id": 82,
+      "top": "strapless ruffle top",
+      "bottom": "wide-leg draped pants",
+      "colors": [
+        "ivory"
+      ],
+      "print": "solid",
+      "vibe": "elegant evening drape",
+      "occasions": [
+        "Party",
+        "Wedding"
+      ]
+    },
+    {
+      "id": 83,
+      "top": "one-shoulder puff-sleeve top",
+      "bottom": "shorts",
+      "colors": [
+        "olive green",
+        "white"
+      ],
+      "print": "tropical leaf",
+      "vibe": "tropical resort vacation",
+      "occasions": [
+        "Vacation"
+      ]
+    },
+    {
+      "id": 84,
+      "top": "square-neck crop top",
+      "bottom": "shorts",
+      "colors": [
+        "white",
+        "navy"
+      ],
+      "print": "toile print",
+      "vibe": "playful vintage vacation",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 85,
+      "top": "crop top",
+      "bottom": "a-line midi skirt",
+      "colors": [
+        "yellow",
+        "lavender"
+      ],
+      "print": "floral applique",
+      "vibe": "vibrant statement glam",
+      "occasions": [
+        "Party",
+        "Festive"
+      ]
+    },
+    {
+      "id": 86,
+      "top": "puff-sleeve crop top",
+      "bottom": "mini skirt",
+      "colors": [
+        "white",
+        "black"
+      ],
+      "print": "floral scalloped embroidery",
+      "vibe": "chic monochrome date look",
+      "occasions": [
+        "Party",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 87,
+      "top": "tie-strap bustier crop top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "cream",
+        "blue"
+      ],
+      "print": "floral stripe",
+      "vibe": "romantic boho breezy",
+      "occasions": [
+        "Festive",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 88,
+      "top": "tank top",
+      "bottom": "shorts",
+      "colors": [
+        "beige",
+        "khaki"
+      ],
+      "print": "solid with tassel trim",
+      "vibe": "breezy boho vacation",
+      "occasions": [
+        "Vacation"
+      ]
+    },
+    {
+      "id": 89,
+      "top": "long-sleeve crop top",
+      "bottom": "tiered ruffle mini skirt",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "print": "ditsy floral",
+      "vibe": "romantic feminine flirty",
+      "occasions": [
+        "Party",
+        "Festive"
+      ]
+    },
+    {
+      "id": 90,
+      "top": "sleeveless square-neck top",
+      "bottom": "shorts",
+      "colors": [
+        "white",
+        "green"
+      ],
+      "print": "floral vine embroidery",
+      "vibe": "fresh garden party",
+      "occasions": [
+        "Everyday",
+        "Party"
+      ]
+    },
+    {
+      "id": 91,
+      "top": "wrap-style top",
+      "bottom": "shorts",
+      "colors": [
+        "cream",
+        "red",
+        "pink"
+      ],
+      "print": "floral",
+      "vibe": "resort chic vacation",
+      "occasions": [
+        "Vacation",
+        "Party"
+      ]
+    },
+    {
+      "id": 92,
+      "top": "eyelet lace peplum top",
+      "bottom": "shorts",
+      "colors": [
+        "magenta",
+        "pink"
+      ],
+      "print": "eyelet lace solid",
+      "vibe": "romantic date night",
+      "occasions": [
+        "Party",
+        "Festive"
+      ]
+    },
+    {
+      "id": 93,
+      "top": "sleeveless embroidered top",
+      "bottom": "shorts with tie belt",
+      "colors": [
+        "white",
+        "navy"
+      ],
+      "print": "medallion embroidery",
+      "vibe": "boho chic breezy",
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ]
+    },
+    {
+      "id": 94,
+      "top": "wrap top",
+      "bottom": "mini skirt",
+      "colors": [
+        "yellow"
+      ],
+      "print": "solid",
+      "vibe": "sunny minimalist chic",
+      "occasions": [
+        "Everyday",
+        "Party"
+      ]
+    },
+    {
+      "id": 95,
+      "top": "flutter-sleeve crop top",
+      "bottom": "wide-leg palazzo pants",
+      "colors": [
+        "white",
+        "teal"
+      ],
+      "print": "floral",
+      "vibe": "tropical breezy vacation",
+      "occasions": [
+        "Vacation"
+      ]
+    },
+    {
+      "id": 96,
+      "top": "halter crop top",
+      "bottom": "flared mini skirt",
+      "colors": [
+        "lavender",
+        "white"
+      ],
+      "print": "polka dot",
+      "vibe": "playful flirty party",
+      "occasions": [
+        "Party",
+        "Festive"
+      ]
+    },
+    {
+      "id": 97,
+      "top": "tie-front crop top",
+      "bottom": "mini skirt",
+      "colors": [
+        "cream",
+        "blue"
+      ],
+      "print": "floral embroidery",
+      "vibe": "romantic vacation chic",
+      "occasions": [
+        "Vacation",
+        "Party"
+      ]
+    },
+    {
+      "id": 98,
+      "top": "square-neck crop top",
+      "bottom": "tiered midi skirt",
+      "colors": [
+        "white"
+      ],
+      "print": "eyelet lace solid",
+      "vibe": "coastal summer chic",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 99,
+      "top": "sleeveless top",
+      "bottom": "wide-leg culottes",
+      "colors": [
+        "oatmeal",
+        "cream"
+      ],
+      "print": "solid",
+      "vibe": "minimalist relaxed casual",
+      "occasions": [
+        "Everyday"
+      ]
+    },
+    {
+      "id": 100,
+      "top": "puff-sleeve crop top",
+      "bottom": "full mini skirt",
+      "colors": [
+        "yellow",
+        "white",
+        "green"
+      ],
+      "print": "lemon print",
+      "vibe": "romantic vacation flirty",
+      "occasions": [
+        "Vacation",
+        "Party"
+      ]
+    },
+    {
+      "id": 101,
+      "top": "puff-sleeve crop top",
+      "bottom": "shorts",
+      "colors": [
+        "beige",
+        "red",
+        "green"
+      ],
+      "print": "floral (tulip)",
+      "vibe": "vintage romantic chic",
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ]
+    },
+    {
+      "id": 102,
+      "top": "flowy wrap top",
+      "bottom": "shorts",
+      "colors": [
+        "coral pink"
+      ],
+      "print": "solid",
+      "vibe": "soft flowy vacation",
+      "occasions": [
+        "Vacation",
+        "Party"
+      ]
+    },
+    {
+      "id": 103,
+      "top": "flutter-sleeve floral-strap crop top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "ivory",
+        "white"
+      ],
+      "print": "solid with floral straps",
+      "vibe": "resort elegant chic",
+      "occasions": [
+        "Vacation",
+        "Wedding"
+      ]
+    },
+    {
+      "id": 104,
+      "top": "flutter-sleeve floral-strap crop top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "ivory",
+        "white"
+      ],
+      "print": "solid with floral straps",
+      "vibe": "resort elegant chic",
+      "occasions": [
+        "Vacation",
+        "Wedding"
+      ]
+    },
+    {
+      "id": 105,
+      "top": "bustier crop top",
+      "bottom": "tiered maxi skirt",
+      "colors": [
+        "cream",
+        "red"
+      ],
+      "print": "cherry floral",
+      "vibe": "romantic feminine vacation",
+      "occasions": [
+        "Festive",
+        "Party"
+      ]
+    },
+    {
+      "id": 106,
+      "top": "ruffle crop top",
+      "bottom": "mini skirt",
+      "colors": [
+        "white"
+      ],
+      "print": "eyelet lace",
+      "vibe": "sweet romantic date",
+      "occasions": [
+        "Party",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 107,
+      "top": "halter tiered top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "sage green"
+      ],
+      "print": "solid",
+      "vibe": "relaxed chic casual",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 108,
+      "top": "halter crop top",
+      "bottom": "tiered maxi skirt",
+      "colors": [
+        "cream",
+        "tan"
+      ],
+      "print": "floral vine",
+      "vibe": "elegant garden wedding",
+      "occasions": [
+        "Wedding",
+        "Festive"
+      ]
+    },
+    {
+      "id": 109,
+      "top": "collared shirt",
+      "bottom": "tapered pants",
+      "colors": [
+        "cream",
+        "navy blue"
+      ],
+      "print": "leaf print",
+      "vibe": "chic resort minimal",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 110,
+      "top": "peplum blouse",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "white",
+        "blue"
+      ],
+      "print": "floral toile",
+      "vibe": "romantic breezy vacation",
+      "occasions": [
+        "Vacation",
+        "Party"
+      ]
+    },
+    {
+      "id": 111,
+      "top": "crop top",
+      "bottom": "maxi skirt",
+      "colors": [
+        "cream",
+        "green"
+      ],
+      "print": "botanical leaf print",
+      "vibe": "elegant boho resort",
+      "occasions": [
+        "Vacation",
+        "Festive"
+      ]
+    },
+    {
+      "id": 112,
+      "top": "wrap top",
+      "bottom": "shorts",
+      "colors": [
+        "beige",
+        "tan"
+      ],
+      "print": "solid",
+      "vibe": "chic casual everyday",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 113,
+      "top": "crop top",
+      "bottom": "shorts",
+      "colors": [
+        "beige",
+        "brown",
+        "yellow"
+      ],
+      "print": "floral",
+      "vibe": "boho vacation casual",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 114,
+      "top": "tie-strap crop top",
+      "bottom": "tiered maxi skirt",
+      "colors": [
+        "red",
+        "cream"
+      ],
+      "print": "floral",
+      "vibe": "vibrant festive vacation",
+      "occasions": [
+        "Festive",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 115,
+      "top": "crop top",
+      "bottom": "maxi skirt",
+      "colors": [
+        "yellow",
+        "green",
+        "pink"
+      ],
+      "print": "botanical floral",
+      "vibe": "garden party elegant",
+      "occasions": [
+        "Festive",
+        "Party"
+      ]
+    },
+    {
+      "id": 116,
+      "top": "deep-v crop top",
+      "bottom": "shorts",
+      "colors": [
+        "blue",
+        "cream"
+      ],
+      "print": "scenic toile print",
+      "vibe": "glam vacation chic",
+      "occasions": [
+        "Party",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 117,
+      "top": "sleeveless vest",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "rust",
+        "terracotta"
+      ],
+      "print": "floral embroidery",
+      "vibe": "sharp office chic",
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ]
+    },
+    {
+      "id": 118,
+      "top": "crop top",
+      "bottom": "mini skirt",
+      "colors": [
+        "navy",
+        "white"
+      ],
+      "print": "floral embroidery",
+      "vibe": "preppy chic party",
+      "occasions": [
+        "Party",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 119,
+      "top": "cutout crop top",
+      "bottom": "shorts",
+      "colors": [
+        "beige"
+      ],
+      "print": "solid",
+      "vibe": "minimal boho casual",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 120,
+      "top": "tie-neck blouse",
+      "bottom": "shorts",
+      "colors": [
+        "peach",
+        "coral"
+      ],
+      "print": "solid eyelet",
+      "vibe": "sweet feminine casual",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 121,
+      "top": "peplum blouse",
+      "bottom": "straight pants",
+      "colors": [
+        "red",
+        "white"
+      ],
+      "print": "pinstripe",
+      "vibe": "bold statement chic",
+      "occasions": [
+        "Party",
+        "Festive"
+      ]
+    },
+    {
+      "id": 122,
+      "top": "crop top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "print": "ikat",
+      "vibe": "breezy resort chic",
+      "occasions": [
+        "Vacation",
+        "Festive"
+      ]
+    },
+    {
+      "id": 123,
+      "top": "bandeau top",
+      "bottom": "shorts",
+      "colors": [
+        "ivory",
+        "cream"
+      ],
+      "print": "solid with floral appliqué",
+      "vibe": "playful romantic vacation",
+      "occasions": [
+        "Vacation",
+        "Party"
+      ]
+    },
+    {
+      "id": 124,
+      "top": "blouse",
+      "bottom": "shorts",
+      "colors": [
+        "maroon",
+        "cream"
+      ],
+      "print": "gingham check",
+      "vibe": "cozy retro casual",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 125,
+      "top": "babydoll top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "chartreuse",
+        "lime green"
+      ],
+      "print": "solid",
+      "vibe": "playful vibrant casual",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 126,
+      "top": "babydoll top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "chartreuse",
+        "lime green"
+      ],
+      "print": "solid",
+      "vibe": "playful vibrant casual",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 127,
+      "top": "strapless smocked top",
+      "bottom": "shorts",
+      "colors": [
+        "cream",
+        "ivory"
+      ],
+      "print": "solid",
+      "vibe": "flirty summer casual",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 128,
+      "top": "button-front blouse",
+      "bottom": "tiered mini skirt",
+      "colors": [
+        "olive green"
+      ],
+      "print": "solid",
+      "vibe": "sharp office chic",
+      "occasions": [
+        "Everyday",
+        "Party"
+      ]
+    },
+    {
+      "id": 129,
+      "top": "wrap vest",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "cream",
+        "beige"
+      ],
+      "print": "pinstripe",
+      "vibe": "sharp office chic",
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ]
+    },
+    {
+      "id": 130,
+      "top": "halter cape top",
+      "bottom": "shorts",
+      "colors": [
+        "yellow",
+        "cream"
+      ],
+      "print": "floral",
+      "vibe": "sunny playful vacation",
+      "occasions": [
+        "Vacation",
+        "Party"
+      ]
+    },
+    {
+      "id": 131,
+      "top": "pleated cami top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "cream",
+        "beige"
+      ],
+      "print": "solid textured",
+      "vibe": "breezy vacation casual",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 132,
+      "top": "cami top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "tan",
+        "camel"
+      ],
+      "print": "solid",
+      "vibe": "sharp office chic",
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ]
+    },
+    {
+      "id": 133,
+      "top": "pintuck blouse",
+      "bottom": "straight pants",
+      "colors": [
+        "black",
+        "red"
+      ],
+      "print": "solid with stripe trim",
+      "vibe": "elegant evening chic",
+      "occasions": [
+        "Party",
+        "Festive"
+      ]
+    },
+    {
+      "id": 134,
+      "top": "one-shoulder crop top",
+      "bottom": "shorts",
+      "colors": [
+        "olive green"
+      ],
+      "print": "abstract marble print",
+      "vibe": "modern vacation chic",
+      "occasions": [
+        "Vacation",
+        "Party"
+      ]
+    },
+    {
+      "id": 135,
+      "top": "ruffle-strap crop top",
+      "bottom": "bubble shorts",
+      "colors": [
+        "cream",
+        "beige"
+      ],
+      "print": "solid",
+      "vibe": "cute playful casual",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 136,
+      "top": "peplum top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "taupe",
+        "white"
+      ],
+      "print": "gingham check",
+      "vibe": "breezy vacation casual",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 137,
+      "top": "tie-strap ruffle top",
+      "bottom": "shorts",
+      "colors": [
+        "blush pink"
+      ],
+      "print": "solid",
+      "vibe": "romantic feminine vacation",
+      "occasions": [
+        "Vacation",
+        "Party"
+      ]
+    },
+    {
+      "id": 138,
+      "top": "embroidered vest",
+      "bottom": "shorts",
+      "colors": [
+        "white",
+        "rust"
+      ],
+      "print": "celestial embroidery",
+      "vibe": "boho festival chic",
+      "occasions": [
+        "Festive",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 139,
+      "top": "puff-sleeve crop top",
+      "bottom": "mini skirt",
+      "colors": [
+        "black",
+        "white"
+      ],
+      "print": "floral embroidery",
+      "vibe": "edgy chic party",
+      "occasions": [
+        "Party",
+        "Festive"
+      ]
+    },
+    {
+      "id": 140,
+      "top": "halter cape top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "beige",
+        "tan"
+      ],
+      "print": "solid textured",
+      "vibe": "elegant vacation resort",
+      "occasions": [
+        "Vacation",
+        "Festive"
+      ]
+    },
+    {
+      "id": 141,
+      "top": "collared top",
+      "bottom": "straight pants",
+      "colors": [
+        "cream",
+        "red",
+        "grey"
+      ],
+      "print": "geometric ikat",
+      "vibe": "sharp office chic",
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ]
+    },
+    {
+      "id": 142,
+      "top": "tie-front peplum top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "taupe",
+        "cream"
+      ],
+      "print": "stripe",
+      "vibe": "breezy vacation casual",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 143,
+      "top": "peplum top",
+      "bottom": "shorts",
+      "colors": [
+        "coral",
+        "pink"
+      ],
+      "print": "solid",
+      "vibe": "romantic feminine vacation",
+      "occasions": [
+        "Vacation",
+        "Party"
+      ]
+    },
+    {
+      "id": 144,
+      "top": "tank top",
+      "bottom": "shorts",
+      "colors": [
+        "beige"
+      ],
+      "print": "solid textured",
+      "vibe": "minimal everyday casual",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 145,
+      "top": "ruffle-sleeve wrap crop top",
+      "bottom": "flounce mini skirt",
+      "colors": [
+        "pink",
+        "white"
+      ],
+      "print": "ditsy floral",
+      "vibe": "flirty vacation romantic",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 146,
+      "top": "one-shoulder cami top",
+      "bottom": "wide-leg linen pants",
+      "colors": [
+        "ivory",
+        "blush"
+      ],
+      "print": "polka dot patchwork",
+      "vibe": "artsy relaxed resort",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 147,
+      "top": "scalloped-edge crop top",
+      "bottom": "scalloped-hem maxi skirt",
+      "colors": [
+        "white",
+        "black"
+      ],
+      "print": "solid with contrast trim",
+      "vibe": "sleek modern minimal chic",
+      "occasions": [
+        "Party",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 148,
+      "top": "wrap blouson top",
+      "bottom": "paperbag shorts",
+      "colors": [
+        "cream",
+        "green",
+        "orange"
+      ],
+      "print": "tropical floral",
+      "vibe": "breezy vacation casual",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 149,
+      "top": "strapless peplum top",
+      "bottom": "wide-leg linen pants",
+      "colors": [
+        "ivory"
+      ],
+      "print": "solid",
+      "vibe": "coastal minimalist chic",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 150,
+      "top": "sleeveless crop top",
+      "bottom": "tailored shorts",
+      "colors": [
+        "beige",
+        "black"
+      ],
+      "print": "tribal embroidered",
+      "vibe": "boho everyday casual",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 151,
+      "top": "boat-neck crop top",
+      "bottom": "smocked-waist shorts",
+      "colors": [
+        "beige"
+      ],
+      "print": "solid",
+      "vibe": "breezy beach vacation",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 152,
+      "top": "collared short-sleeve shirt",
+      "bottom": "wrap mini skirt",
+      "colors": [
+        "cream",
+        "multicolor"
+      ],
+      "print": "novelty scenic print",
+      "vibe": "playful resort getaway",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 153,
+      "top": "sleeveless textured top",
+      "bottom": "pleated midi skirt",
+      "colors": [
+        "white"
+      ],
+      "print": "feather texture solid",
+      "vibe": "romantic evening elegant",
+      "occasions": [
+        "Party",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 154,
+      "top": "twisted halter peplum top",
+      "bottom": "wide-leg trousers",
+      "colors": [
+        "rust",
+        "brown",
+        "khaki"
+      ],
+      "print": "abstract artistic",
+      "vibe": "edgy contemporary chic",
+      "occasions": [
+        "Everyday",
+        "Party"
+      ]
+    },
+    {
+      "id": 155,
+      "top": "button-front cami top",
+      "bottom": "tie-waist shorts",
+      "colors": [
+        "oatmeal"
+      ],
+      "print": "solid linen",
+      "vibe": "relaxed sunny casual",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 156,
+      "top": "cape-sleeve crop top",
+      "bottom": "midi skirt",
+      "colors": [
+        "cream",
+        "green",
+        "yellow"
+      ],
+      "print": "parrot floral embroidered",
+      "vibe": "garden party resort chic",
+      "occasions": [
+        "Vacation",
+        "Party"
+      ]
+    },
+    {
+      "id": 157,
+      "top": "square-neck crop top",
+      "bottom": "tiered maxi skirt",
+      "colors": [
+        "navy",
+        "white"
+      ],
+      "print": "bold floral mosaic",
+      "vibe": "vibrant resort statement",
+      "occasions": [
+        "Vacation",
+        "Festive"
+      ]
+    },
+    {
+      "id": 158,
+      "top": "sleeveless crop top",
+      "bottom": "flared shorts",
+      "colors": [
+        "blush",
+        "purple",
+        "orange"
+      ],
+      "print": "bright floral",
+      "vibe": "cheerful summer casual",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 159,
+      "top": "ruffle-strap crop top",
+      "bottom": "eyelet maxi skirt",
+      "colors": [
+        "white"
+      ],
+      "print": "broderie anglaise",
+      "vibe": "romantic bridal-ready elegant",
+      "occasions": [
+        "Wedding",
+        "Party"
+      ]
+    },
+    {
+      "id": 160,
+      "top": "tie-strap peplum cami",
+      "bottom": "tapered cropped pants",
+      "colors": [
+        "black",
+        "white"
+      ],
+      "print": "polka dot check",
+      "vibe": "sharp evening chic",
+      "occasions": [
+        "Party",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 161,
+      "top": "puff-sleeve square-neck top",
+      "bottom": "tiered maxi skirt",
+      "colors": [
+        "navy",
+        "white"
+      ],
+      "print": "floral scroll",
+      "vibe": "elegant vintage-inspired formal",
+      "occasions": [
+        "Wedding",
+        "Festive"
+      ]
+    },
+    {
+      "id": 162,
+      "top": "ruffle-strap embellished crop top",
+      "bottom": "tiered lehenga skirt",
+      "colors": [
+        "mint",
+        "pink"
+      ],
+      "print": "floral with mirror work",
+      "vibe": "dreamy festive ethnic",
+      "occasions": [
+        "Festive",
+        "Wedding"
+      ]
+    },
+    {
+      "id": 163,
+      "top": "puff-sleeve ruffled blouse",
+      "bottom": "tiered ruffle mini skirt",
+      "colors": [
+        "dusty pink"
+      ],
+      "print": "eyelet broderie",
+      "vibe": "romantic feminine party",
+      "occasions": [
+        "Party",
+        "Festive"
+      ]
+    },
+    {
+      "id": 164,
+      "top": "smocked tie-strap crop top",
+      "bottom": "wide-leg pants",
+      "colors": [
+        "pastel blue",
+        "pink",
+        "cream"
+      ],
+      "print": "pastel stripe",
+      "vibe": "breezy vacation casual",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 165,
+      "top": "one-shoulder draped top",
+      "bottom": "wide-leg drawstring pants",
+      "colors": [
+        "blush pink"
+      ],
+      "print": "solid",
+      "vibe": "soft romantic evening",
+      "occasions": [
+        "Vacation",
+        "Party"
+      ]
+    },
+    {
+      "id": 166,
+      "top": "tie-strap scalloped crop top",
+      "bottom": "eyelet maxi skirt",
+      "colors": [
+        "white",
+        "navy"
+      ],
+      "print": "embroidered dot floral",
+      "vibe": "delicate feminine elegant",
+      "occasions": [
+        "Wedding",
+        "Party"
+      ]
+    },
+    {
+      "id": 167,
+      "top": "pearl-strap draped crop top",
+      "bottom": "wide-leg linen pants",
+      "colors": [
+        "oatmeal"
+      ],
+      "print": "solid with pearl trim",
+      "vibe": "refined understated elegant",
+      "occasions": [
+        "Party",
+        "Wedding"
+      ]
+    },
+    {
+      "id": 168,
+      "top": "v-neck peplum tank",
+      "bottom": "straight-leg pants",
+      "colors": [
+        "beige"
+      ],
+      "print": "solid linen",
+      "vibe": "easy sunny casual",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 169,
+      "top": "square-neck crop top",
+      "bottom": "pleated wide-leg trousers",
+      "colors": [
+        "olive green"
+      ],
+      "print": "solid",
+      "vibe": "sharp office-to-party chic",
+      "occasions": [
+        "Party",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 170,
+      "top": "ruffled jeweled-strap crop top",
+      "bottom": "shorts",
+      "colors": [
+        "blue",
+        "white"
+      ],
+      "print": "toile floral",
+      "vibe": "romantic garden party",
+      "occasions": [
+        "Party",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 171,
+      "top": "halter square-neck crop top",
+      "bottom": "shorts",
+      "colors": [
+        "black",
+        "cream"
+      ],
+      "print": "baroque damask",
+      "vibe": "bold graphic evening",
+      "occasions": [
+        "Party",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 172,
+      "top": "sleeveless crop top",
+      "bottom": "shorts",
+      "colors": [
+        "denim blue"
+      ],
+      "print": "textured stripe",
+      "vibe": "laid-back casual weekend",
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ]
+    },
+    {
+      "id": 173,
+      "top": "ric-rac trim cami top",
+      "bottom": "ric-rac trim shorts",
+      "colors": [
+        "white",
+        "black"
+      ],
+      "print": "solid with wave trim",
+      "vibe": "playful retro casual",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    },
+    {
+      "id": 174,
+      "top": "sleeveless crop top",
+      "bottom": "maxi skirt",
+      "colors": [
+        "white",
+        "navy"
+      ],
+      "print": "tropical leaf shell print",
+      "vibe": "coastal resort statement",
+      "occasions": [
+        "Vacation",
+        "Festive"
+      ]
+    },
+    {
+      "id": 175,
+      "top": "asymmetric ruffle crop top",
+      "bottom": "asymmetric tiered midi skirt",
+      "colors": [
+        "white"
+      ],
+      "print": "solid",
+      "vibe": "elegant party sophisticated",
+      "occasions": [
+        "Party",
+        "Wedding"
+      ]
+    },
+    {
+      "id": 176,
+      "top": "asymmetric ruffle crop top",
+      "bottom": "asymmetric tiered midi skirt",
+      "colors": [
+        "white"
+      ],
+      "print": "solid",
+      "vibe": "elegant party sophisticated",
+      "occasions": [
+        "Party",
+        "Wedding"
+      ]
+    },
+    {
+      "id": 177,
+      "top": "puff-sleeve pleated crop top",
+      "bottom": "tie-waist shorts",
+      "colors": [
+        "ivory"
+      ],
+      "print": "solid linen",
+      "vibe": "breezy coastal vacation",
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ]
+    }
+  ]
+}

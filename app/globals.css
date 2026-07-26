@@ -1,26 +1,68 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fdf8f1;
+  --foreground: #2a1210;
+  --maroon-950: #200608;
+  --maroon-900: #3a0d10;
+  --maroon-800: #5c1216;
+  --maroon-700: #7a1a1f;
+  --maroon-600: #8f2228;
+  --maroon-500: #a8323a;
+  --cream-50: #fffdf9;
+  --cream-100: #fdf8f1;
+  --cream-200: #f7ecdd;
+  --cream-300: #efe0c9;
+  --gold-500: #b78a3a;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
+  --color-maroon-950: var(--maroon-950);
+  --color-maroon-900: var(--maroon-900);
+  --color-maroon-800: var(--maroon-800);
+  --color-maroon-700: var(--maroon-700);
+  --color-maroon-600: var(--maroon-600);
+  --color-maroon-500: var(--maroon-500);
+  --color-cream-50: var(--cream-50);
+  --color-cream-100: var(--cream-100);
+  --color-cream-200: var(--cream-200);
+  --color-cream-300: var(--cream-300);
+  --color-gold-500: var(--gold-500);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 rgba(122, 26, 31, 0.45);
+  }
+  100% {
+    box-shadow: 0 0 0 22px rgba(122, 26, 31, 0);
+  }
+}
+
+.mic-pulse {
+  animation: pulse-ring 1.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes speak-bounce {
+  0%,
+  100% {
+    transform: scaleY(0.4);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.speak-bar {
+  animation: speak-bounce 0.9s ease-in-out infinite;
 }

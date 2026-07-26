@@ -1,0 +1,800 @@
+{
+  "generatedAt": "2026-07-26",
+  "source": "claude-sonnet vision labeling of fabrics/manifest.json swatches",
+  "swatches": [
+    {
+      "folder": "checks",
+      "file": "Screenshot_20260325_223426_Instagram.jpg",
+      "color": "olive green",
+      "family": "green",
+      "tone": "dark",
+      "pattern": "blue floral on olive green check"
+    },
+    {
+      "folder": "checks",
+      "file": "Screenshot_20260325_231437_Instagram.jpg",
+      "color": "teal-mustard plaid",
+      "family": "multicolor",
+      "tone": "light",
+      "pattern": "teal and mustard madras plaid"
+    },
+    {
+      "folder": "checks",
+      "file": "Screenshot_20260326_092547_Meesho.jpg",
+      "color": "black",
+      "family": "black",
+      "tone": "dark",
+      "pattern": "black and white gingham check"
+    },
+    {
+      "folder": "checks",
+      "file": "Screenshot_20260326_092601_Meesho.jpg",
+      "color": "mustard yellow",
+      "family": "yellow",
+      "tone": "dark",
+      "pattern": "mustard yellow gingham check"
+    },
+    {
+      "folder": "checks",
+      "file": "Screenshot_20260326_092617_Meesho.jpg",
+      "color": "red",
+      "family": "red",
+      "tone": "bright",
+      "pattern": "red and white gingham check"
+    },
+    {
+      "folder": "checks",
+      "file": "Screenshot_20260326_092659_Meesho.jpg",
+      "color": "khaki brown",
+      "family": "brown",
+      "tone": "light",
+      "pattern": "brown and beige gingham check"
+    },
+    {
+      "folder": "georgette-floral",
+      "file": "Screenshot_20260326_095314_Meesho.jpg",
+      "color": "navy blue",
+      "family": "blue",
+      "tone": "dark",
+      "pattern": "coral pink floral on navy georgette"
+    },
+    {
+      "folder": "georgette-floral",
+      "file": "Screenshot_20260326_095323_Meesho.jpg",
+      "color": "white",
+      "family": "white",
+      "tone": "light",
+      "pattern": "rani pink and mauve floral bouquets"
+    },
+    {
+      "folder": "georgette-floral",
+      "file": "Screenshot_20260326_095355_Meesho.jpg",
+      "color": "off-white",
+      "family": "white",
+      "tone": "light",
+      "pattern": "dusty pink rose floral on white chiffon"
+    },
+    {
+      "folder": "georgette-floral",
+      "file": "Screenshot_20260326_095410_Meesho.jpg",
+      "color": "black",
+      "family": "black",
+      "tone": "dark",
+      "pattern": "multicolor floral bouquets on black georgette"
+    },
+    {
+      "folder": "georgette-floral",
+      "file": "Screenshot_20260326_095427_Meesho.jpg",
+      "color": "charcoal black",
+      "family": "black",
+      "tone": "dark",
+      "pattern": "beige magnolia floral on charcoal"
+    },
+    {
+      "folder": "georgette-floral",
+      "file": "Screenshot_20260326_095545_Meesho.jpg",
+      "color": "maroon",
+      "family": "red",
+      "tone": "dark",
+      "pattern": "beige floral outline on maroon"
+    },
+    {
+      "folder": "georgette-floral",
+      "file": "Screenshot_20260326_095555_Meesho.jpg",
+      "color": "cream",
+      "family": "beige",
+      "tone": "light",
+      "pattern": "olive green tonal floral line art"
+    },
+    {
+      "folder": "georgette-floral",
+      "file": "Screenshot_20260326_095603_Meesho.jpg",
+      "color": "sea green",
+      "family": "green",
+      "tone": "pastel",
+      "pattern": "pink rose bouquets on mint green"
+    },
+    {
+      "folder": "georgette-floral",
+      "file": "Screenshot_20260326_095618_Meesho.jpg",
+      "color": "rani maroon",
+      "family": "red",
+      "tone": "dark",
+      "pattern": "peach floral on maroon georgette"
+    },
+    {
+      "folder": "georgette-floral",
+      "file": "Screenshot_20260326_095629_Meesho.jpg",
+      "color": "chocolate brown",
+      "family": "brown",
+      "tone": "dark",
+      "pattern": "cream floral silhouette on brown"
+    },
+    {
+      "folder": "georgette-floral",
+      "file": "Screenshot_20260326_095643_Meesho.jpg",
+      "color": "navy blue",
+      "family": "blue",
+      "tone": "dark",
+      "pattern": "tonal rose floral outline on navy"
+    },
+    {
+      "folder": "georgette-floral",
+      "file": "Screenshot_20260326_095702_Meesho.jpg",
+      "color": "ivory",
+      "family": "beige",
+      "tone": "light",
+      "pattern": "peach floral bouquets on ivory"
+    },
+    {
+      "folder": "georgette-floral",
+      "file": "Screenshot_20260326_095736_Meesho.jpg",
+      "color": "white",
+      "family": "multicolor",
+      "tone": "bright",
+      "pattern": "multicolor watercolor florals on white"
+    },
+    {
+      "folder": "georgette-floral",
+      "file": "Screenshot_20260326_095755_Meesho.jpg",
+      "color": "beige",
+      "family": "beige",
+      "tone": "light",
+      "pattern": "white magnolia floral on beige"
+    },
+    {
+      "folder": "georgette-floral",
+      "file": "Screenshot_20260326_095835_Meesho.jpg",
+      "color": "white",
+      "family": "multicolor",
+      "tone": "bright",
+      "pattern": "fruit and popsicle novelty print"
+    },
+    {
+      "folder": "georgette-floral",
+      "file": "Screenshot_20260326_095913_Meesho.jpg",
+      "color": "bottle green",
+      "family": "green",
+      "tone": "dark",
+      "pattern": "red and gold Japanese floral on green"
+    },
+    {
+      "folder": "instantly-available",
+      "file": "IMG_3756.webp",
+      "color": "white",
+      "family": "white",
+      "tone": "light",
+      "pattern": "white cutwork floral embroidery"
+    },
+    {
+      "folder": "instantly-available",
+      "file": "IMG_3758.webp",
+      "color": "sage green",
+      "family": "green",
+      "tone": "pastel",
+      "pattern": "blue and white floral vine on sage"
+    },
+    {
+      "folder": "instantly-available",
+      "file": "IMG_3759.webp",
+      "color": "black",
+      "family": "black",
+      "tone": "dark",
+      "pattern": "bold black floral silhouette on white"
+    },
+    {
+      "folder": "instantly-available",
+      "file": "IMG_3760.webp",
+      "color": "white",
+      "family": "white",
+      "tone": "light",
+      "pattern": "teal and red cherry blossom print"
+    },
+    {
+      "folder": "instantly-available",
+      "file": "IMG_3761.webp",
+      "color": "white",
+      "family": "white",
+      "tone": "light",
+      "pattern": "navy sun moon palm novelty print"
+    },
+    {
+      "folder": "instantly-available",
+      "file": "IMG_3762.webp",
+      "color": "off-white",
+      "family": "white",
+      "tone": "light",
+      "pattern": "plain solid, no print"
+    },
+    {
+      "folder": "instantly-available",
+      "file": "IMG_3765.webp",
+      "color": "navy blue",
+      "family": "blue",
+      "tone": "dark",
+      "pattern": "plain solid, no print"
+    },
+    {
+      "folder": "instantly-available",
+      "file": "IMG_3766.webp",
+      "color": "cream",
+      "family": "beige",
+      "tone": "light",
+      "pattern": "plain solid ribbed texture"
+    },
+    {
+      "folder": "organza",
+      "file": "Screenshot_20260326_094444_Meesho.jpg",
+      "color": "lavender grey",
+      "family": "purple",
+      "tone": "pastel",
+      "pattern": "large purple floral (blossom) print"
+    },
+    {
+      "folder": "organza",
+      "file": "Screenshot_20260326_094513_Meesho.jpg",
+      "color": "white",
+      "family": "white",
+      "tone": "light",
+      "pattern": "teal blue butterfly print"
+    },
+    {
+      "folder": "organza",
+      "file": "Screenshot_20260326_094551_Meesho.jpg",
+      "color": "mustard yellow",
+      "family": "yellow",
+      "tone": "dark",
+      "pattern": "orange rose floral print"
+    },
+    {
+      "folder": "organza",
+      "file": "Screenshot_20260326_094604_Meesho.jpg",
+      "color": "ivory cream",
+      "family": "white",
+      "tone": "light",
+      "pattern": "pastel peach and mint floral print"
+    },
+    {
+      "folder": "organza",
+      "file": "Screenshot_20260326_094718_Meesho.jpg",
+      "color": "white",
+      "family": "white",
+      "tone": "light",
+      "pattern": "yellow and white daisy print"
+    },
+    {
+      "folder": "organza",
+      "file": "Screenshot_20260326_095300_Meesho.jpg",
+      "color": "olive green",
+      "family": "green",
+      "tone": "dark",
+      "pattern": "white floral print"
+    },
+    {
+      "folder": "plain",
+      "file": "Screenshot_20260328_103530_Gallery.jpg",
+      "color": "merlot maroon red",
+      "family": "red",
+      "tone": "dark",
+      "pattern": null
+    },
+    {
+      "folder": "plain",
+      "file": "Screenshot_20260328_103533_Gallery.jpg",
+      "color": "jade black",
+      "family": "black",
+      "tone": "dark",
+      "pattern": null
+    },
+    {
+      "folder": "plain",
+      "file": "Screenshot_20260328_103535_Gallery.jpg",
+      "color": "steel blue",
+      "family": "blue",
+      "tone": "light",
+      "pattern": null
+    },
+    {
+      "folder": "plain",
+      "file": "Screenshot_20260328_103537_Gallery.jpg",
+      "color": "military green",
+      "family": "green",
+      "tone": "dark",
+      "pattern": null
+    },
+    {
+      "folder": "plain",
+      "file": "Screenshot_20260328_103539_Gallery.jpg",
+      "color": "off-white",
+      "family": "white",
+      "tone": "light",
+      "pattern": null
+    },
+    {
+      "folder": "plain",
+      "file": "Screenshot_20260328_103540_Gallery.jpg",
+      "color": "dove grey",
+      "family": "grey",
+      "tone": "light",
+      "pattern": null
+    },
+    {
+      "folder": "plain",
+      "file": "Screenshot_20260328_103546_Gallery.jpg",
+      "color": "mustard yellow",
+      "family": "yellow",
+      "tone": "dark",
+      "pattern": null
+    },
+    {
+      "folder": "plain",
+      "file": "Screenshot_20260328_103548_Gallery.jpg",
+      "color": "apple green",
+      "family": "green",
+      "tone": "bright",
+      "pattern": null
+    },
+    {
+      "folder": "plain",
+      "file": "Screenshot_20260328_103550_Gallery.jpg",
+      "color": "prussian blue",
+      "family": "blue",
+      "tone": "dark",
+      "pattern": null
+    },
+    {
+      "folder": "plain",
+      "file": "Screenshot_20260328_103552_Gallery.jpg",
+      "color": "khaki beige",
+      "family": "beige",
+      "tone": "light",
+      "pattern": null
+    },
+    {
+      "folder": "plain",
+      "file": "Screenshot_20260328_103553_Gallery.jpg",
+      "color": "navy dark blue",
+      "family": "blue",
+      "tone": "dark",
+      "pattern": null
+    },
+    {
+      "folder": "plain",
+      "file": "Screenshot_20260328_103555_Gallery.jpg",
+      "color": "natural white",
+      "family": "white",
+      "tone": "light",
+      "pattern": null
+    },
+    {
+      "folder": "satin",
+      "file": "024bd479cf7bc010f1372aab4112bf40.jpg",
+      "color": "olive green",
+      "family": "green",
+      "tone": "bright",
+      "pattern": null
+    },
+    {
+      "folder": "satin",
+      "file": "0846a82c709b5d0e4d82b5e0aabd6d94.jpg",
+      "color": "ivory white",
+      "family": "white",
+      "tone": "light",
+      "pattern": null
+    },
+    {
+      "folder": "satin",
+      "file": "13a386265eec40f956a6f34e310b8235.jpg",
+      "color": "dusty rose pink",
+      "family": "pink",
+      "tone": "pastel",
+      "pattern": null
+    },
+    {
+      "folder": "satin",
+      "file": "1887c435b4dc4302cba0f7539366e1e5.jpg",
+      "color": "jet black",
+      "family": "black",
+      "tone": "dark",
+      "pattern": null
+    },
+    {
+      "folder": "satin",
+      "file": "23d2225c1d5f995ba53a8ca04f8bf898.jpg",
+      "color": "deep crimson red",
+      "family": "red",
+      "tone": "dark",
+      "pattern": null
+    },
+    {
+      "folder": "satin",
+      "file": "3460fd5a27f87f4eef0a5c92b99251df.jpg",
+      "color": "champagne gold",
+      "family": "gold",
+      "tone": "light",
+      "pattern": null
+    },
+    {
+      "folder": "satin",
+      "file": "4d2626645065d5b518bd8edc26581fee.jpg",
+      "color": "ice blue",
+      "family": "blue",
+      "tone": "pastel",
+      "pattern": null
+    },
+    {
+      "folder": "satin",
+      "file": "801f7b74c79d583cd88ae3b3f374aa8f.jpg",
+      "color": "dusty mauve",
+      "family": "purple",
+      "tone": "pastel",
+      "pattern": null
+    },
+    {
+      "folder": "satin",
+      "file": "84f580770cd9f58644cb6b541267b066.jpg",
+      "color": "wine maroon",
+      "family": "red",
+      "tone": "dark",
+      "pattern": null
+    },
+    {
+      "folder": "satin",
+      "file": "87457ed9a5da23a583d29417e1680520.jpg",
+      "color": "royal blue",
+      "family": "blue",
+      "tone": "dark",
+      "pattern": null
+    },
+    {
+      "folder": "satin",
+      "file": "974809e66603c121b39d2b743707a851.jpg",
+      "color": "deep teal green",
+      "family": "green",
+      "tone": "dark",
+      "pattern": null
+    },
+    {
+      "folder": "satin",
+      "file": "9ca7b1a136f4c0dab38340769db6d13f.jpg",
+      "color": "butter yellow",
+      "family": "yellow",
+      "tone": "pastel",
+      "pattern": null
+    },
+    {
+      "folder": "satin",
+      "file": "e2ff11c1f98aa132861737dfff0296a7.jpg",
+      "color": "rani pink",
+      "family": "pink",
+      "tone": "bright",
+      "pattern": null
+    },
+    {
+      "folder": "satin",
+      "file": "ee8afcec5b3b60afcdd8c124ba55313e.jpg",
+      "color": "bright red",
+      "family": "red",
+      "tone": "bright",
+      "pattern": null
+    },
+    {
+      "folder": "stripes",
+      "file": "Screenshot_20260325_221822_Instagram.jpg",
+      "color": "navy blue",
+      "family": "blue",
+      "tone": "dark",
+      "pattern": "rani pink floral on navy stripes"
+    },
+    {
+      "folder": "stripes",
+      "file": "Screenshot_20260325_221918_Instagram.jpg",
+      "color": "cream",
+      "family": "beige",
+      "tone": "light",
+      "pattern": "black tribal stripe-dot print on cream"
+    },
+    {
+      "folder": "stripes",
+      "file": "Screenshot_20260325_222014_Instagram.jpg",
+      "color": "cornflower blue",
+      "family": "blue",
+      "tone": "bright",
+      "pattern": "orange floral bouquets on blue pinstripe"
+    },
+    {
+      "folder": "stripes",
+      "file": "Screenshot_20260325_222034_Instagram.jpg",
+      "color": "navy blue",
+      "family": "blue",
+      "tone": "dark",
+      "pattern": "navy and white bold stripe"
+    },
+    {
+      "folder": "stripes",
+      "file": "Screenshot_20260325_222337_Instagram.jpg",
+      "color": "black",
+      "family": "black",
+      "tone": "dark",
+      "pattern": "cream tribal stripe-dot print on black"
+    },
+    {
+      "folder": "stripes",
+      "file": "Screenshot_20260325_222602_Instagram.jpg",
+      "color": "mint green",
+      "family": "green",
+      "tone": "pastel",
+      "pattern": "mint green pinstripe on white"
+    },
+    {
+      "folder": "stripes",
+      "file": "Screenshot_20260325_223015_Instagram.jpg",
+      "color": "orange",
+      "family": "orange",
+      "tone": "bright",
+      "pattern": "red hearts on orange stripe"
+    },
+    {
+      "folder": "stripes",
+      "file": "Screenshot_20260325_223537_Instagram.jpg",
+      "color": "indigo blue",
+      "family": "blue",
+      "tone": "dark",
+      "pattern": "blue ombre chevron zigzag print"
+    },
+    {
+      "folder": "stripes",
+      "file": "Screenshot_20260325_231317_Instagram.jpg",
+      "color": "leaf green",
+      "family": "green",
+      "tone": "light",
+      "pattern": "green wavy chevron with mustard dashes"
+    }
+  ],
+  "addOns": [
+    {
+      "folder": "add-ons",
+      "file": "16440814ff99af6c814be16396775ea4.jpg",
+      "type": "embroidery",
+      "color": "pink",
+      "desc": "pink gold sequin hummingbird patch"
+    },
+    {
+      "folder": "add-ons",
+      "file": "3750dd15d28cc3f1bc4bdf925e273022.jpg",
+      "type": "embroidery",
+      "color": "multicolor",
+      "desc": "multicolor dragonfly embroidery patch"
+    },
+    {
+      "folder": "add-ons",
+      "file": "3db76d48ccf01df506eaff835efe86cb.jpg",
+      "type": "embroidery",
+      "color": "multicolor",
+      "desc": "kalamkari-style face embroidery patch"
+    },
+    {
+      "folder": "add-ons",
+      "file": "404144466c30b20aa1ae20dd27f97420.jpg",
+      "type": "embroidery",
+      "color": "pink",
+      "desc": "beaded pink orange flower embroidery"
+    },
+    {
+      "folder": "add-ons",
+      "file": "60f77a4b3cf80c8cac860928f09b2c36.jpg",
+      "type": "embroidery",
+      "color": "gold",
+      "desc": "gold pink lotus embroidery motif"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_113745_Instagram.jpg",
+      "type": "embroidery",
+      "color": "multicolor",
+      "desc": "beaded owl patch multicolor"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_113822_Instagram.jpg",
+      "type": "embroidery",
+      "color": "green",
+      "desc": "green beaded cactus patch with flowers"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_113834_Instagram.jpg",
+      "type": "pearl",
+      "color": "white",
+      "desc": "pearl beaded popcorn box motif"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_113907_Instagram.jpg",
+      "type": "embroidery",
+      "color": "white",
+      "desc": "beaded koi fish motif pair"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_113927_Instagram.jpg",
+      "type": "embroidery",
+      "color": "pink",
+      "desc": "beaded flamingo pond scene patch"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_114003_Instagram.jpg",
+      "type": "embroidery",
+      "color": "pink",
+      "desc": "rhinestone bead flamingo motif"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_114020_Instagram.jpg",
+      "type": "embroidery",
+      "color": "multicolor",
+      "desc": "beaded bee and flowers patch"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_114102_Instagram.jpg",
+      "type": "embroidery",
+      "color": "multicolor",
+      "desc": "colorful floral embroidered yoke border"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_114120_Instagram.jpg",
+      "type": "embroidery",
+      "color": "green",
+      "desc": "beaded coconut palm tree motif pair"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_114146_Instagram.jpg",
+      "type": "embroidery",
+      "color": "pink",
+      "desc": "pink blue beaded bird motifs"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_114214_Instagram.jpg",
+      "type": "embroidery",
+      "color": "multicolor",
+      "desc": "beaded toucan patch black yellow"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_114240_Instagram.jpg",
+      "type": "sequin",
+      "color": "gold",
+      "desc": "gold silver sequin dragonfly patch"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_114315_Instagram.jpg",
+      "type": "embroidery",
+      "color": "white",
+      "desc": "beaded poodle dog patch"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_114326_Instagram.jpg",
+      "type": "embroidery",
+      "color": "white",
+      "desc": "beaded bunny rabbit patch with pearls"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_114350_Instagram.jpg",
+      "type": "pearl",
+      "color": "white",
+      "desc": "pearl rhinestone flamingo patch"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_114359_Instagram.jpg",
+      "type": "embroidery",
+      "color": "red",
+      "desc": "beaded red mushroom patch with pearls"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_114412_Instagram.jpg",
+      "type": "embroidery",
+      "color": "gold",
+      "desc": "beaded evil eye eyelash motifs"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_114428_Instagram.jpg",
+      "type": "pearl",
+      "color": "white",
+      "desc": "small pearl popcorn motifs scattered"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_114439_Instagram.jpg",
+      "type": "embroidery",
+      "color": "green",
+      "desc": "beaded hummingbird patch with pearls"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_114453_Instagram.jpg",
+      "type": "embroidery",
+      "color": "blue",
+      "desc": "small beaded evil eye motifs"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_114518_Instagram.jpg",
+      "type": "embroidery",
+      "color": "pink",
+      "desc": "pink pineapple embroidery patch"
+    },
+    {
+      "folder": "add-ons",
+      "file": "Screenshot_20260326_114522_Instagram.jpg",
+      "type": "embroidery",
+      "color": "pink",
+      "desc": "beaded pineapple patch with flower"
+    },
+    {
+      "folder": "add-ons",
+      "file": "a653356a16be5ad3d8c0787812ed3f67.jpg",
+      "type": "embroidery",
+      "color": "pink",
+      "desc": "pink rose floral embroidery with pearls"
+    },
+    {
+      "folder": "add-ons",
+      "file": "ac6a811096c1a56ea20ce9ab868a8e48.jpg",
+      "type": "embroidery",
+      "color": "multicolor",
+      "desc": "colorful cat face embroidery patches"
+    },
+    {
+      "folder": "add-ons",
+      "file": "cf70778a34c2a79985b455d32c1b61f1.jpg",
+      "type": "embroidery",
+      "color": "pink",
+      "desc": "beaded flamingo patch with tassels"
+    },
+    {
+      "folder": "add-ons",
+      "file": "da995832a5b78e4089702a586bf93c67.jpg",
+      "type": "sequin",
+      "color": "gold",
+      "desc": "gold beaded palm tree motif"
+    },
+    {
+      "folder": "add-ons",
+      "file": "db9172effdb66561c33b2f65d7d98a23.jpg",
+      "type": "embroidery",
+      "color": "red",
+      "desc": "red floral branch embroidery with tassels"
+    }
+  ]
+}

@@ -1,0 +1,5614 @@
+{
+  "generatedAt": "2026-07-26",
+  "source": "claude-sonnet vision labeling of outfits/*/sketch.webp",
+  "sketches": [
+    {
+      "id": "j-1",
+      "category": "jumpsuits",
+      "garment": "jumpsuit",
+      "neckline": "V-neck (crisscross straps)",
+      "sleeves": "sleeveless",
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "fitted with waistband",
+      "details": [
+        "crisscross front straps",
+        "fitted midriff band",
+        "pleated wide-leg pants"
+      ],
+      "back": null,
+      "styleTags": [
+        "chic",
+        "evening",
+        "minimal",
+        "modern"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Crisscross Strap Wide-Leg Jumpsuit",
+      "existingName": "Wide Leg Jumpsuit",
+      "nameMismatch": false
+    },
+    {
+      "id": "j-2",
+      "category": "jumpsuits",
+      "garment": "jumpsuit",
+      "neckline": "V-neck (crisscross straps)",
+      "sleeves": "sleeveless",
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "fitted with waistband",
+      "details": [
+        "crisscross halter straps",
+        "fitted bodice",
+        "wide-leg pants"
+      ],
+      "back": null,
+      "styleTags": [
+        "chic",
+        "modern",
+        "party",
+        "minimal"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Crisscross Halter Wide-Leg Jumpsuit",
+      "existingName": "Fitted Jumpsuit",
+      "nameMismatch": false
+    },
+    {
+      "id": "j-3",
+      "category": "jumpsuits",
+      "garment": "jumpsuit",
+      "neckline": "halter, tied in bow at neck",
+      "sleeves": "sleeveless",
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "fitted with waistband",
+      "details": [
+        "halter neck tied in bow",
+        "center front slit",
+        "wide-leg pants"
+      ],
+      "back": null,
+      "styleTags": [
+        "elegant",
+        "party",
+        "chic",
+        "evening"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Halter Tie-Neck Wide-Leg Jumpsuit",
+      "existingName": "Culotte Jumpsuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "j-4",
+      "category": "jumpsuits",
+      "garment": "jumpsuit",
+      "neckline": "square (overall bib)",
+      "sleeves": "sleeveless (adjustable buckle straps)",
+      "length": "floor-length",
+      "silhouette": "overall/dungaree, wide-leg",
+      "waist": "fitted with waistband",
+      "details": [
+        "adjustable buckle straps",
+        "side pockets",
+        "wide-leg floor-length pants"
+      ],
+      "back": null,
+      "styleTags": [
+        "casual",
+        "utility",
+        "everyday",
+        "chic"
+      ],
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ],
+      "suggestedName": "Buckle-Strap Overall Wide-Leg Jumpsuit",
+      "existingName": "Belted Jumpsuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "j-5",
+      "category": "jumpsuits",
+      "garment": "jumpsuit",
+      "neckline": "deep V halter",
+      "sleeves": "sleeveless (thin loop straps)",
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "fitted with waistband",
+      "details": [
+        "deep V halter neckline",
+        "thin loop straps",
+        "center front slit",
+        "wide-leg pants"
+      ],
+      "back": null,
+      "styleTags": [
+        "elegant",
+        "party",
+        "sultry",
+        "evening"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Deep V Halter Wide-Leg Jumpsuit",
+      "existingName": "Strapless Jumpsuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "j-6",
+      "category": "jumpsuits",
+      "garment": "jumpsuit",
+      "neckline": "V wrap (surplice)",
+      "sleeves": "sleeveless",
+      "length": "floor-length",
+      "silhouette": "wrap, wide-leg",
+      "waist": "fitted with waistband",
+      "details": [
+        "surplice wrap front",
+        "side leg slit",
+        "wide-leg pants"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "elegant",
+        "everyday",
+        "chic"
+      ],
+      "occasions": [
+        "Everyday",
+        "Party"
+      ],
+      "suggestedName": "Wrap-Front Wide-Leg Jumpsuit",
+      "existingName": "Halter Jumpsuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "j-7",
+      "category": "jumpsuits",
+      "garment": "jumpsuit",
+      "neckline": "halter/V with bow at bust",
+      "sleeves": "sleeveless",
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "fitted with waistband",
+      "details": [
+        "decorative bow at bust seam",
+        "center front slit",
+        "wide-leg pants"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "party",
+        "feminine",
+        "evening"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Bow-Detail Halter Wide-Leg Jumpsuit",
+      "existingName": "Wrap Jumpsuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "j-8",
+      "category": "jumpsuits",
+      "garment": "jumpsuit",
+      "neckline": "off-shoulder (bardot) with ruffle flounce",
+      "sleeves": "off-shoulder ruffle flounce (short)",
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "fitted with waistband, side tie bow",
+      "details": [
+        "off-shoulder ruffle flounce neckline",
+        "side tie bow at hip",
+        "center front slit",
+        "wide-leg pants"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "boho",
+        "festive",
+        "vacation"
+      ],
+      "occasions": [
+        "Festive",
+        "Vacation"
+      ],
+      "suggestedName": "Off-Shoulder Ruffle Wide-Leg Jumpsuit",
+      "existingName": "Palazzo Jumpsuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "j-9",
+      "category": "jumpsuits",
+      "garment": "jumpsuit",
+      "neckline": "boat/scoop neck",
+      "sleeves": "sleeveless",
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "sash tie belt",
+      "details": [
+        "wide scoop neckline",
+        "fabric sash tie belt with bow",
+        "center front slit",
+        "wide-leg pants"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "classic",
+        "everyday",
+        "chic"
+      ],
+      "occasions": [
+        "Everyday",
+        "Party"
+      ],
+      "suggestedName": "Sash-Belt Wide-Leg Jumpsuit",
+      "existingName": "Cropped Jumpsuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "j-10",
+      "category": "jumpsuits",
+      "garment": "jumpsuit",
+      "neckline": "asymmetric one-shoulder (crisscross straps)",
+      "sleeves": "sleeveless",
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "fitted with waistband",
+      "details": [
+        "asymmetric one-shoulder straps",
+        "crisscross bodice",
+        "wide-leg pants"
+      ],
+      "back": null,
+      "styleTags": [
+        "edgy",
+        "modern",
+        "party",
+        "asymmetric"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Asymmetric Cross-Strap Wide-Leg Jumpsuit",
+      "existingName": "Off-Shoulder Jumpsuit",
+      "nameMismatch": false
+    },
+    {
+      "id": "j-11",
+      "category": "jumpsuits",
+      "garment": "jumpsuit",
+      "neckline": "straight (strapless) with center bow",
+      "sleeves": "sleeveless (strapless)",
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "fitted with waistband",
+      "details": [
+        "strapless bustier bodice",
+        "bow detail at center bust",
+        "wide-leg pleated pants"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "party",
+        "feminine",
+        "evening"
+      ],
+      "occasions": [
+        "Party",
+        "Wedding"
+      ],
+      "suggestedName": "Strapless Bow-Front Wide-Leg Jumpsuit",
+      "existingName": "V-Neck Jumpsuit",
+      "nameMismatch": false
+    },
+    {
+      "id": "j-12",
+      "category": "jumpsuits",
+      "garment": "jumpsuit",
+      "neckline": "V-neck",
+      "sleeves": "ruffle-trimmed sleeveless (flutter at armhole)",
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "fitted with waistband",
+      "details": [
+        "ruffle trim along neckline and armholes",
+        "ruffle hem at ankle cuffs",
+        "wide-leg pants"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "boho",
+        "feminine",
+        "festive"
+      ],
+      "occasions": [
+        "Festive",
+        "Party"
+      ],
+      "suggestedName": "Ruffle-Trim V-Neck Wide-Leg Jumpsuit",
+      "existingName": "Square Neck Jumpsuit",
+      "nameMismatch": false
+    },
+    {
+      "id": "j-13",
+      "category": "jumpsuits",
+      "garment": "jumpsuit",
+      "neckline": "collared V (lapel wrap)",
+      "sleeves": "long sleeves with cuffs",
+      "length": "floor-length",
+      "silhouette": "wrap, wide-leg",
+      "waist": "wrap-tie sash",
+      "details": [
+        "notched lapel collar",
+        "wrap front bodice",
+        "sash tie waist",
+        "wide-leg pants"
+      ],
+      "back": null,
+      "styleTags": [
+        "chic",
+        "tailored",
+        "office",
+        "evening"
+      ],
+      "occasions": [
+        "Party",
+        "Everyday"
+      ],
+      "suggestedName": "Blazer-Collar Wrap Wide-Leg Jumpsuit",
+      "existingName": "Pocketed Jumpsuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "j-14",
+      "category": "jumpsuits",
+      "garment": "jumpsuit",
+      "neckline": "stand collar with keyhole slit",
+      "sleeves": "sleeveless",
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "fitted with waistband",
+      "details": [
+        "stand collar",
+        "keyhole neckline slit",
+        "pleated wide-leg pants"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "modern",
+        "elegant",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Stand-Collar Keyhole Wide-Leg Jumpsuit",
+      "existingName": "Sleeveless Jumpsuit",
+      "nameMismatch": false
+    },
+    {
+      "id": "j-15",
+      "category": "jumpsuits",
+      "garment": "jumpsuit",
+      "neckline": "stand collar with keyhole slit",
+      "sleeves": "full balloon/bishop sleeves gathered at cuff",
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "fitted with waistband",
+      "details": [
+        "full balloon sleeves",
+        "gathered cuffs",
+        "stand collar keyhole neckline",
+        "wide-leg pants"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "statement",
+        "dramatic",
+        "festive"
+      ],
+      "occasions": [
+        "Festive",
+        "Party"
+      ],
+      "suggestedName": "Balloon-Sleeve Stand-Collar Jumpsuit",
+      "existingName": "Long Sleeve Jumpsuit",
+      "nameMismatch": false
+    },
+    {
+      "id": "j-16",
+      "category": "jumpsuits",
+      "garment": "jumpsuit",
+      "neckline": "asymmetric one-shoulder wrap",
+      "sleeves": "sleeveless (single shoulder strap)",
+      "length": "floor-length",
+      "silhouette": "wrap, wide-leg",
+      "waist": "side tie / knotted",
+      "details": [
+        "asymmetric one-shoulder strap",
+        "wrap-front bodice",
+        "side waist tie",
+        "draped wrap-front pant leg"
+      ],
+      "back": null,
+      "styleTags": [
+        "edgy",
+        "draped",
+        "modern",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Asymmetric Wrap Wide-Leg Jumpsuit",
+      "existingName": "Short Sleeve Jumpsuit",
+      "nameMismatch": false
+    },
+    {
+      "id": "j-17",
+      "category": "jumpsuits",
+      "garment": "jumpsuit",
+      "neckline": "halter with stand band, keyhole",
+      "sleeves": "sleeveless",
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "fitted with waistband",
+      "details": [
+        "halter stand-band neckline",
+        "keyhole slit",
+        "wide-leg pants"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "classic",
+        "elegant",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday",
+        "Party"
+      ],
+      "suggestedName": "Halter Band-Neck Wide-Leg Jumpsuit",
+      "existingName": "Utility Jumpsuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "j-18",
+      "category": "jumpsuits",
+      "garment": "jumpsuit",
+      "neckline": "square",
+      "sleeves": "sleeveless (thin looped straps)",
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "fitted with waistband",
+      "details": [
+        "thin looped shoulder straps",
+        "square neckline",
+        "wide-leg pants"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "clean",
+        "everyday",
+        "modern"
+      ],
+      "occasions": [
+        "Everyday",
+        "Party"
+      ],
+      "suggestedName": "Square-Neck Twist-Strap Wide-Leg Jumpsuit",
+      "existingName": "Backless Jumpsuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "j-19",
+      "category": "jumpsuits",
+      "garment": "jumpsuit",
+      "neckline": "square",
+      "sleeves": "sleeveless (thin double straps)",
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "fitted with waistband",
+      "details": [
+        "thin double straps",
+        "square neckline",
+        "wide-leg pants"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "classic",
+        "everyday",
+        "versatile"
+      ],
+      "occasions": [
+        "Everyday",
+        "Party"
+      ],
+      "suggestedName": "Double-Strap Square-Neck Wide-Leg Jumpsuit",
+      "existingName": "Ruffled Jumpsuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "j-20",
+      "category": "jumpsuits",
+      "garment": "jumpsuit",
+      "neckline": "straight (strapless)",
+      "sleeves": "sleeveless (strapless)",
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "fitted with waistband, seamed bodice",
+      "details": [
+        "strapless bustier with button placket",
+        "seamed/boned bodice",
+        "wide-leg pleated pants"
+      ],
+      "back": null,
+      "styleTags": [
+        "chic",
+        "tailored",
+        "party",
+        "statement"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Strapless Button-Front Wide-Leg Jumpsuit",
+      "existingName": "Tie-Waist Jumpsuit",
+      "nameMismatch": false
+    },
+    {
+      "id": "j-21",
+      "category": "jumpsuits",
+      "garment": "romper",
+      "neckline": "boat neck (front); deep V (back)",
+      "sleeves": "sleeveless",
+      "length": "hip-length",
+      "silhouette": "fit and flare top, wide-leg shorts",
+      "waist": "fitted with waistband",
+      "details": [
+        "front hip pockets",
+        "wide-leg shorts"
+      ],
+      "back": "deep V-back with tied bow at waist",
+      "styleTags": [
+        "playful",
+        "casual",
+        "cute",
+        "vacation"
+      ],
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ],
+      "suggestedName": "Pocket Romper with Bow-Tie Back",
+      "existingName": "Button-Front Jumpsuit",
+      "nameMismatch": false
+    },
+    {
+      "id": "j-22",
+      "category": "jumpsuits",
+      "garment": "romper",
+      "neckline": "halter with stand collar and keyhole",
+      "sleeves": "sleeveless",
+      "length": "hip-length",
+      "silhouette": "fitted bodice, wide-leg shorts",
+      "waist": "fitted with waistband",
+      "details": [
+        "halter neck with keyhole",
+        "wide-leg shorts"
+      ],
+      "back": "deep V open back with halter tie",
+      "styleTags": [
+        "chic",
+        "summer",
+        "vacation",
+        "minimal"
+      ],
+      "occasions": [
+        "Vacation",
+        "Party"
+      ],
+      "suggestedName": "Halter Open-Back Romper",
+      "existingName": "Sleek Minimalist Jumpsuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "j-23",
+      "category": "jumpsuits",
+      "garment": "romper",
+      "neckline": "wrap V (surplice)",
+      "sleeves": "sleeveless",
+      "length": "hip-length",
+      "silhouette": "wrap bodice, wide-leg shorts",
+      "waist": "side tie sash (wrap)",
+      "details": [
+        "wrap front bodice",
+        "side sash tie",
+        "center front slit on shorts"
+      ],
+      "back": "plain back with elastic gathered waistband",
+      "styleTags": [
+        "boho",
+        "resort",
+        "vacation",
+        "draped"
+      ],
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ],
+      "suggestedName": "Wrap-Tie Romper",
+      "existingName": "Floral Print Jumpsuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "j-24",
+      "category": "jumpsuits",
+      "garment": "romper",
+      "neckline": "halter with tied bow straps",
+      "sleeves": "sleeveless",
+      "length": "hip-length",
+      "silhouette": "fitted bodice, wide-leg shorts",
+      "waist": "fitted with waistband",
+      "details": [
+        "halter neck tie straps",
+        "center front slit on shorts"
+      ],
+      "back": "fitted bodice with center back zipper",
+      "styleTags": [
+        "chic",
+        "summer",
+        "party",
+        "minimal"
+      ],
+      "occasions": [
+        "Party",
+        "Vacation"
+      ],
+      "suggestedName": "Halter Tie-Neck Romper with Back Zip",
+      "existingName": "Striped Jumpsuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "j-25",
+      "category": "jumpsuits",
+      "garment": "romper",
+      "neckline": "crew/round (front); deep V (back)",
+      "sleeves": "long sleeves with cuffs",
+      "length": "hip-length",
+      "silhouette": "fitted bodice, pleated wide shorts",
+      "waist": "fitted with waistband",
+      "details": [
+        "long sleeves with cuffs",
+        "pleated shorts"
+      ],
+      "back": "deep V open back, low waistband",
+      "styleTags": [
+        "chic",
+        "office-to-evening",
+        "modern",
+        "transitional"
+      ],
+      "occasions": [
+        "Everyday",
+        "Party"
+      ],
+      "suggestedName": "Long-Sleeve Open-Back Romper",
+      "existingName": "Linen Jumpsuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "j-26",
+      "category": "jumpsuits",
+      "garment": "romper",
+      "neckline": "square/V with looped straps (front); deep V (back)",
+      "sleeves": "sleeveless",
+      "length": "hip-length",
+      "silhouette": "fitted bodice, pleated wide shorts",
+      "waist": "fitted, gathered",
+      "details": [
+        "looped shoulder straps",
+        "pleated shorts"
+      ],
+      "back": "deep V racerback with center bow tie",
+      "styleTags": [
+        "romantic",
+        "feminine",
+        "party",
+        "vacation"
+      ],
+      "occasions": [
+        "Party",
+        "Vacation"
+      ],
+      "suggestedName": "Bow-Back Romper with Looped Straps",
+      "existingName": "Denim Jumpsuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "j-27",
+      "category": "jumpsuits",
+      "garment": "romper",
+      "neckline": "V (crisscross wrap straps)",
+      "sleeves": "sleeveless",
+      "length": "hip-length",
+      "silhouette": "wrap bodice, wide shorts",
+      "waist": "fitted with waistband",
+      "details": [
+        "crisscross wrap straps front and back",
+        "wide-leg shorts"
+      ],
+      "back": "crisscross straps continuing at back, fitted waistband",
+      "styleTags": [
+        "chic",
+        "minimal",
+        "vacation",
+        "modern"
+      ],
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ],
+      "suggestedName": "Crisscross Strap Romper",
+      "existingName": "Satin Jumpsuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "j-28",
+      "category": "jumpsuits",
+      "garment": "romper",
+      "neckline": "sweetheart with center front lace-up",
+      "sleeves": "ruffle flutter cold-shoulder cap sleeves with tie-bow straps",
+      "length": "hip-length",
+      "silhouette": "fitted bodice, gathered shorts",
+      "waist": "fitted, gathered",
+      "details": [
+        "front corset-style lace-up",
+        "ruffle cold-shoulder cap sleeves",
+        "tie-bow shoulder straps",
+        "gathered shorts"
+      ],
+      "back": null,
+      "styleTags": [
+        "boho",
+        "romantic",
+        "festival",
+        "playful"
+      ],
+      "occasions": [
+        "Festive",
+        "Vacation"
+      ],
+      "suggestedName": "Lace-Up Ruffle Cold-Shoulder Romper",
+      "existingName": "Pleated Jumpsuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "j-29",
+      "category": "jumpsuits",
+      "garment": "romper",
+      "neckline": "V wrap",
+      "sleeves": "kimono cap sleeves",
+      "length": "hip-length",
+      "silhouette": "wrap, belted",
+      "waist": "belted with buckle",
+      "details": [
+        "wrap V neckline",
+        "belted waist with buckle",
+        "kimono cap sleeves"
+      ],
+      "back": null,
+      "styleTags": [
+        "chic",
+        "resort",
+        "casual",
+        "vacation"
+      ],
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ],
+      "suggestedName": "Belted Wrap Romper",
+      "existingName": "Tapered Leg Jumpsuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "j-30",
+      "category": "jumpsuits",
+      "garment": "romper",
+      "neckline": "square (overall bib)",
+      "sleeves": "sleeveless (adjustable buckle straps)",
+      "length": "hip-length",
+      "silhouette": "overall/dungaree, wide shorts",
+      "waist": "fitted with waistband",
+      "details": [
+        "adjustable buckle straps",
+        "front bib pockets",
+        "wide-leg shorts"
+      ],
+      "back": "crossed straps at back, fitted waistband",
+      "styleTags": [
+        "casual",
+        "utility",
+        "playful",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ],
+      "suggestedName": "Buckle-Strap Overall Romper",
+      "existingName": "Jogger Jumpsuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "j-31",
+      "category": "jumpsuits",
+      "garment": "romper",
+      "neckline": "deep V",
+      "sleeves": "kimono/cap sleeves",
+      "length": "hip-length",
+      "silhouette": "relaxed, elastic waist",
+      "waist": "elastic",
+      "details": [
+        "deep V neckline",
+        "cap sleeves",
+        "elastic gathered waist",
+        "shorts"
+      ],
+      "back": null,
+      "styleTags": [
+        "casual",
+        "relaxed",
+        "vacation",
+        "everyday"
+      ],
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ],
+      "suggestedName": "Cap-Sleeve V-Neck Elastic-Waist Romper",
+      "existingName": "Romper Style Jumpsuit",
+      "nameMismatch": false
+    },
+    {
+      "id": "j-32",
+      "category": "jumpsuits",
+      "garment": "romper",
+      "neckline": "straight across with scalloped contrast trim",
+      "sleeves": "bow-tied shoulder straps (flutter cap)",
+      "length": "hip-length",
+      "silhouette": "fit and flare, elastic waist",
+      "waist": "elastic gathered with scalloped contrast trim",
+      "details": [
+        "polka dot print",
+        "scalloped contrast trim at neckline and waist",
+        "bow-tied shoulder straps",
+        "cuffed shorts hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "cute",
+        "retro",
+        "playful",
+        "vacation"
+      ],
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ],
+      "suggestedName": "Polka Dot Bow-Strap Romper",
+      "existingName": "Tie-Shoulder Jumpsuit",
+      "nameMismatch": false
+    },
+    {
+      "id": "d-1",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "halter (tied in bow at neck)",
+      "sleeves": "sleeveless (halter)",
+      "length": "floor-length",
+      "silhouette": "fit and flare / A-line",
+      "waist": "fitted with waistband",
+      "details": [
+        "halter neck tied in bow",
+        "gathered fitted waistband",
+        "flowy gathered A-line skirt",
+        "scalloped hemline"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "flowy",
+        "feminine",
+        "festive"
+      ],
+      "occasions": [
+        "Festive",
+        "Wedding",
+        "Vacation"
+      ],
+      "suggestedName": "Halter Bow-Tie Maxi Dress",
+      "existingName": "Floral Summer Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "d-2",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "halter V-neck",
+      "sleeves": "flutter sleeves",
+      "length": "floor-length",
+      "silhouette": "A-line",
+      "waist": "fitted waist seam",
+      "details": [
+        "halter tie neck",
+        "gathered A-line skirt"
+      ],
+      "back": "high halter neckline, flutter sleeve",
+      "styleTags": [
+        "romantic",
+        "festive",
+        "elegant",
+        "flowy"
+      ],
+      "occasions": [
+        "Festive",
+        "Party",
+        "Wedding"
+      ],
+      "suggestedName": "Halter Flutter Sleeve Maxi Dress",
+      "existingName": "Elegant A-Line Dress",
+      "nameMismatch": false
+    },
+    {
+      "id": "d-3",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "round",
+      "sleeves": "ruffle petal cap sleeves",
+      "length": "floor-length",
+      "silhouette": "A-line",
+      "waist": "fitted, gathered waist seam",
+      "details": [
+        "single tier flounce at hem",
+        "ruffle cap sleeves"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "girly",
+        "feminine",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ],
+      "suggestedName": "Ruffle Cap Sleeve Flounce Hem Maxi Dress",
+      "existingName": "Boho Maxi Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "d-4",
+      "category": "maxi-dresses",
+      "garment": "maxi shirt dress",
+      "neckline": "mandarin collar V-opening",
+      "sleeves": "sleeveless",
+      "length": "floor-length",
+      "silhouette": "A-line",
+      "waist": "fitted with belted side tabs (buttoned)",
+      "details": [
+        "button placket",
+        "patch pockets",
+        "buttoned belt tabs",
+        "mandarin collar"
+      ],
+      "back": null,
+      "styleTags": [
+        "utility",
+        "minimal",
+        "classic",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ],
+      "suggestedName": "Mandarin Collar Belted Pocket Shirt Maxi Dress",
+      "existingName": "Wrap Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "d-5",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "V-neck wrap (front), round (back)",
+      "sleeves": "cap sleeves",
+      "length": "floor-length",
+      "silhouette": "A-line",
+      "waist": "fitted, tie sash with knot/rosette",
+      "details": [
+        "cascading ruffle down wrap front",
+        "waist tie with rosette knot",
+        "gathered flounce at hem"
+      ],
+      "back": "round neckline, banded waist, gathered flounce hem",
+      "styleTags": [
+        "romantic",
+        "elegant",
+        "feminine",
+        "flowy"
+      ],
+      "occasions": [
+        "Festive",
+        "Party",
+        "Wedding"
+      ],
+      "suggestedName": "Wrap Cascade Ruffle Tie-Waist Maxi Dress",
+      "existingName": "Midi Shirt Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "d-6",
+      "category": "maxi-dresses",
+      "garment": "maxi shirt dress",
+      "neckline": "mandarin collar V-opening",
+      "sleeves": "sleeveless",
+      "length": "floor-length",
+      "silhouette": "A-line",
+      "waist": "fitted with belted side tabs (buttoned)",
+      "details": [
+        "button placket",
+        "patch pockets",
+        "buttoned belt tabs",
+        "mandarin collar"
+      ],
+      "back": null,
+      "styleTags": [
+        "utility",
+        "minimal",
+        "classic",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ],
+      "suggestedName": "Mandarin Collar Belted Pocket Sleeveless Maxi Dress",
+      "existingName": "Off-Shoulder Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "d-7",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "halter",
+      "sleeves": "sleeveless",
+      "length": "floor-length",
+      "silhouette": "A-line",
+      "waist": "fitted, gathered",
+      "details": [
+        "halter neck with tassel/drop trim"
+      ],
+      "back": "crisscross straps with tie-knot detail",
+      "styleTags": [
+        "boho",
+        "resort",
+        "romantic",
+        "minimal"
+      ],
+      "occasions": [
+        "Vacation",
+        "Festive",
+        "Everyday"
+      ],
+      "suggestedName": "Halter Crisscross-Back Tassel Trim Maxi Dress",
+      "existingName": "Fit & Flare Dress",
+      "nameMismatch": false
+    },
+    {
+      "id": "d-8",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "round",
+      "sleeves": "sleeveless",
+      "length": "floor-length",
+      "silhouette": "A-line",
+      "waist": "cut-outs at waist",
+      "details": [
+        "waist cut-out",
+        "gathered skirt"
+      ],
+      "back": null,
+      "styleTags": [
+        "modern",
+        "minimal",
+        "sexy",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Vacation"
+      ],
+      "suggestedName": "Cut-Out Waist Round Neck Maxi Dress",
+      "existingName": "Tiered Sundress",
+      "nameMismatch": true
+    },
+    {
+      "id": "d-9",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "V-neck",
+      "sleeves": "sleeveless (thin straps)",
+      "length": "floor-length",
+      "silhouette": "A-line",
+      "waist": "fitted, banded corset-style waist",
+      "details": [
+        "pleated bodice and skirt",
+        "multi-band waist detailing"
+      ],
+      "back": "deep V back, banded waist, straighter skirt",
+      "styleTags": [
+        "elegant",
+        "evening",
+        "classic",
+        "statement"
+      ],
+      "occasions": [
+        "Party",
+        "Festive",
+        "Wedding"
+      ],
+      "suggestedName": "Deep V-Neck Banded Waist Pleated Maxi Dress",
+      "existingName": "Bodycon Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "d-10",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "off-shoulder",
+      "sleeves": "off-shoulder petal/butterfly sleeves",
+      "length": "floor-length",
+      "silhouette": "A-line",
+      "waist": "shirred with drawstring tie",
+      "details": [
+        "shirred smocked bodice",
+        "drawstring tie at bust",
+        "paneled A-line skirt with center pleats",
+        "off-shoulder petal sleeves"
+      ],
+      "back": "structured square-cut strap paneling with visible vertical seams",
+      "styleTags": [
+        "romantic",
+        "boho",
+        "resort",
+        "feminine"
+      ],
+      "occasions": [
+        "Vacation",
+        "Festive",
+        "Party"
+      ],
+      "suggestedName": "Shirred Off-Shoulder Petal Sleeve Maxi Dress",
+      "existingName": "Empire Waist Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "d-11",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "sweetheart",
+      "sleeves": "spaghetti straps with bow ties at shoulder",
+      "length": "floor-length",
+      "silhouette": "fit and flare",
+      "waist": "fitted with waistband",
+      "details": [
+        "bow-tie shoulder straps",
+        "sweetheart bodice",
+        "pleated A-line skirt"
+      ],
+      "back": "mirrors front with sweetheart bodice, bow-tie straps and fitted waistband",
+      "styleTags": [
+        "romantic",
+        "feminine",
+        "party",
+        "bridesmaid"
+      ],
+      "occasions": [
+        "Wedding",
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Sweetheart Bow-Strap Pleated Maxi Dress",
+      "existingName": "Asymmetric Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "d-12",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "halter",
+      "sleeves": "sleeveless",
+      "length": "floor-length",
+      "silhouette": "A-line",
+      "waist": "belted with tie-sash bow at front",
+      "details": [
+        "halter neckline",
+        "tie-sash waist bow",
+        "flowing pleated skirt"
+      ],
+      "back": "halter ties cross at neck, wide waistband, gathered skirt",
+      "styleTags": [
+        "elegant",
+        "resort",
+        "minimal",
+        "romantic"
+      ],
+      "occasions": [
+        "Vacation",
+        "Festive",
+        "Party"
+      ],
+      "suggestedName": "Halter Tie-Waist Flowy Maxi Dress",
+      "existingName": "Halter Neck Dress",
+      "nameMismatch": false
+    },
+    {
+      "id": "d-13",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "V-neck",
+      "sleeves": "full puff sleeves with cuffs",
+      "length": "floor-length",
+      "silhouette": "A-line",
+      "waist": "fitted waistband with long sash tie",
+      "details": [
+        "front button placket",
+        "wrap-front bodice",
+        "puff sleeves with cuffs",
+        "trailing sash bow at waist"
+      ],
+      "back": "plain back with waistband and puff sleeves",
+      "styleTags": [
+        "vintage",
+        "romantic",
+        "workwear-chic",
+        "elegant"
+      ],
+      "occasions": [
+        "Everyday",
+        "Festive",
+        "Party"
+      ],
+      "suggestedName": "Wrap-Front Puff Sleeve Button Maxi Dress",
+      "existingName": "Sheath Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "d-14",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "V-neck",
+      "sleeves": "flutter bell sleeves",
+      "length": "floor-length",
+      "silhouette": "fit and flare",
+      "waist": "fitted waist seam",
+      "details": [
+        "wrap V bodice",
+        "high-low ruffled hem",
+        "flutter sleeves"
+      ],
+      "back": "round neckline, plain skirt, flutter sleeves",
+      "styleTags": [
+        "romantic",
+        "boho",
+        "flowy",
+        "feminine"
+      ],
+      "occasions": [
+        "Festive",
+        "Party",
+        "Vacation"
+      ],
+      "suggestedName": "Wrap V-Neck Flutter Sleeve High-Low Maxi Dress",
+      "existingName": "Kaftan Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "d-15",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "round",
+      "sleeves": "flutter cap sleeves",
+      "length": "floor-length",
+      "silhouette": "A-line",
+      "waist": "fitted with waistband",
+      "details": [
+        "tiered ruffle flounce hem",
+        "flutter cap sleeves"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "feminine",
+        "girly",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ],
+      "suggestedName": "Flutter Sleeve Tiered Flounce Hem Maxi Dress",
+      "existingName": "Tea Length Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "d-16",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "V-neck",
+      "sleeves": "flutter angel-wing sleeves",
+      "length": "floor-length",
+      "silhouette": "tiered",
+      "waist": "fitted waistband",
+      "details": [
+        "4-tier gathered ruffle skirt",
+        "flutter angel-wing sleeves"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "statement",
+        "festive",
+        "voluminous"
+      ],
+      "occasions": [
+        "Wedding",
+        "Festive",
+        "Party"
+      ],
+      "suggestedName": "Tiered Ruffle Flutter Sleeve Maxi Gown",
+      "existingName": "Slip Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "d-17",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "round (front), deep-V (back)",
+      "sleeves": "ruffle cap sleeves",
+      "length": "floor-length",
+      "silhouette": "straight/column with ruffled hem flounce",
+      "waist": "fitted",
+      "details": [
+        "ruffle trim front panels",
+        "ruffle cap sleeves",
+        "ruffled flounce hem"
+      ],
+      "back": "deep-V plunge back with ruffle trim edges",
+      "styleTags": [
+        "romantic",
+        "boho",
+        "feminine",
+        "statement"
+      ],
+      "occasions": [
+        "Festive",
+        "Party"
+      ],
+      "suggestedName": "Ruffle-Trim Column Maxi Dress with Plunge Back",
+      "existingName": "Peplum Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "d-18",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "sweetheart with bow detail",
+      "sleeves": "spaghetti straps",
+      "length": "floor-length",
+      "silhouette": "empire waist",
+      "waist": "empire",
+      "details": [
+        "bow accent at bust",
+        "flowing gathered skirt"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "empire",
+        "flowy",
+        "feminine"
+      ],
+      "occasions": [
+        "Festive",
+        "Party",
+        "Vacation"
+      ],
+      "suggestedName": "Empire Waist Bow-Front Maxi Dress",
+      "existingName": "Shirt Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "d-19",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "halter/crossover straps",
+      "sleeves": "sleeveless (thin straps)",
+      "length": "floor-length",
+      "silhouette": "empire waist",
+      "waist": "empire, gathered",
+      "details": [
+        "crossover shoulder straps",
+        "gathered bodice"
+      ],
+      "back": null,
+      "styleTags": [
+        "boho",
+        "minimal",
+        "resort",
+        "romantic"
+      ],
+      "occasions": [
+        "Vacation",
+        "Everyday",
+        "Festive"
+      ],
+      "suggestedName": "Crossover Strap Empire Maxi Dress",
+      "existingName": "Pinafore Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "d-20",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "halter crossover straps",
+      "sleeves": "sleeveless",
+      "length": "floor-length",
+      "silhouette": "tiered",
+      "waist": "fitted at bodice-to-tier seam",
+      "details": [
+        "3-tier ruffled skirt",
+        "crisscross halter straps"
+      ],
+      "back": "crisscross straps at back",
+      "styleTags": [
+        "boho",
+        "tiered",
+        "romantic",
+        "resort"
+      ],
+      "occasions": [
+        "Vacation",
+        "Festive",
+        "Party"
+      ],
+      "suggestedName": "Crisscross Halter Tiered Ruffle Maxi Dress",
+      "existingName": "Smock Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "d-21",
+      "category": "maxi-dresses",
+      "garment": "maxi shirt dress",
+      "neckline": "collared",
+      "sleeves": "short sleeves with cuffs",
+      "length": "floor-length",
+      "silhouette": "A-line",
+      "waist": "fitted waist seam",
+      "details": [
+        "button placket down full length",
+        "collar",
+        "cuffed short sleeves"
+      ],
+      "back": null,
+      "styleTags": [
+        "classic",
+        "workwear-chic",
+        "minimal",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ],
+      "suggestedName": "Collared Button-Front Shirt Maxi Dress",
+      "existingName": "Cut-Out Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "d-22",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "sweetheart",
+      "sleeves": "flutter angel-wing cap sleeves",
+      "length": "floor-length",
+      "silhouette": "A-line with tiered hem",
+      "waist": "fitted, dropped",
+      "details": [
+        "single ruffle tier at hem",
+        "flutter wing cap sleeves",
+        "gathered skirt"
+      ],
+      "back": "bow tie accent at waist with matching flutter sleeves",
+      "styleTags": [
+        "romantic",
+        "girly",
+        "party",
+        "feminine"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Sweetheart Flutter Sleeve Bow-Back Maxi Dress",
+      "existingName": "Bardot Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "d-23",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "sweetheart (bustier-style cups)",
+      "sleeves": "spaghetti straps",
+      "length": "floor-length",
+      "silhouette": "A-line",
+      "waist": "fitted",
+      "details": [
+        "bustier-style cup seaming",
+        "zigzag tier seam",
+        "ruffled tiered flounce hem"
+      ],
+      "back": "thin straps with bow accent at upper back",
+      "styleTags": [
+        "playful",
+        "romantic",
+        "party",
+        "feminine"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Bustier Cup Bow-Back Ruffle Hem Maxi Dress",
+      "existingName": "Pleated Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "d-24",
+      "category": "maxi-dresses",
+      "garment": "maxi dress",
+      "neckline": "V-neck",
+      "sleeves": "sleeveless (thin straps)",
+      "length": "floor-length",
+      "silhouette": "A-line",
+      "waist": "fitted, wide banded waist",
+      "details": [
+        "vertical pleated skirt panels",
+        "banded corset-style waist"
+      ],
+      "back": "V-neck back with banded waist",
+      "styleTags": [
+        "elegant",
+        "minimal",
+        "evening",
+        "classic"
+      ],
+      "occasions": [
+        "Party",
+        "Festive",
+        "Wedding"
+      ],
+      "suggestedName": "V-Neck Banded Waist Pleated Maxi Dress",
+      "existingName": "Ruffle Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "p-1",
+      "category": "pants",
+      "garment": "wide-leg palazzo pants",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "wide-leg / palazzo",
+      "waist": "high-waisted with drawstring tie",
+      "details": [
+        "drawstring waist tie",
+        "wide flowy leg"
+      ],
+      "back": null,
+      "styleTags": [
+        "boho",
+        "relaxed",
+        "resort",
+        "minimal"
+      ],
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ],
+      "suggestedName": "Drawstring Wide-Leg Palazzo Pants",
+      "existingName": "Wide Leg Pants",
+      "nameMismatch": false
+    },
+    {
+      "id": "p-2",
+      "category": "pants",
+      "garment": "high-waisted wide-leg pants",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "high-waisted, fitted waistband",
+      "details": [
+        "center crease/seam",
+        "clean plain waistband"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "classic",
+        "tailored",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ],
+      "suggestedName": "High-Waisted Wide-Leg Trousers",
+      "existingName": "Straight Leg Pants",
+      "nameMismatch": false
+    },
+    {
+      "id": "p-3",
+      "category": "pants",
+      "garment": "wide-leg flared pants",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length, dramatic flare",
+      "silhouette": "bell-bottom / extreme flare",
+      "waist": "high-waisted, fitted waistband",
+      "details": [
+        "dramatic bell flare from knee",
+        "scalloped hem",
+        "vertical fabric drape lines"
+      ],
+      "back": null,
+      "styleTags": [
+        "retro",
+        "glam",
+        "statement",
+        "70s-inspired"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "High-Waisted Bell-Bottom Flare Pants",
+      "existingName": "Skinny Pants",
+      "nameMismatch": true
+    },
+    {
+      "id": "p-4",
+      "category": "pants",
+      "garment": "trumpet flare pants",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "trumpet/mermaid flare (fitted through hip, flares below knee)",
+      "waist": "high-waisted",
+      "details": [
+        "dramatic trumpet flare",
+        "scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "glam",
+        "statement",
+        "retro",
+        "evening"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "High-Waisted Trumpet Flare Pants",
+      "existingName": "Bootcut Pants",
+      "nameMismatch": true
+    },
+    {
+      "id": "p-5",
+      "category": "pants",
+      "garment": "tiered ruffle wide-leg pants",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "wide-leg with tiered ruffle trim",
+      "waist": "high-waisted, fitted waistband",
+      "details": [
+        "two tiers of ruffle trim bands down the legs"
+      ],
+      "back": null,
+      "styleTags": [
+        "boho",
+        "playful",
+        "statement",
+        "festive"
+      ],
+      "occasions": [
+        "Festive",
+        "Party",
+        "Vacation"
+      ],
+      "suggestedName": "Tiered Ruffle-Trim Wide-Leg Pants",
+      "existingName": "Palazzo Pants",
+      "nameMismatch": true
+    },
+    {
+      "id": "p-6",
+      "category": "pants",
+      "garment": "wide-leg pants",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "high-waisted, plain waistband",
+      "details": [
+        "center seam",
+        "clean minimal design"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "classic",
+        "tailored",
+        "versatile"
+      ],
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ],
+      "suggestedName": "Classic Wide-Leg Pants",
+      "existingName": "Cigarette Pants",
+      "nameMismatch": true
+    },
+    {
+      "id": "p-7",
+      "category": "pants",
+      "garment": "ruffle-trim wide-leg pants",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "wide-leg with cascading ruffle edge",
+      "waist": "high-waisted",
+      "details": [
+        "cascading ruffle trim down leg",
+        "curling ruffle hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "boho",
+        "statement",
+        "festive"
+      ],
+      "occasions": [
+        "Festive",
+        "Party"
+      ],
+      "suggestedName": "Cascading Ruffle-Edge Wide-Leg Pants",
+      "existingName": "Cargo Pants",
+      "nameMismatch": true
+    },
+    {
+      "id": "p-8",
+      "category": "pants",
+      "garment": "wide-leg palazzo pants",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "wide-leg flared",
+      "waist": "high-waisted, banded",
+      "details": [
+        "contrast hem cuff panel with wavy topstitch",
+        "front pleats",
+        "two leg-fit variations sketched side by side"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "chic",
+        "everyday",
+        "tailored"
+      ],
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ],
+      "suggestedName": "Contrast-Hem Wide-Leg Palazzo Pants",
+      "existingName": "Joggers",
+      "nameMismatch": true
+    },
+    {
+      "id": "p-9",
+      "category": "pants",
+      "garment": "wide-leg flared pants",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "flared with godet inserts",
+      "waist": "high-waisted, banded",
+      "details": [
+        "diagonal godet flare panels at hem",
+        "center front seam",
+        "dramatic flare from knee down",
+        "scalloped hem edge"
+      ],
+      "back": null,
+      "styleTags": [
+        "boho",
+        "dramatic",
+        "flowy",
+        "statement"
+      ],
+      "occasions": [
+        "Festive",
+        "Party"
+      ],
+      "suggestedName": "Godet Flare Wide-Leg Pants",
+      "existingName": "Pleated Trousers",
+      "nameMismatch": true
+    },
+    {
+      "id": "p-10",
+      "category": "pants",
+      "garment": "sash-tie wide-leg pants",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "high-waisted with scalloped ruffle waistband and obi-style tie sash",
+      "details": [
+        "long knotted waist tie",
+        "scalloped ruffle waistband"
+      ],
+      "back": null,
+      "styleTags": [
+        "boho",
+        "statement",
+        "resort",
+        "festive"
+      ],
+      "occasions": [
+        "Festive",
+        "Vacation",
+        "Party"
+      ],
+      "suggestedName": "Scalloped Waistband Sash-Tie Wide-Leg Pants",
+      "existingName": "Paper Bag Pants",
+      "nameMismatch": true
+    },
+    {
+      "id": "p-11",
+      "category": "pants",
+      "garment": "paperbag-waist wide-leg pants",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "high-waisted paperbag waist with tie sash",
+      "details": [
+        "paperbag waist",
+        "long trailing tie sash"
+      ],
+      "back": null,
+      "styleTags": [
+        "boho",
+        "relaxed",
+        "resort",
+        "minimal"
+      ],
+      "occasions": [
+        "Everyday",
+        "Vacation",
+        "Festive"
+      ],
+      "suggestedName": "Paperbag Waist Tie Wide-Leg Pants",
+      "existingName": "Culottes",
+      "nameMismatch": true
+    },
+    {
+      "id": "p-12",
+      "category": "pants",
+      "garment": "button-tab wide-leg trousers",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "wide-leg",
+      "waist": "high-waisted with button-tab fly detail",
+      "details": [
+        "button waistband tab",
+        "tailored front"
+      ],
+      "back": null,
+      "styleTags": [
+        "tailored",
+        "classic",
+        "minimal",
+        "workwear"
+      ],
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ],
+      "suggestedName": "Button-Tab High-Waisted Wide-Leg Trousers",
+      "existingName": "Track Pants",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-1",
+      "category": "short-dresses",
+      "garment": "fit and flare mini dress",
+      "neckline": "high round neck with ruffle collar",
+      "sleeves": "flutter cap sleeves",
+      "length": "mini",
+      "silhouette": "fit and flare",
+      "waist": "fitted",
+      "details": [
+        "ruffled stand collar",
+        "fitted bodice with princess seams",
+        "pleated full skirt",
+        "double-layer scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "victorian",
+        "feminine",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Ruffle Collar Flutter-Sleeve Mini Dress",
+      "existingName": "Mini Shift Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-2",
+      "category": "short-dresses",
+      "garment": "mini dress",
+      "neckline": "round neck with oversized ruffle collar",
+      "sleeves": "flutter cap sleeves",
+      "length": "mini",
+      "silhouette": "fit and flare",
+      "waist": "fitted",
+      "details": [
+        "dramatic ruffled cape collar covering shoulders",
+        "fitted bodice with princess seams",
+        "pleated full skirt",
+        "scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "victorian",
+        "statement collar",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Ruffle Cape-Collar Mini Dress",
+      "existingName": "Skater Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-3",
+      "category": "short-dresses",
+      "garment": "pinafore-style dress",
+      "neckline": "wide scoop/yoke neckline",
+      "sleeves": "sleeveless with wide straps",
+      "length": "mini",
+      "silhouette": "A-line",
+      "waist": "fitted, banded",
+      "details": [
+        "wide shoulder straps",
+        "patch pockets at hip",
+        "center front seam",
+        "A-line skirt"
+      ],
+      "back": null,
+      "styleTags": [
+        "utility",
+        "casual",
+        "preppy",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday"
+      ],
+      "suggestedName": "Wide-Strap Pocket Pinafore Mini Dress",
+      "existingName": "T-Shirt Dress",
+      "nameMismatch": false
+    },
+    {
+      "id": "sd-4",
+      "category": "short-dresses",
+      "garment": "mini dress",
+      "neckline": "round neck",
+      "sleeves": "full long fitted sleeves",
+      "length": "mini",
+      "silhouette": "A-line",
+      "waist": "fitted with side cut-outs",
+      "details": [
+        "long fitted sleeves",
+        "side waist cut-outs",
+        "A-line skirt",
+        "wavy hem"
+      ],
+      "back": "keyhole/teardrop cutout at back neckline with fitted side cut-out waist",
+      "styleTags": [
+        "minimal",
+        "modern",
+        "cutout detail",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday",
+        "Party"
+      ],
+      "suggestedName": "Long-Sleeve Cut-Out Waist Mini Dress",
+      "existingName": "Shirt Dress Mini",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-5",
+      "category": "short-dresses",
+      "garment": "mini dress",
+      "neckline": "high ruffled collar with wrap-front V",
+      "sleeves": "sleeveless",
+      "length": "mini",
+      "silhouette": "fit and flare",
+      "waist": "fitted",
+      "details": [
+        "scalloped ruffle collar",
+        "diagonal wrap-look bodice seam",
+        "pleated full skirt",
+        "layered scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "victorian",
+        "statement collar",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Ruffle-Collar Wrap-Bodice Mini Dress",
+      "existingName": "Babydoll Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-6",
+      "category": "short-dresses",
+      "garment": "fit and flare mini dress",
+      "neckline": "one-shoulder",
+      "sleeves": "sleeveless, single asymmetric shoulder strap",
+      "length": "knee",
+      "silhouette": "fit and flare",
+      "waist": "fitted",
+      "details": [
+        "one-shoulder asymmetric bodice",
+        "vertical princess seams",
+        "pleated skirt",
+        "scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "modern",
+        "chic",
+        "asymmetric",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "One-Shoulder Pleated Fit-and-Flare Mini Dress",
+      "existingName": "A-Line Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-7",
+      "category": "short-dresses",
+      "garment": "wrap dress",
+      "neckline": "V-neck (surplice wrap)",
+      "sleeves": "sleeveless",
+      "length": "midi",
+      "silhouette": "wrap dress with asymmetric cascading ruffle hem",
+      "waist": "belted with sash bow",
+      "details": [
+        "surplice crossover bodice",
+        "sash tie with front bow",
+        "asymmetric tiered/cascading ruffle hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "boho",
+        "feminine",
+        "flowy"
+      ],
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ],
+      "suggestedName": "Wrap Sash Cascading Ruffle Midi Dress",
+      "existingName": "Bodycon Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-8",
+      "category": "short-dresses",
+      "garment": "fit and flare dress",
+      "neckline": "halter",
+      "sleeves": "sleeveless (halter straps)",
+      "length": "knee",
+      "silhouette": "fit and flare",
+      "waist": "fitted",
+      "details": [
+        "halter neck tie with bow at nape",
+        "bow cut-out detail at bodice front",
+        "pleated full skirt"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "cute",
+        "party",
+        "feminine"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Halter Bow-Front Pleated Knee-Length Dress",
+      "existingName": "Smock Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-9",
+      "category": "short-dresses",
+      "garment": "fit and flare dress (front and back view)",
+      "neckline": "halter",
+      "sleeves": "sleeveless",
+      "length": "knee",
+      "silhouette": "fit and flare, full gathered skirt",
+      "waist": "fitted",
+      "details": [
+        "front bow cut-out at bodice",
+        "halter tie at neck",
+        "gathered full skirt",
+        "vertical seam lines at bodice"
+      ],
+      "back": "halter tie at nape with fitted bodice showing vertical boning/seam lines down the back",
+      "styleTags": [
+        "romantic",
+        "party",
+        "feminine",
+        "classic"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Halter Bow Fit-and-Flare Dress",
+      "existingName": "Wrap Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-10",
+      "category": "short-dresses",
+      "garment": "mini dress",
+      "neckline": "sweetheart",
+      "sleeves": "scalloped cap sleeves with straps",
+      "length": "mini",
+      "silhouette": "fit and flare",
+      "waist": "fitted",
+      "details": [
+        "scalloped edge on straps/sleeves",
+        "pleated full skirt",
+        "scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "feminine",
+        "party",
+        "sweet"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Sweetheart Scallop-Sleeve Mini Dress",
+      "existingName": "Slip Dress Mini",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-11",
+      "category": "short-dresses",
+      "garment": "mini dress",
+      "neckline": "off-shoulder square neck",
+      "sleeves": "puff sleeves with cuffs",
+      "length": "mini",
+      "silhouette": "fit and flare",
+      "waist": "fitted",
+      "details": [
+        "off-shoulder puffed sleeves with banded cuffs",
+        "pleated full skirt",
+        "wavy scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "feminine",
+        "vacation",
+        "statement sleeve"
+      ],
+      "occasions": [
+        "Party",
+        "Vacation"
+      ],
+      "suggestedName": "Off-Shoulder Puff Sleeve Mini Dress",
+      "existingName": "Halter Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-12",
+      "category": "short-dresses",
+      "garment": "wrap mini dress",
+      "neckline": "surplice V-neck",
+      "sleeves": "tie-shoulder straps with bows",
+      "length": "mini",
+      "silhouette": "wrap",
+      "waist": "fitted, banded",
+      "details": [
+        "bow-tie shoulder straps",
+        "surplice wrap bodice",
+        "pleated skirt",
+        "scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "boho",
+        "feminine",
+        "summer"
+      ],
+      "occasions": [
+        "Vacation",
+        "Party"
+      ],
+      "suggestedName": "Bow-Strap Wrap Mini Dress",
+      "existingName": "Strapless Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-13",
+      "category": "short-dresses",
+      "garment": "mini dress",
+      "neckline": "mock/stand collar",
+      "sleeves": "full bishop balloon sleeves with cuffs",
+      "length": "mini",
+      "silhouette": "fit and flare, tiered hem",
+      "waist": "fitted",
+      "details": [
+        "stand collar",
+        "raglan seams",
+        "voluminous bishop sleeves with banded cuffs",
+        "tiered asymmetric hem layer at bottom of skirt"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "statement sleeve",
+        "vintage",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Stand-Collar Balloon Sleeve Tiered Mini Dress",
+      "existingName": "One-Shoulder Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-14",
+      "category": "short-dresses",
+      "garment": "bralette dress",
+      "neckline": "V-neck bralette top",
+      "sleeves": "spaghetti straps",
+      "length": "mini",
+      "silhouette": "A-line",
+      "waist": "fitted, banded",
+      "details": [
+        "triangle bra-style bodice with front tie bow",
+        "thin straps",
+        "A-line skirt",
+        "straight hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "flirty",
+        "summer",
+        "vacation"
+      ],
+      "occasions": [
+        "Vacation",
+        "Party"
+      ],
+      "suggestedName": "Tie-Front Bralette A-Line Mini Dress",
+      "existingName": "Off-Shoulder Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-15",
+      "category": "short-dresses",
+      "garment": "shirt-style mini dress",
+      "neckline": "Peter Pan collar, button placket",
+      "sleeves": "short sleeves",
+      "length": "mini",
+      "silhouette": "fit and flare",
+      "waist": "fitted",
+      "details": [
+        "Peter Pan collar",
+        "five-button front placket",
+        "pleated full skirt",
+        "scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "preppy",
+        "vintage",
+        "cute",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ],
+      "suggestedName": "Button-Front Peter Pan Collar Mini Dress",
+      "existingName": "Square Neck Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-16",
+      "category": "short-dresses",
+      "garment": "mini dress",
+      "neckline": "V-neck",
+      "sleeves": "spaghetti straps",
+      "length": "mini",
+      "silhouette": "A-line",
+      "waist": "fitted with cut-out sides",
+      "details": [
+        "fringed/textured vertical bodice lines",
+        "side waist cut-outs",
+        "A-line skirt",
+        "scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "boho",
+        "edgy",
+        "party",
+        "textured"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Fringe-Bodice Cut-Out Mini Dress",
+      "existingName": "Sweetheart Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-17",
+      "category": "short-dresses",
+      "garment": "bustier mini dress",
+      "neckline": "sweetheart bustier",
+      "sleeves": "sleeveless with straps",
+      "length": "mini",
+      "silhouette": "fit and flare",
+      "waist": "fitted, structured",
+      "details": [
+        "structured underwire-seamed bustier bodice",
+        "side cut-outs at waist",
+        "A-line pleated skirt",
+        "scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "structured",
+        "party",
+        "glam",
+        "corset-inspired"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Structured Bustier Cut-Out Mini Dress",
+      "existingName": "V-Neck Mini Dress",
+      "nameMismatch": false
+    },
+    {
+      "id": "sd-18",
+      "category": "short-dresses",
+      "garment": "mini dress",
+      "neckline": "sweetheart",
+      "sleeves": "spaghetti straps",
+      "length": "mini",
+      "silhouette": "A-line",
+      "waist": "fitted",
+      "details": [
+        "simple sweetheart bodice",
+        "pleated full skirt",
+        "scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "classic",
+        "sweet",
+        "versatile"
+      ],
+      "occasions": [
+        "Party",
+        "Everyday"
+      ],
+      "suggestedName": "Sweetheart Strappy Mini Dress",
+      "existingName": "Scoop Neck Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-19",
+      "category": "short-dresses",
+      "garment": "mini dress",
+      "neckline": "square neck with ruffle-trim straps",
+      "sleeves": "ruffled wide straps (cap-sleeve-like)",
+      "length": "mini",
+      "silhouette": "fit and flare",
+      "waist": "fitted",
+      "details": [
+        "ruffle-edged straps",
+        "fitted bodice with vertical seams",
+        "pleated full skirt",
+        "wavy hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "feminine",
+        "sweet",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Ruffle-Strap Square Neck Mini Dress",
+      "existingName": "Turtleneck Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-20",
+      "category": "short-dresses",
+      "garment": "mini dress",
+      "neckline": "halter/high neck",
+      "sleeves": "sleeveless",
+      "length": "mini",
+      "silhouette": "fit and flare",
+      "waist": "fitted",
+      "details": [
+        "princess seams",
+        "pleated full skirt",
+        "scalloped hem"
+      ],
+      "back": "large tie bow at waist with sash straps crossing to shoulder",
+      "styleTags": [
+        "romantic",
+        "feminine",
+        "bow detail",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Back-Bow Halter Mini Dress",
+      "existingName": "Puff Sleeve Mini Dress",
+      "nameMismatch": false
+    },
+    {
+      "id": "sd-21",
+      "category": "short-dresses",
+      "garment": "shirt-style mini dress",
+      "neckline": "collared V-neck (shirt collar)",
+      "sleeves": "short sleeves",
+      "length": "mini",
+      "silhouette": "fit and flare",
+      "waist": "fitted, banded",
+      "details": [
+        "fold-over shirt collar",
+        "button placket",
+        "pleated full skirt",
+        "scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "preppy",
+        "classic",
+        "everyday",
+        "vintage"
+      ],
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ],
+      "suggestedName": "Collared Button-Front Shirt Mini Dress",
+      "existingName": "Bell Sleeve Mini Dress",
+      "nameMismatch": false
+    },
+    {
+      "id": "sd-22",
+      "category": "short-dresses",
+      "garment": "mini dress",
+      "neckline": "scoop neck with keyhole/teardrop cutouts",
+      "sleeves": "sleeveless",
+      "length": "mini",
+      "silhouette": "A-line",
+      "waist": "fitted",
+      "details": [
+        "twin teardrop cutout detail at neckline",
+        "princess seams",
+        "pleated full skirt",
+        "scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "cutout detail",
+        "modern",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Everyday"
+      ],
+      "suggestedName": "Keyhole Cutout Scoop Neck Mini Dress",
+      "existingName": "Long Sleeve Mini Dress",
+      "nameMismatch": false
+    },
+    {
+      "id": "sd-23",
+      "category": "short-dresses",
+      "garment": "mini dress",
+      "neckline": "V-neck with ruffle trim",
+      "sleeves": "sleeveless, ruffle trim at armholes",
+      "length": "mini",
+      "silhouette": "fit and flare",
+      "waist": "fitted, banded",
+      "details": [
+        "ruffle trim down center front and armholes",
+        "button placket",
+        "pleated full skirt",
+        "scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "preppy",
+        "cute",
+        "festive"
+      ],
+      "occasions": [
+        "Festive",
+        "Party"
+      ],
+      "suggestedName": "Ruffle-Trim Button-Front Mini Dress",
+      "existingName": "Mesh Panel Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-24",
+      "category": "short-dresses",
+      "garment": "strapless bustier mini dress",
+      "neckline": "sweetheart strapless",
+      "sleeves": "sleeveless",
+      "length": "mini",
+      "silhouette": "fit and flare",
+      "waist": "fitted, structured bustier",
+      "details": [
+        "structured bustier bodice with vertical boning seams",
+        "tiered/color-blocked skirt with horizontal seam near hem",
+        "scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "glam",
+        "structured",
+        "party",
+        "evening"
+      ],
+      "occasions": [
+        "Party",
+        "Wedding"
+      ],
+      "suggestedName": "Strapless Bustier Tiered Mini Dress",
+      "existingName": "Cut-Out Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-25",
+      "category": "short-dresses",
+      "garment": "mini dress",
+      "neckline": "V-neck",
+      "sleeves": "sleeveless",
+      "length": "mini",
+      "silhouette": "fit and flare",
+      "waist": "fitted",
+      "details": [
+        "princess seams",
+        "pleated full skirt",
+        "scalloped hem"
+      ],
+      "back": "large bow tied at waist with straps crossing over shoulders",
+      "styleTags": [
+        "romantic",
+        "bow detail",
+        "feminine",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "V-Neck Mini Dress with Back Bow",
+      "existingName": "Backless Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-26",
+      "category": "short-dresses",
+      "garment": "mini dress",
+      "neckline": "V-neck",
+      "sleeves": "crisscross straps",
+      "length": "mini",
+      "silhouette": "fit and flare",
+      "waist": "fitted, banded",
+      "details": [
+        "crisscross X straps at bodice front and back",
+        "fitted bodice",
+        "pleated full skirt",
+        "scalloped hem"
+      ],
+      "back": "matching crisscross X straps",
+      "styleTags": [
+        "minimal",
+        "strappy",
+        "modern",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Everyday"
+      ],
+      "suggestedName": "Crisscross Strap Mini Dress",
+      "existingName": "Ruffle Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-27",
+      "category": "short-dresses",
+      "garment": "mini dress",
+      "neckline": "V-neck with crossed straps",
+      "sleeves": "sleeveless with diagonal crossed straps forming neckline",
+      "length": "mini",
+      "silhouette": "fit and flare",
+      "waist": "fitted",
+      "details": [
+        "crossed diagonal straps forming V bodice",
+        "pleated full skirt",
+        "scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "modern",
+        "strappy",
+        "minimal",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Everyday"
+      ],
+      "suggestedName": "Crossed-Strap V-Neck Mini Dress",
+      "existingName": "Tiered Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-28",
+      "category": "short-dresses",
+      "garment": "mini dress",
+      "neckline": "round neck with teardrop cutouts",
+      "sleeves": "sleeveless",
+      "length": "mini",
+      "silhouette": "fit and flare",
+      "waist": "fitted",
+      "details": [
+        "twin teardrop/keyhole cutouts below collar",
+        "princess seams",
+        "pleated full skirt",
+        "scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "cutout detail",
+        "modern",
+        "versatile"
+      ],
+      "occasions": [
+        "Everyday",
+        "Party"
+      ],
+      "suggestedName": "Teardrop Cutout Round Neck Mini Dress",
+      "existingName": "Pleated Mini Dress",
+      "nameMismatch": false
+    },
+    {
+      "id": "sd-29",
+      "category": "short-dresses",
+      "garment": "mini dress",
+      "neckline": "off-shoulder square neck",
+      "sleeves": "puff sleeves with cuffs",
+      "length": "mini",
+      "silhouette": "A-line",
+      "waist": "fitted, banded",
+      "details": [
+        "off-shoulder banded puff sleeves",
+        "pleated A-line skirt",
+        "straight hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "statement sleeve",
+        "feminine",
+        "vacation"
+      ],
+      "occasions": [
+        "Vacation",
+        "Party"
+      ],
+      "suggestedName": "Off-Shoulder Puff Sleeve A-Line Mini Dress",
+      "existingName": "Lace Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-30",
+      "category": "short-dresses",
+      "garment": "dress",
+      "neckline": "sweetheart",
+      "sleeves": "thin straps",
+      "length": "knee",
+      "silhouette": "fit and flare",
+      "waist": "belted (tie sash)",
+      "details": [
+        "tie sash belt at waist",
+        "full pleated skirt",
+        "straight hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "classic",
+        "feminine",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Sweetheart Sash-Belt Fit-and-Flare Dress",
+      "existingName": "Sequin Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-31",
+      "category": "short-dresses",
+      "garment": "mini dress",
+      "neckline": "sweetheart",
+      "sleeves": "spaghetti straps",
+      "length": "mini",
+      "silhouette": "fit and flare",
+      "waist": "fitted",
+      "details": [
+        "pleated bodice",
+        "double-tier ruffle hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "tiered",
+        "feminine",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Sweetheart Tiered Ruffle Mini Dress",
+      "existingName": "Velvet Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-32",
+      "category": "short-dresses",
+      "garment": "wrap dress",
+      "neckline": "V-neck wrap",
+      "sleeves": "full long sleeves with cuffs",
+      "length": "mini",
+      "silhouette": "wrap, A-line",
+      "waist": "tie belt/sash",
+      "details": [
+        "wrap front with long tie sash",
+        "gathered skirt",
+        "asymmetric handkerchief hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "boho",
+        "wrap",
+        "cozy",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ],
+      "suggestedName": "Long-Sleeve Wrap Mini Dress",
+      "existingName": "Denim Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-33",
+      "category": "short-dresses",
+      "garment": "trench coat dress",
+      "neckline": "notched lapel collar",
+      "sleeves": "long sleeves with cuffs",
+      "length": "knee",
+      "silhouette": "fit and flare, coat-style",
+      "waist": "belted with buckle",
+      "details": [
+        "notched lapel collar",
+        "button-through front (wrap look)",
+        "buckled belt",
+        "full pleated skirt"
+      ],
+      "back": null,
+      "styleTags": [
+        "utility",
+        "classic",
+        "chic",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ],
+      "suggestedName": "Belted Lapel-Collar Coat Dress",
+      "existingName": "Knit Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-34",
+      "category": "short-dresses",
+      "garment": "mini dress",
+      "neckline": "round neck",
+      "sleeves": "bow tie-straps",
+      "length": "mini",
+      "silhouette": "fit and flare",
+      "waist": "fitted",
+      "details": [
+        "bow-tied shoulder straps",
+        "fitted bodice",
+        "pleated full skirt",
+        "straight/gently curved hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "sweet",
+        "feminine",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Bow-Tie Strap Mini Dress",
+      "existingName": "Ribbed Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sd-35",
+      "category": "short-dresses",
+      "garment": "mini dress",
+      "neckline": "halter with crisscross straps",
+      "sleeves": "sleeveless (halter)",
+      "length": "mini",
+      "silhouette": "drop-waist, tiered",
+      "waist": "fitted, dropped",
+      "details": [
+        "crisscross halter straps",
+        "chevron/V-shaped tier seam",
+        "double-tier ruffled skirt"
+      ],
+      "back": null,
+      "styleTags": [
+        "boho",
+        "tiered",
+        "summer",
+        "vacation"
+      ],
+      "occasions": [
+        "Vacation",
+        "Party"
+      ],
+      "suggestedName": "Crisscross Halter Tiered Mini Dress",
+      "existingName": "Satin Mini Dress",
+      "nameMismatch": true
+    },
+    {
+      "id": "sh-1",
+      "category": "shorts",
+      "garment": "paperbag waist shorts",
+      "neckline": null,
+      "sleeves": null,
+      "length": "hip-length",
+      "silhouette": "straight leg with paperbag waist",
+      "waist": "paperbag waist with tie belt",
+      "details": [
+        "front tie belt with bow",
+        "cuffed hem",
+        "front seam pleats"
+      ],
+      "back": "plain paperbag waistband with belt loops, no tie shown, cuffed hem",
+      "styleTags": [
+        "casual",
+        "chic",
+        "vacation",
+        "minimal"
+      ],
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ],
+      "suggestedName": "Paperbag Waist Tie-Belt Shorts",
+      "existingName": "Denim Shorts",
+      "nameMismatch": true
+    },
+    {
+      "id": "sh-2",
+      "category": "shorts",
+      "garment": "wrap shorts",
+      "neckline": null,
+      "sleeves": null,
+      "length": "hip-length",
+      "silhouette": "straight leg with wrap front",
+      "waist": "fitted with asymmetric side bow tie",
+      "details": [
+        "front wrap seam",
+        "asymmetric side bow tie",
+        "cuffed hem"
+      ],
+      "back": "plain waistband with tie ends tucked through a loop, cuffed hem",
+      "styleTags": [
+        "chic",
+        "vacation",
+        "romantic"
+      ],
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ],
+      "suggestedName": "Wrap Front Side-Tie Cuffed Shorts",
+      "existingName": "High-Waisted Shorts",
+      "nameMismatch": true
+    },
+    {
+      "id": "sh-3",
+      "category": "shorts",
+      "garment": "wide-leg culotte shorts",
+      "neckline": null,
+      "sleeves": null,
+      "length": "hip-length",
+      "silhouette": "wide-leg, flared, pleated",
+      "waist": "fitted with side drawstring tie",
+      "details": [
+        "front pleats",
+        "cuffed hem",
+        "long side drawstring tie"
+      ],
+      "back": null,
+      "styleTags": [
+        "boho",
+        "relaxed",
+        "vacation",
+        "casual"
+      ],
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ],
+      "suggestedName": "Pleated Wide-Leg Culotte Shorts with Tie",
+      "existingName": "Bermuda Shorts",
+      "nameMismatch": true
+    },
+    {
+      "id": "sh-4",
+      "category": "shorts",
+      "garment": "skort",
+      "neckline": null,
+      "sleeves": null,
+      "length": "hip-length",
+      "silhouette": "straight with faux wrap effect",
+      "waist": "high-waisted, fitted",
+      "details": [
+        "faux wrap panels with button trim on both sides",
+        "front seam pleats"
+      ],
+      "back": "plain shorts back with no buttons",
+      "styleTags": [
+        "preppy",
+        "structured",
+        "smart-casual"
+      ],
+      "occasions": [
+        "Everyday"
+      ],
+      "suggestedName": "Button-Trim Wrap Skort",
+      "existingName": "Athletic Shorts",
+      "nameMismatch": true
+    },
+    {
+      "id": "sh-5",
+      "category": "shorts",
+      "garment": "wrap shorts",
+      "neckline": null,
+      "sleeves": null,
+      "length": "hip-length",
+      "silhouette": "tulip/petal hem with wrap front",
+      "waist": "fitted with center front bow tie",
+      "details": [
+        "tulip petal overlapping hem",
+        "front bow tie",
+        "gathered waist"
+      ],
+      "back": "plain fitted waistband, straight hem, no tie",
+      "styleTags": [
+        "romantic",
+        "flirty",
+        "feminine",
+        "vacation"
+      ],
+      "occasions": [
+        "Vacation",
+        "Party"
+      ],
+      "suggestedName": "Bow-Tie Tulip Hem Wrap Shorts",
+      "existingName": "Tailored Shorts",
+      "nameMismatch": true
+    },
+    {
+      "id": "sh-6",
+      "category": "shorts",
+      "garment": "pleated shorts",
+      "neckline": null,
+      "sleeves": null,
+      "length": "hip-length",
+      "silhouette": "straight leg, pleated front",
+      "waist": "fitted with belt loop tab",
+      "details": [
+        "front pleats",
+        "cuffed hem",
+        "back welt pockets"
+      ],
+      "back": "back welt pockets with center back seam, cuffed hem",
+      "styleTags": [
+        "classic",
+        "tailored",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday"
+      ],
+      "suggestedName": "Pleated Cuffed Shorts with Back Welt Pockets",
+      "existingName": "Paperbag Shorts",
+      "nameMismatch": true
+    },
+    {
+      "id": "sh-7",
+      "category": "shorts",
+      "garment": "ruffle-hem shorts",
+      "neckline": null,
+      "sleeves": null,
+      "length": "hip-length",
+      "silhouette": "flared, pleated with ruffle trim",
+      "waist": "high-waisted, fitted with button closure",
+      "details": [
+        "front pleats",
+        "side pockets",
+        "ruffle hem trim",
+        "front button closure"
+      ],
+      "back": null,
+      "styleTags": [
+        "feminine",
+        "flirty",
+        "romantic",
+        "vacation"
+      ],
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ],
+      "suggestedName": "Pleated Ruffle-Hem Shorts",
+      "existingName": "Cargo Shorts",
+      "nameMismatch": true
+    },
+    {
+      "id": "sh-8",
+      "category": "shorts",
+      "garment": "wrap shorts",
+      "neckline": null,
+      "sleeves": null,
+      "length": "hip-length",
+      "silhouette": "tulip/petal hem with wrap front",
+      "waist": "fitted with drawstring tie",
+      "details": [
+        "tulip petal overlapping hem",
+        "drawstring waist tie"
+      ],
+      "back": "plain straight hem, fitted waistband",
+      "styleTags": [
+        "romantic",
+        "flirty",
+        "vacation",
+        "feminine"
+      ],
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ],
+      "suggestedName": "Drawstring Tulip Hem Wrap Shorts",
+      "existingName": "Culotte Shorts",
+      "nameMismatch": true
+    },
+    {
+      "id": "sh-9",
+      "category": "shorts",
+      "garment": "high-waisted shorts",
+      "neckline": null,
+      "sleeves": null,
+      "length": "hip-length",
+      "silhouette": "straight leg, pleated front",
+      "waist": "high-waisted with button placket",
+      "details": [
+        "front button placket (4 buttons)",
+        "front pleats",
+        "cuffed hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "classic",
+        "tailored",
+        "smart-casual",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday"
+      ],
+      "suggestedName": "Button-Front High-Waisted Pleated Shorts",
+      "existingName": "Bike Shorts",
+      "nameMismatch": true
+    },
+    {
+      "id": "sh-10",
+      "category": "shorts",
+      "garment": "tiered ruffle skort",
+      "neckline": null,
+      "sleeves": null,
+      "length": "mini",
+      "silhouette": "flared, asymmetric wrap with tiered ruffles",
+      "waist": "fitted high waist",
+      "details": [
+        "asymmetric wrap overlay",
+        "two-tier ruffle hem",
+        "textured woven fabric"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "flirty",
+        "feminine",
+        "vacation"
+      ],
+      "occasions": [
+        "Vacation",
+        "Everyday"
+      ],
+      "suggestedName": "Asymmetric Tiered Ruffle Skort",
+      "existingName": "Pleated Shorts",
+      "nameMismatch": true
+    },
+    {
+      "id": "sh-11",
+      "category": "shorts",
+      "garment": "wrap skort",
+      "neckline": null,
+      "sleeves": null,
+      "length": "mini",
+      "silhouette": "A-line with faux wrap front",
+      "waist": "high-waisted, fitted",
+      "details": [
+        "faux wrap front panel",
+        "button placket (3 buttons)",
+        "textured woven fabric"
+      ],
+      "back": null,
+      "styleTags": [
+        "preppy",
+        "minimal",
+        "smart-casual"
+      ],
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ],
+      "suggestedName": "Button Wrap Skort",
+      "existingName": "Linen Shorts",
+      "nameMismatch": true
+    },
+    {
+      "id": "sh-12",
+      "category": "shorts",
+      "garment": "paperbag waist shorts",
+      "neckline": null,
+      "sleeves": null,
+      "length": "hip-length",
+      "silhouette": "straight leg with paperbag waist",
+      "waist": "smocked elastic paperbag waist",
+      "details": [
+        "smocked elastic waistband",
+        "cuffed hem",
+        "plain front"
+      ],
+      "back": null,
+      "styleTags": [
+        "casual",
+        "minimal",
+        "everyday",
+        "vacation"
+      ],
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ],
+      "suggestedName": "Smocked Paperbag Waist Cuffed Shorts",
+      "existingName": "Belted Shorts",
+      "nameMismatch": true
+    },
+    {
+      "id": "s-1",
+      "category": "skirts",
+      "garment": "maxi skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "A-line, flared",
+      "waist": "fitted with side buckle tab",
+      "details": [
+        "side buckle waist tab",
+        "vertical pleats",
+        "curled/rolled hem edges"
+      ],
+      "back": null,
+      "styleTags": [
+        "elegant",
+        "flowy",
+        "festive",
+        "boho"
+      ],
+      "occasions": [
+        "Festive",
+        "Wedding"
+      ],
+      "suggestedName": "Buckle-Waist Flared Maxi Skirt",
+      "existingName": "A-Line Skirt",
+      "nameMismatch": false
+    },
+    {
+      "id": "s-2",
+      "category": "skirts",
+      "garment": "wrap skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "midi",
+      "silhouette": "pencil/straight with draped wrap front",
+      "waist": "fitted waistband",
+      "details": [
+        "draped wrap front folds",
+        "front overlap opening"
+      ],
+      "back": null,
+      "styleTags": [
+        "elegant",
+        "sleek",
+        "office",
+        "minimal"
+      ],
+      "occasions": [
+        "Everyday"
+      ],
+      "suggestedName": "Draped Wrap Front Midi Skirt",
+      "existingName": "Pencil Skirt",
+      "nameMismatch": false
+    },
+    {
+      "id": "s-3",
+      "category": "skirts",
+      "garment": "maxi skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "A-line",
+      "waist": "high-waisted, gathered, wide waistband",
+      "details": [
+        "gathered fullness at waist",
+        "long sash tie hanging center front",
+        "rosette/knot waist accent",
+        "scalloped wavy hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "flowy",
+        "feminine",
+        "boho"
+      ],
+      "occasions": [
+        "Festive",
+        "Party"
+      ],
+      "suggestedName": "Rosette Sash A-Line Maxi Skirt",
+      "existingName": "Pleated Skirt",
+      "nameMismatch": true
+    },
+    {
+      "id": "s-4",
+      "category": "skirts",
+      "garment": "maxi skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "A-line",
+      "waist": "fitted waistband with long sash tied in a bow",
+      "details": [
+        "long bow sash with streamer tails",
+        "center front seam",
+        "scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "elegant",
+        "flowy",
+        "feminine"
+      ],
+      "occasions": [
+        "Festive",
+        "Party"
+      ],
+      "suggestedName": "Sash Bow A-Line Maxi Skirt",
+      "existingName": "Maxi Skirt",
+      "nameMismatch": false
+    },
+    {
+      "id": "s-5",
+      "category": "skirts",
+      "garment": "skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "midi",
+      "silhouette": "A-line with asymmetric cascading flounce",
+      "waist": "fitted narrow waistband",
+      "details": [
+        "diagonal seam creating a cascading ruffle flounce",
+        "asymmetric scalloped ruffle hem",
+        "gathered ruffle panel"
+      ],
+      "back": null,
+      "styleTags": [
+        "boho",
+        "romantic",
+        "flowy",
+        "asymmetric"
+      ],
+      "occasions": [
+        "Festive",
+        "Vacation",
+        "Party"
+      ],
+      "suggestedName": "Asymmetric Ruffle Flounce Skirt",
+      "existingName": "Mini Skirt",
+      "nameMismatch": false
+    },
+    {
+      "id": "s-6",
+      "category": "skirts",
+      "garment": "tiered skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "A-line, two-tier",
+      "waist": "narrow fitted waistband",
+      "details": [
+        "fitted yoke top tier",
+        "gathered lower tier",
+        "wavy seam between tiers",
+        "scalloped wavy hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "flowy",
+        "feminine",
+        "boho"
+      ],
+      "occasions": [
+        "Festive",
+        "Vacation"
+      ],
+      "suggestedName": "Two-Tier A-Line Maxi Skirt",
+      "existingName": "Midi Skirt",
+      "nameMismatch": false
+    },
+    {
+      "id": "s-7",
+      "category": "skirts",
+      "garment": "maxi skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "A-line",
+      "waist": "gathered waist with tie sash bow",
+      "details": [
+        "center front button placket",
+        "tie sash bow at waist",
+        "gathered fullness",
+        "scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "boho",
+        "vintage-inspired",
+        "feminine"
+      ],
+      "occasions": [
+        "Festive",
+        "Everyday"
+      ],
+      "suggestedName": "Button-Front Sash Tie Maxi Skirt",
+      "existingName": "Wrap Skirt",
+      "nameMismatch": true
+    },
+    {
+      "id": "s-8",
+      "category": "skirts",
+      "garment": "maxi skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "A-line",
+      "waist": "fitted waistband with scalloped trim edge",
+      "details": [
+        "scalloped lace-edge waistband",
+        "two-tier ruffle hem",
+        "gathered fullness"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "feminine",
+        "party",
+        "tiered"
+      ],
+      "occasions": [
+        "Festive",
+        "Party"
+      ],
+      "suggestedName": "Tiered Ruffle Hem A-Line Maxi Skirt",
+      "existingName": "Circle Skirt",
+      "nameMismatch": true
+    },
+    {
+      "id": "s-9",
+      "category": "skirts",
+      "garment": "tiered maxi skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "tiered A-line",
+      "waist": "fitted narrow waistband",
+      "details": [
+        "three tiers of gathered ruffles",
+        "wavy scalloped seams between tiers",
+        "voluminous silhouette"
+      ],
+      "back": null,
+      "styleTags": [
+        "boho",
+        "romantic",
+        "tiered",
+        "festival"
+      ],
+      "occasions": [
+        "Festive",
+        "Vacation",
+        "Party"
+      ],
+      "suggestedName": "Three-Tier Ruffle Maxi Skirt",
+      "existingName": "Asymmetric Skirt",
+      "nameMismatch": true
+    },
+    {
+      "id": "s-10",
+      "category": "skirts",
+      "garment": "maxi skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "A-line with tiered ruffle hem",
+      "waist": "fitted waistband",
+      "details": [
+        "vertical pleats",
+        "double tiered ruffle hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "feminine",
+        "festive",
+        "flowy"
+      ],
+      "occasions": [
+        "Festive",
+        "Wedding"
+      ],
+      "suggestedName": "Tiered Ruffle-Hem Pleated Maxi Skirt",
+      "existingName": "Tiered Skirt",
+      "nameMismatch": false
+    },
+    {
+      "id": "s-11",
+      "category": "skirts",
+      "garment": "maxi skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "A-line with single ruffle tier hem",
+      "waist": "fitted waistband",
+      "details": [
+        "vertical pleats",
+        "ruffle hem tier"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "feminine",
+        "festive"
+      ],
+      "occasions": [
+        "Festive",
+        "Wedding"
+      ],
+      "suggestedName": "Ruffle-Hem Pleated Maxi Skirt",
+      "existingName": "High-Waisted Skirt",
+      "nameMismatch": true
+    },
+    {
+      "id": "s-12",
+      "category": "skirts",
+      "garment": "maxi skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "wrap-front, straight/A-line",
+      "waist": "fitted with large side bow",
+      "details": [
+        "side bow tie detail",
+        "wrap front seam",
+        "radiating pleat lines from waist"
+      ],
+      "back": null,
+      "styleTags": [
+        "elegant",
+        "romantic",
+        "festive",
+        "statement"
+      ],
+      "occasions": [
+        "Festive",
+        "Wedding",
+        "Party"
+      ],
+      "suggestedName": "Side-Bow Wrap Maxi Skirt",
+      "existingName": "Denim Skirt",
+      "nameMismatch": true
+    },
+    {
+      "id": "s-13",
+      "category": "skirts",
+      "garment": "maxi skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "A-line, wide flare",
+      "waist": "fitted waistband",
+      "details": [
+        "vertical pleats",
+        "scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "elegant",
+        "flowy",
+        "festive"
+      ],
+      "occasions": [
+        "Festive",
+        "Wedding"
+      ],
+      "suggestedName": "Scalloped Hem Flared Maxi Skirt",
+      "existingName": "Leather Skirt",
+      "nameMismatch": true
+    },
+    {
+      "id": "s-14",
+      "category": "skirts",
+      "garment": "A-line skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "knee",
+      "silhouette": "A-line",
+      "waist": "fitted waistband",
+      "details": [
+        "scalloped hem",
+        "side seam darts"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "classic",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday"
+      ],
+      "suggestedName": "Scalloped Hem A-Line Knee Skirt",
+      "existingName": "Tulle Skirt",
+      "nameMismatch": true
+    },
+    {
+      "id": "s-15",
+      "category": "skirts",
+      "garment": "wrap skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "midi",
+      "silhouette": "asymmetric wrap with cascading ruffle",
+      "waist": "fitted waistband",
+      "details": [
+        "diagonal wrap seam",
+        "cascading ruffle trim",
+        "asymmetric wavy hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "boho",
+        "romantic",
+        "asymmetric",
+        "flowy"
+      ],
+      "occasions": [
+        "Festive",
+        "Everyday"
+      ],
+      "suggestedName": "Asymmetric Wrap Skirt with Cascading Ruffle",
+      "existingName": "Slit Skirt",
+      "nameMismatch": true
+    },
+    {
+      "id": "s-16",
+      "category": "skirts",
+      "garment": "gathered skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "midi",
+      "silhouette": "A-line, gathered, tiered asymmetric hem",
+      "waist": "fitted with side bow and long ribbon ties",
+      "details": [
+        "side bow with long ribbon ties",
+        "gathered waist",
+        "asymmetric ruffled tiered hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "feminine",
+        "boho",
+        "festive"
+      ],
+      "occasions": [
+        "Festive",
+        "Party"
+      ],
+      "suggestedName": "Bow-Tie Gathered Asymmetric Midi Skirt",
+      "existingName": "Ruffled Skirt",
+      "nameMismatch": false
+    },
+    {
+      "id": "s-17",
+      "category": "skirts",
+      "garment": "tiered skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "knee",
+      "silhouette": "A-line with scalloped ruffle tier",
+      "waist": "fitted waistband with tie tab",
+      "details": [
+        "scalloped ruffle hem tier",
+        "waist tie tab"
+      ],
+      "back": null,
+      "styleTags": [
+        "feminine",
+        "flirty",
+        "everyday",
+        "cute"
+      ],
+      "occasions": [
+        "Everyday",
+        "Party"
+      ],
+      "suggestedName": "Scalloped Tiered Knee Skirt",
+      "existingName": "Cargo Skirt",
+      "nameMismatch": true
+    },
+    {
+      "id": "s-18",
+      "category": "skirts",
+      "garment": "maxi skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "A-line with cascading wavy ruffle trim",
+      "waist": "fitted with side bow tie",
+      "details": [
+        "side bow tie",
+        "diagonal wavy ruffle cascading trim",
+        "gathered waist"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "elegant",
+        "festive",
+        "flowy"
+      ],
+      "occasions": [
+        "Festive",
+        "Wedding"
+      ],
+      "suggestedName": "Bow-Tie Cascading Ruffle Maxi Skirt",
+      "existingName": "Flared Skirt",
+      "nameMismatch": true
+    },
+    {
+      "id": "s-19",
+      "category": "skirts",
+      "garment": "flared skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "knee",
+      "silhouette": "A-line, flared gored panels",
+      "waist": "fitted waistband",
+      "details": [
+        "gored panels",
+        "curled/rolled hem edges"
+      ],
+      "back": null,
+      "styleTags": [
+        "classic",
+        "flowy",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday"
+      ],
+      "suggestedName": "Rolled-Hem Flared Knee Skirt",
+      "existingName": "Trumpet Skirt",
+      "nameMismatch": true
+    },
+    {
+      "id": "s-20",
+      "category": "skirts",
+      "garment": "maxi skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "floor-length",
+      "silhouette": "A-line, gathered",
+      "waist": "fitted waistband",
+      "details": [
+        "gathered fullness",
+        "vertical fold lines",
+        "plain hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "flowy",
+        "everyday",
+        "festive"
+      ],
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ],
+      "suggestedName": "Gathered A-Line Maxi Skirt",
+      "existingName": "Bias Cut Skirt",
+      "nameMismatch": true
+    },
+    {
+      "id": "s-21",
+      "category": "skirts",
+      "garment": "tiered skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "knee",
+      "silhouette": "full, gathered with scalloped ruffle hem",
+      "waist": "fitted waistband",
+      "details": [
+        "scalloped ruffle hem tier",
+        "gathered fullness"
+      ],
+      "back": null,
+      "styleTags": [
+        "feminine",
+        "romantic",
+        "everyday",
+        "cute"
+      ],
+      "occasions": [
+        "Everyday",
+        "Party"
+      ],
+      "suggestedName": "Scalloped Ruffle-Hem Knee Skirt",
+      "existingName": "Box Pleated Skirt",
+      "nameMismatch": true
+    },
+    {
+      "id": "s-22",
+      "category": "skirts",
+      "garment": "A-line skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "knee",
+      "silhouette": "gathered/pleated, A-line",
+      "waist": "fitted waistband",
+      "details": [
+        "gathered pleats",
+        "plain hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "classic",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday"
+      ],
+      "suggestedName": "Gathered A-Line Knee Skirt",
+      "existingName": "Godet Skirt",
+      "nameMismatch": true
+    },
+    {
+      "id": "s-23",
+      "category": "skirts",
+      "garment": "A-line skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "knee",
+      "silhouette": "A-line, gored/pleated",
+      "waist": "fitted waistband",
+      "details": [
+        "gored panel seams",
+        "plain hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "classic",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday"
+      ],
+      "suggestedName": "Gored A-Line Knee Skirt",
+      "existingName": "Button-Front Skirt",
+      "nameMismatch": true
+    },
+    {
+      "id": "s-24",
+      "category": "skirts",
+      "garment": "tiered mini skirt",
+      "neckline": null,
+      "sleeves": null,
+      "length": "mini",
+      "silhouette": "tiered, flared",
+      "waist": "fitted waistband",
+      "details": [
+        "three-tier ruffle construction",
+        "flared silhouette"
+      ],
+      "back": null,
+      "styleTags": [
+        "playful",
+        "romantic",
+        "party",
+        "cute"
+      ],
+      "occasions": [
+        "Party",
+        "Everyday"
+      ],
+      "suggestedName": "Three-Tier Ruffle Mini Skirt",
+      "existingName": "Handkerchief Hem Skirt",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-1",
+      "category": "tops",
+      "garment": "bustier top",
+      "neckline": "sweetheart",
+      "sleeves": "sleeveless with sheer draped wing-like side panels",
+      "length": "cropped",
+      "silhouette": "fitted bodice with dramatic sheer draped side panels",
+      "waist": "fitted",
+      "details": [
+        "sheer butterfly-wing draped side panels",
+        "ruched/twisted bodice knot detail",
+        "strapless sweetheart bodice",
+        "avant-garde sculptural drape"
+      ],
+      "back": null,
+      "styleTags": [
+        "avant-garde",
+        "glamorous",
+        "sculptural",
+        "statement",
+        "bridal"
+      ],
+      "occasions": [
+        "Wedding",
+        "Party"
+      ],
+      "suggestedName": "Butterfly Wing Draped Bustier Top",
+      "existingName": "Classic White Tee",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-2",
+      "category": "tops",
+      "garment": "peplum crop top",
+      "neckline": "straight/strapless",
+      "sleeves": "sleeveless (strapless)",
+      "length": "cropped",
+      "silhouette": "fitted bodice with A-line peplum flare",
+      "waist": "fitted with waist seam",
+      "details": [
+        "waist seam",
+        "A-line peplum flare hem",
+        "scalloped bottom edge"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "structured",
+        "versatile",
+        "elegant"
+      ],
+      "occasions": [
+        "Party",
+        "Everyday"
+      ],
+      "suggestedName": "Strapless Peplum Crop Top",
+      "existingName": "V-Neck Top",
+      "nameMismatch": false
+    },
+    {
+      "id": "t-3",
+      "category": "tops",
+      "garment": "bustier vest top",
+      "neckline": "straight, V at center front where straps meet",
+      "sleeves": "sleeveless, thin straps",
+      "length": "hip-length",
+      "silhouette": "fitted with wide belted waistband",
+      "waist": "belted with square buckle",
+      "details": [
+        "center front button placket",
+        "wide waistband with square belt buckle",
+        "scalloped notched hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "structured",
+        "utility",
+        "edgy",
+        "corsetcore"
+      ],
+      "occasions": [
+        "Party",
+        "Everyday"
+      ],
+      "suggestedName": "Belted Buckle Bustier Top",
+      "existingName": "Crop Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-4",
+      "category": "tops",
+      "garment": "one-shoulder draped top",
+      "neckline": "asymmetric one-shoulder",
+      "sleeves": "one-shoulder (single draped strap, other arm bare)",
+      "length": "hip-length",
+      "silhouette": "draped asymmetric with handkerchief hem",
+      "waist": null,
+      "details": [
+        "one-shoulder drape",
+        "asymmetric handkerchief hem",
+        "fitted bodice"
+      ],
+      "back": null,
+      "styleTags": [
+        "modern",
+        "edgy",
+        "evening",
+        "asymmetric"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "One-Shoulder Asymmetric Drape Top",
+      "existingName": "Peplum Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-5",
+      "category": "tops",
+      "garment": "surplice wrap top",
+      "neckline": "asymmetric draped surplice",
+      "sleeves": "full balloon/bishop long sleeves",
+      "length": "hip-length",
+      "silhouette": "fitted bodice, voluminous sleeves",
+      "waist": null,
+      "details": [
+        "deep asymmetric wrap drape",
+        "cascading bow tassel tie",
+        "balloon bishop sleeves with cuffs"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "statement",
+        "boho",
+        "voluminous"
+      ],
+      "occasions": [
+        "Festive",
+        "Party"
+      ],
+      "suggestedName": "Bishop-Sleeve Wrap Top with Tassel Bow",
+      "existingName": "Off-Shoulder Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-6",
+      "category": "tops",
+      "garment": "cami top",
+      "neckline": "sweetheart (scalloped)",
+      "sleeves": "thin straps",
+      "length": "cropped",
+      "silhouette": "fitted/bodycon",
+      "waist": null,
+      "details": [
+        "scalloped sweetheart neckline",
+        "fitted bodycon body",
+        "thin straps"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "minimal",
+        "party",
+        "feminine"
+      ],
+      "occasions": [
+        "Party",
+        "Everyday"
+      ],
+      "suggestedName": "Scalloped Sweetheart Cami Top",
+      "existingName": "Bardot Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-7",
+      "category": "tops",
+      "garment": "wrap top",
+      "neckline": "deep V (surplice)",
+      "sleeves": "full puff/balloon sleeves",
+      "length": "hip-length",
+      "silhouette": "wrap fitted with oversized bow",
+      "waist": "tied oversized bow with long trailing sash",
+      "details": [
+        "surplice wrap front",
+        "oversized statement bow",
+        "puff sleeves",
+        "fringe cuff trim"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "statement",
+        "voluminous",
+        "party"
+      ],
+      "occasions": [
+        "Festive",
+        "Party"
+      ],
+      "suggestedName": "Puff-Sleeve Wrap Top with Statement Bow",
+      "existingName": "Halter Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-8",
+      "category": "tops",
+      "garment": "peplum cami top",
+      "neckline": "straight/square (wide straps)",
+      "sleeves": "wide straps (sleeveless)",
+      "length": "hip-length",
+      "silhouette": "fitted bodice into gathered bubble peplum",
+      "waist": "seamed, gathered",
+      "details": [
+        "wide straps",
+        "dropped gathered peplum",
+        "scalloped wavy hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "flirty",
+        "feminine",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Wide-Strap Bubble Peplum Top",
+      "existingName": "Tank Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-9",
+      "category": "tops",
+      "garment": "one-shoulder draped top",
+      "neckline": "asymmetric one-shoulder (draped)",
+      "sleeves": "single fitted sleeve with cuff (other shoulder bare)",
+      "length": "cropped",
+      "silhouette": "draped, ruched knot",
+      "waist": null,
+      "details": [
+        "ruched knot detail",
+        "single fitted sleeve with cuff",
+        "asymmetric draped fabric"
+      ],
+      "back": null,
+      "styleTags": [
+        "edgy",
+        "asymmetric",
+        "modern",
+        "statement"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Asymmetric Ruched One-Shoulder Top",
+      "existingName": "Blouse",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-10",
+      "category": "tops",
+      "garment": "crop top",
+      "neckline": "scalloped sweetheart",
+      "sleeves": "sleeveless, thin straps",
+      "length": "cropped",
+      "silhouette": "fitted bralette-style",
+      "waist": "fitted",
+      "details": [
+        "scalloped wavy neckline trim",
+        "scalloped wavy hem",
+        "thin straps"
+      ],
+      "back": null,
+      "styleTags": [
+        "playful",
+        "romantic",
+        "minimal",
+        "summer"
+      ],
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ],
+      "suggestedName": "Scalloped Edge Bralette Crop Top",
+      "existingName": "Tunic Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-11",
+      "category": "tops",
+      "garment": "tiered ruffle crop top",
+      "neckline": "straight",
+      "sleeves": "sleeveless, thin straps",
+      "length": "cropped",
+      "silhouette": "tiered/ruffled",
+      "waist": null,
+      "details": [
+        "three tiers of gathered ruffles forming the entire bodice",
+        "fully ruffled silhouette"
+      ],
+      "back": null,
+      "styleTags": [
+        "boho",
+        "romantic",
+        "tiered",
+        "playful"
+      ],
+      "occasions": [
+        "Vacation",
+        "Festive",
+        "Everyday"
+      ],
+      "suggestedName": "Tiered Ruffle Crop Top",
+      "existingName": "Wrap Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-12",
+      "category": "tops",
+      "garment": "crop top",
+      "neckline": "straight with ruffle flounce trim",
+      "sleeves": "sleeveless, thin straps",
+      "length": "cropped",
+      "silhouette": "fitted with ruffle flounce top and bottom",
+      "waist": "fitted",
+      "details": [
+        "ruffle flounce trim at bust",
+        "ruffle flounce at hem",
+        "fitted midriff panel"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "playful",
+        "flirty",
+        "boho"
+      ],
+      "occasions": [
+        "Party",
+        "Vacation",
+        "Everyday"
+      ],
+      "suggestedName": "Double Ruffle Flounce Crop Top",
+      "existingName": "Bustier Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-13",
+      "category": "tops",
+      "garment": "bustier crop top",
+      "neckline": "straight with oversized bow",
+      "sleeves": "sleeveless, thin crossed straps",
+      "length": "cropped",
+      "silhouette": "fitted, asymmetric wrap-look bodice",
+      "waist": "fitted",
+      "details": [
+        "oversized bow at center front bodice",
+        "crisscross thin straps",
+        "asymmetric wrap draping"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "statement",
+        "party",
+        "feminine"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Oversized Bow Bustier Crop Top",
+      "existingName": "Corset Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-14",
+      "category": "tops",
+      "garment": "crop top",
+      "neckline": "scalloped straight",
+      "sleeves": "sleeveless, thin straps",
+      "length": "cropped",
+      "silhouette": "straight/fitted tank",
+      "waist": "fitted",
+      "details": [
+        "scalloped wavy neckline",
+        "scalloped wavy hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "playful",
+        "summer",
+        "basic"
+      ],
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ],
+      "suggestedName": "Scalloped Edge Tank Crop Top",
+      "existingName": "Button-Up Shirt",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-15",
+      "category": "tops",
+      "garment": "bandeau crop top",
+      "neckline": "straight bandeau with center bow",
+      "sleeves": "sleeveless, thin straps",
+      "length": "cropped",
+      "silhouette": "straight/fitted",
+      "waist": "fitted",
+      "details": [
+        "bow accent at center front neckline",
+        "straight hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "flirty",
+        "summer",
+        "playful"
+      ],
+      "occasions": [
+        "Everyday",
+        "Vacation",
+        "Party"
+      ],
+      "suggestedName": "Bow Bandeau Crop Top",
+      "existingName": "Tie-Front Top",
+      "nameMismatch": false
+    },
+    {
+      "id": "t-16",
+      "category": "tops",
+      "garment": "blouse",
+      "neckline": "collarless, scalloped yoke (back view)",
+      "sleeves": "full leg-of-mutton/puff sleeves with buttoned cuffs",
+      "length": "hip-length",
+      "silhouette": "fitted with flared peplum hem",
+      "waist": "fitted",
+      "details": [
+        "center back button placket",
+        "scalloped yoke seam",
+        "buttoned cuffs",
+        "slight flare/godets at hem"
+      ],
+      "back": "center back seam with button placket, scalloped yoke detail, gathered leg-of-mutton sleeves with buttoned cuffs",
+      "styleTags": [
+        "vintage-inspired",
+        "romantic",
+        "victorian",
+        "elegant"
+      ],
+      "occasions": [
+        "Festive",
+        "Everyday"
+      ],
+      "suggestedName": "Victorian Puff Sleeve Blouse",
+      "existingName": "Asymmetric Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-17",
+      "category": "tops",
+      "garment": "crop top",
+      "neckline": "off-shoulder with scalloped ruffle collar",
+      "sleeves": "flutter cap sleeves",
+      "length": "cropped",
+      "silhouette": "fitted",
+      "waist": "fitted",
+      "details": [
+        "ruffled scalloped collar/neckline trim",
+        "flutter cap sleeves"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "feminine",
+        "playful",
+        "boho"
+      ],
+      "occasions": [
+        "Party",
+        "Everyday",
+        "Vacation"
+      ],
+      "suggestedName": "Ruffle Collar Flutter Sleeve Crop Top",
+      "existingName": "Cold-Shoulder Top",
+      "nameMismatch": false
+    },
+    {
+      "id": "t-18",
+      "category": "tops",
+      "garment": "cape-sleeve crop top",
+      "neckline": "scalloped ruffled V-neck",
+      "sleeves": "bell/kimono batwing sleeves gathered at wrist with ruffle trim",
+      "length": "cropped",
+      "silhouette": "fitted with dramatic flared sleeves",
+      "waist": "fitted",
+      "details": [
+        "dramatic bell/batwing sleeves",
+        "ruffled scalloped neckline",
+        "gathered ruffle cuffs",
+        "center front V hem slit"
+      ],
+      "back": null,
+      "styleTags": [
+        "dramatic",
+        "boho",
+        "statement",
+        "romantic"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Ruffled Batwing Sleeve Crop Top",
+      "existingName": "Ruffled Top",
+      "nameMismatch": false
+    },
+    {
+      "id": "t-19",
+      "category": "tops",
+      "garment": "crop top",
+      "neckline": "sweetheart/V with center bow",
+      "sleeves": "fluttery puffed batwing/petal sleeves",
+      "length": "cropped",
+      "silhouette": "fitted bodice with tiered ruffle peplum hem",
+      "waist": "fitted",
+      "details": [
+        "center bow accent",
+        "tiered ruffle/godet peplum hem",
+        "dramatic puff sleeves"
+      ],
+      "back": "center back panel with straps, same puff sleeves and tiered ruffle peplum hem",
+      "styleTags": [
+        "romantic",
+        "statement",
+        "party",
+        "feminine"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Bow Front Puff Sleeve Tiered Peplum Top",
+      "existingName": "Smock Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-20",
+      "category": "tops",
+      "garment": "crop top",
+      "neckline": "straight with center bow",
+      "sleeves": "full puff/bishop sleeves",
+      "length": "cropped",
+      "silhouette": "fitted bodice with tiered ruffle peplum hem",
+      "waist": "fitted",
+      "details": [
+        "center front bow",
+        "tiered ruffle peplum hem",
+        "voluminous puff sleeves"
+      ],
+      "back": "straps with center back panel, same puff sleeves and tiered ruffle peplum hem",
+      "styleTags": [
+        "romantic",
+        "statement",
+        "party",
+        "feminine"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Puff Sleeve Bow Peplum Top",
+      "existingName": "Peasant Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-21",
+      "category": "tops",
+      "garment": "bustier top",
+      "neckline": null,
+      "sleeves": "sleeveless, thin straps",
+      "length": "hip-length",
+      "silhouette": "fitted with flared peplum hem (godets)",
+      "waist": "fitted with princess seams",
+      "details": [
+        "center back button placket",
+        "princess seams",
+        "flared peplum hem with godets"
+      ],
+      "back": "center back button placket with princess seams, flared godet peplum hem",
+      "styleTags": [
+        "structured",
+        "elegant",
+        "vintage-inspired",
+        "romantic"
+      ],
+      "occasions": [
+        "Party",
+        "Everyday"
+      ],
+      "suggestedName": "Button-Back Peplum Bustier Top",
+      "existingName": "Cami Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-22",
+      "category": "tops",
+      "garment": "blouse",
+      "neckline": "mandarin/stand collar with button placket",
+      "sleeves": "full bishop sleeves with ruffled shoulder cap and gathered cuffs, one tied with a bow",
+      "length": "cropped",
+      "silhouette": "fitted",
+      "waist": "banded waist hem",
+      "details": [
+        "mandarin collar",
+        "center front button placket",
+        "ruffled sleeve cap detail",
+        "gathered cuffs with tie bow"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "vintage-inspired",
+        "victorian",
+        "elegant"
+      ],
+      "occasions": [
+        "Festive",
+        "Everyday"
+      ],
+      "suggestedName": "Ruffle Cap Bishop Sleeve Blouse",
+      "existingName": "Bodysuit",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-23",
+      "category": "tops",
+      "garment": "cropped bolero/shrug top",
+      "neckline": null,
+      "sleeves": "ruffled cap sleeves",
+      "length": "hip-length",
+      "silhouette": "fitted with flared peplum hem (godets)",
+      "waist": "fitted with princess seams",
+      "details": [
+        "ruffled cap sleeves",
+        "center back button placket",
+        "princess seams",
+        "flared peplum hem with godets"
+      ],
+      "back": "center back button placket, princess seams, ruffled cap sleeves",
+      "styleTags": [
+        "romantic",
+        "structured",
+        "vintage-inspired",
+        "feminine"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Ruffle Cap Sleeve Peplum Bolero",
+      "existingName": "Turtleneck",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-24",
+      "category": "tops",
+      "garment": "blouse",
+      "neckline": "ruffled stand/high collar",
+      "sleeves": "full bishop sleeves with gathered cuffs tied with a bow at the wrist",
+      "length": "cropped",
+      "silhouette": "fitted",
+      "waist": "fitted",
+      "details": [
+        "ruffled high collar",
+        "center front button placket",
+        "gathered cuffs with bow tie"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "victorian",
+        "vintage-inspired",
+        "elegant"
+      ],
+      "occasions": [
+        "Festive",
+        "Everyday"
+      ],
+      "suggestedName": "Ruffle Collar Bishop Sleeve Blouse",
+      "existingName": "Mock Neck Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-25",
+      "category": "tops",
+      "garment": "crop top",
+      "neckline": "round/scoop",
+      "sleeves": "sleeveless, thin straps",
+      "length": "cropped",
+      "silhouette": "fitted, straight hem",
+      "waist": "fitted with princess seams",
+      "details": [
+        "princess seams",
+        "straight hem"
+      ],
+      "back": "crisscross (X) straps with a bow tied at the waist",
+      "styleTags": [
+        "minimal",
+        "flirty",
+        "versatile",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ],
+      "suggestedName": "Crisscross Back Tie Tank Top",
+      "existingName": "Square Neck Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-26",
+      "category": "tops",
+      "garment": "halter crop top",
+      "neckline": "halter with bow tie at neck",
+      "sleeves": "sleeveless (halter)",
+      "length": "cropped",
+      "silhouette": "fitted, gathered/shirred bodice",
+      "waist": "fitted",
+      "details": [
+        "bow tie neck detail",
+        "shirred bodice",
+        "alternate version shown with a button placket panel at the hip"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "flirty",
+        "playful",
+        "summer"
+      ],
+      "occasions": [
+        "Vacation",
+        "Party",
+        "Everyday"
+      ],
+      "suggestedName": "Bow Halter Neck Crop Top",
+      "existingName": "Sweetheart Neck Top",
+      "nameMismatch": false
+    },
+    {
+      "id": "t-27",
+      "category": "tops",
+      "garment": "wrap top",
+      "neckline": "V wrap",
+      "sleeves": "kimono/petal flutter sleeves (puffed)",
+      "length": "hip-length",
+      "silhouette": "wrap",
+      "waist": "wrap-tie with tassel fringe knot",
+      "details": [
+        "draped wrap front",
+        "tassel fringe tie knot at hip",
+        "alternate version shown with an obi-style crisscross wrapped waistband"
+      ],
+      "back": null,
+      "styleTags": [
+        "boho",
+        "romantic",
+        "wrap",
+        "flowy"
+      ],
+      "occasions": [
+        "Vacation",
+        "Festive",
+        "Everyday"
+      ],
+      "suggestedName": "Kimono Sleeve Wrap Top with Tassel Tie",
+      "existingName": "Boat Neck Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-28",
+      "category": "tops",
+      "garment": "crop tank top",
+      "neckline": "scoop",
+      "sleeves": "sleeveless, thin straps",
+      "length": "cropped",
+      "silhouette": "fitted, straight hem",
+      "waist": "fitted with princess seams",
+      "details": [
+        "princess seams",
+        "straight hem",
+        "thin shoulder tie"
+      ],
+      "back": "crisscross (X) front straps variant of the same silhouette",
+      "styleTags": [
+        "minimal",
+        "basic",
+        "versatile",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ],
+      "suggestedName": "Crisscross Strap Cami Crop Top",
+      "existingName": "Cowl Neck Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-29",
+      "category": "tops",
+      "garment": "crop top",
+      "neckline": "round/scoop",
+      "sleeves": "sleeveless, thin straps",
+      "length": "cropped",
+      "silhouette": "fitted, straight hem",
+      "waist": "fitted with princess seams",
+      "details": [
+        "princess seams",
+        "straight hem"
+      ],
+      "back": "crisscross (X) straps with a bow tied at the waist",
+      "styleTags": [
+        "minimal",
+        "flirty",
+        "versatile",
+        "everyday"
+      ],
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ],
+      "suggestedName": "Crisscross Back Tie Crop Top",
+      "existingName": "Keyhole Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-30",
+      "category": "tops",
+      "garment": "wrap top",
+      "neckline": "plunging V wrap",
+      "sleeves": "cap sleeves",
+      "length": "cropped",
+      "silhouette": "wrap",
+      "waist": "tie knot at hem",
+      "details": [
+        "thin crisscross ties knotted into a bow with tassel at hem",
+        "small side hem slits",
+        "alternate plain round-neck version shown alongside"
+      ],
+      "back": null,
+      "styleTags": [
+        "boho",
+        "flirty",
+        "romantic",
+        "playful"
+      ],
+      "occasions": [
+        "Vacation",
+        "Party",
+        "Everyday"
+      ],
+      "suggestedName": "Plunge Wrap Tie Crop Top",
+      "existingName": "Cut-Out Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-31",
+      "category": "tops",
+      "garment": "halter crop top",
+      "neckline": "halter with deep round cutout below neck",
+      "sleeves": "sleeveless (halter)",
+      "length": "hip-length",
+      "silhouette": "fitted",
+      "waist": "fitted with princess seams",
+      "details": [
+        "deep round chest cutout below halter neckline",
+        "princess seams",
+        "V-notch double-point hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "sexy",
+        "minimal",
+        "summer",
+        "statement"
+      ],
+      "occasions": [
+        "Party",
+        "Vacation"
+      ],
+      "suggestedName": "Cutout Halter Crop Top",
+      "existingName": "Mesh Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-32",
+      "category": "tops",
+      "garment": "peplum top",
+      "neckline": "sweetheart",
+      "sleeves": "sleeveless, thin straps",
+      "length": "cropped",
+      "silhouette": "fitted bodice with gathered peplum flare hem",
+      "waist": "fitted with waist seam/waistband",
+      "details": [
+        "sweetheart bodice",
+        "waist seam",
+        "gathered ruffle peplum hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "flirty",
+        "party",
+        "feminine"
+      ],
+      "occasions": [
+        "Party",
+        "Festive",
+        "Everyday"
+      ],
+      "suggestedName": "Sweetheart Peplum Crop Top",
+      "existingName": "Lace Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-33",
+      "category": "tops",
+      "garment": "cami crop top",
+      "neckline": "V-neck",
+      "sleeves": "spaghetti straps",
+      "length": "cropped",
+      "silhouette": "fitted bodice with tiered peplum",
+      "waist": "fitted seam at waist",
+      "details": [
+        "tiered ruffle hem",
+        "seamed bodice",
+        "crossed V straps"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "flirty",
+        "feminine",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Ruffle-Hem Cami Crop Top",
+      "existingName": "Embroidered Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-34",
+      "category": "tops",
+      "garment": "sleeveless button-front vest top",
+      "neckline": "V-neck",
+      "sleeves": "sleeveless",
+      "length": "hip-length",
+      "silhouette": "fitted, princess-seamed",
+      "waist": "fitted",
+      "details": [
+        "front button placket",
+        "princess seams",
+        "collarless V neck"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "preppy",
+        "office",
+        "structured"
+      ],
+      "occasions": [
+        "Everyday",
+        "Party"
+      ],
+      "suggestedName": "Button-Front V-Neck Vest Top",
+      "existingName": "Striped Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-35",
+      "category": "tops",
+      "garment": "boxy crop top",
+      "neckline": "straight (banded)",
+      "sleeves": "ruffled cap/flutter shoulder straps",
+      "length": "hip-length",
+      "silhouette": "straight/boxy",
+      "waist": "fringe-trimmed waist seam",
+      "details": [
+        "ruffled winged shoulder straps",
+        "fringe trim at waist seam",
+        "boxy silhouette"
+      ],
+      "back": null,
+      "styleTags": [
+        "boho",
+        "playful",
+        "statement",
+        "summer"
+      ],
+      "occasions": [
+        "Vacation",
+        "Party"
+      ],
+      "suggestedName": "Ruffle-Strap Fringe-Trim Top",
+      "existingName": "Polka Dot Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-36",
+      "category": "tops",
+      "garment": "blouse",
+      "neckline": "collared (mandarin/stand collar)",
+      "sleeves": "cap sleeves with ruffle trim",
+      "length": "hip-length",
+      "silhouette": "straight/fitted",
+      "waist": null,
+      "details": [
+        "button placket",
+        "vertical ruffle frill front panel",
+        "stand collar"
+      ],
+      "back": null,
+      "styleTags": [
+        "victorian",
+        "romantic",
+        "vintage",
+        "office"
+      ],
+      "occasions": [
+        "Everyday",
+        "Festive"
+      ],
+      "suggestedName": "Ruffle-Front Collared Blouse",
+      "existingName": "Floral Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-37",
+      "category": "tops",
+      "garment": "dolman top",
+      "neckline": "round/boat (wide scoop)",
+      "sleeves": "dramatic flared bell/dolman sleeves",
+      "length": "hip-length",
+      "silhouette": "draped/dolman",
+      "waist": null,
+      "details": [
+        "draped bell sleeves",
+        "asymmetric notched side hem",
+        "dolman cut"
+      ],
+      "back": null,
+      "styleTags": [
+        "dramatic",
+        "boho",
+        "statement",
+        "flowy"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Draped Bell-Sleeve Dolman Top",
+      "existingName": "Graphic Tee",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-38",
+      "category": "tops",
+      "garment": "wrap-front crop top",
+      "neckline": "crossover V (wrap-style)",
+      "sleeves": "sleeveless",
+      "length": "cropped",
+      "silhouette": "fitted wrap-front",
+      "waist": "fitted",
+      "details": [
+        "single button placket",
+        "crossover wrap neckline",
+        "cropped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "chic",
+        "office",
+        "versatile"
+      ],
+      "occasions": [
+        "Everyday",
+        "Party"
+      ],
+      "suggestedName": "Crossover Button Crop Top",
+      "existingName": "Henley Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-39",
+      "category": "tops",
+      "garment": "off-shoulder top",
+      "neckline": "off-shoulder/straight",
+      "sleeves": "flutter petal sleeves",
+      "length": "cropped",
+      "silhouette": "fitted/boxy",
+      "waist": "fringe/tassel trim at bust line",
+      "details": [
+        "off-shoulder flutter sleeves",
+        "fringe trim below bust",
+        "boxy fitted body"
+      ],
+      "back": null,
+      "styleTags": [
+        "boho",
+        "romantic",
+        "summer",
+        "playful"
+      ],
+      "occasions": [
+        "Vacation",
+        "Party"
+      ],
+      "suggestedName": "Off-Shoulder Flutter-Sleeve Fringe Top",
+      "existingName": "Polo Shirt",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-40",
+      "category": "tops",
+      "garment": "wrap crop top",
+      "neckline": "asymmetric draped wrap",
+      "sleeves": "sleeveless",
+      "length": "cropped",
+      "silhouette": "bodycon wrap",
+      "waist": "fitted with keyhole cut-out",
+      "details": [
+        "diagonal wrap drape",
+        "circular keyhole cut-out",
+        "fringe trim on hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "edgy",
+        "boho",
+        "bodycon",
+        "statement"
+      ],
+      "occasions": [
+        "Party",
+        "Vacation"
+      ],
+      "suggestedName": "Asymmetric Wrap Keyhole Top",
+      "existingName": "Baseball Tee",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-41",
+      "category": "tops",
+      "garment": "asymmetric wrap top",
+      "neckline": "asymmetric wrap crossover",
+      "sleeves": "sleeveless",
+      "length": "hip-length",
+      "silhouette": "fitted wrap",
+      "waist": "fitted",
+      "details": [
+        "diagonal button placket",
+        "three covered buttons",
+        "asymmetric wrap front"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "chic",
+        "structured",
+        "modern"
+      ],
+      "occasions": [
+        "Everyday",
+        "Party"
+      ],
+      "suggestedName": "Asymmetric Button Wrap Top",
+      "existingName": "Muscle Tee",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-42",
+      "category": "tops",
+      "garment": "surplice wrap top",
+      "neckline": "V-neck (surplice wrap)",
+      "sleeves": "short flutter/cape sleeves",
+      "length": "hip-length",
+      "silhouette": "wrap with tie belt",
+      "waist": "belted with tie bow",
+      "details": [
+        "surplice wrap front",
+        "tie-waist bow",
+        "flutter sleeves",
+        "handkerchief hem points"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "feminine",
+        "boho",
+        "flowy"
+      ],
+      "occasions": [
+        "Festive",
+        "Party"
+      ],
+      "suggestedName": "Surplice Wrap Top with Waist Bow",
+      "existingName": "Racerback Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-43",
+      "category": "tops",
+      "garment": "top (back view)",
+      "neckline": "scoop back",
+      "sleeves": "sleeveless",
+      "length": "hip-length",
+      "silhouette": "fitted",
+      "waist": "tied bow at back waist",
+      "details": [
+        "oversized back bow",
+        "scoop back neckline",
+        "fitted bodice"
+      ],
+      "back": "large bow tied at center back waist with long streamer ends",
+      "styleTags": [
+        "romantic",
+        "feminine",
+        "statement",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Bow-Back Tie Top",
+      "existingName": "Bell Sleeve Top",
+      "nameMismatch": false
+    },
+    {
+      "id": "t-44",
+      "category": "tops",
+      "garment": "crossed-strap top",
+      "neckline": "deep V (crossed halter-style straps)",
+      "sleeves": "sleeveless",
+      "length": "hip-length",
+      "silhouette": "boxy straight",
+      "waist": null,
+      "details": [
+        "crossed V straps forming halter",
+        "boxy straight body",
+        "deep V neckline"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "edgy",
+        "modern",
+        "structured"
+      ],
+      "occasions": [
+        "Party",
+        "Everyday"
+      ],
+      "suggestedName": "Crossed-Strap V-Neck Top",
+      "existingName": "Bishop Sleeve Top",
+      "nameMismatch": false
+    },
+    {
+      "id": "t-45",
+      "category": "tops",
+      "garment": "asymmetric wrap top",
+      "neckline": "asymmetric V wrap",
+      "sleeves": "sleeveless, one bare shoulder",
+      "length": "hip-length",
+      "silhouette": "wrap asymmetric with handkerchief hem",
+      "waist": "wrap tie",
+      "details": [
+        "asymmetric wrap front",
+        "one exposed shoulder",
+        "handkerchief pointed hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "modern",
+        "asymmetric",
+        "edgy",
+        "evening"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Asymmetric One-Shoulder Wrap Top",
+      "existingName": "Puff Sleeve Top",
+      "nameMismatch": false
+    },
+    {
+      "id": "t-46",
+      "category": "tops",
+      "garment": "bustier top with attached sleeves",
+      "neckline": "sweetheart",
+      "sleeves": "full balloon/bishop long sleeves with fitted cuffs",
+      "length": "cropped",
+      "silhouette": "fitted bodice, voluminous sleeves",
+      "waist": null,
+      "details": [
+        "sweetheart neckline with gathered fringe",
+        "balloon bishop sleeves",
+        "fitted cuffs"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "statement",
+        "party",
+        "voluminous"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Sweetheart Bustier Top with Balloon Sleeves",
+      "existingName": "Lantern Sleeve Top",
+      "nameMismatch": false
+    },
+    {
+      "id": "t-47",
+      "category": "tops",
+      "garment": "blouse",
+      "neckline": "V-neck",
+      "sleeves": "full balloon/puff long sleeves with cuffs",
+      "length": "hip-length",
+      "silhouette": "fitted with cropped waist yoke",
+      "waist": "seamed yoke with button placket",
+      "details": [
+        "puff balloon sleeves",
+        "cropped waist seam",
+        "button placket below waist seam"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "feminine",
+        "voluminous",
+        "party"
+      ],
+      "occasions": [
+        "Festive",
+        "Party"
+      ],
+      "suggestedName": "Puff-Sleeve Cropped Yoke Blouse",
+      "existingName": "Flutter Sleeve Top",
+      "nameMismatch": false
+    },
+    {
+      "id": "t-48",
+      "category": "tops",
+      "garment": "blouse",
+      "neckline": "collared (oversized sailor-style double collar)",
+      "sleeves": "sleeveless",
+      "length": "hip-length",
+      "silhouette": "straight/boxy",
+      "waist": "fitted band at hem",
+      "details": [
+        "oversized sailor collar",
+        "vertical button placket",
+        "gathered/fringe trim at collar seam"
+      ],
+      "back": null,
+      "styleTags": [
+        "preppy",
+        "nautical",
+        "structured",
+        "chic"
+      ],
+      "occasions": [
+        "Everyday",
+        "Party"
+      ],
+      "suggestedName": "Sailor-Collar Button-Front Top",
+      "existingName": "Cap Sleeve Top",
+      "nameMismatch": false
+    },
+    {
+      "id": "t-49",
+      "category": "tops",
+      "garment": "flared peplum top",
+      "neckline": "sweetheart",
+      "sleeves": "bow-tie straps",
+      "length": "mini",
+      "silhouette": "fitted bodice with tiered pleated flare",
+      "waist": "seamed at waist",
+      "details": [
+        "bow-tie shoulder straps",
+        "gathered pleated flare",
+        "scalloped wavy hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "feminine",
+        "flirty",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Bow-Strap Flared Mini Peplum Top",
+      "existingName": "Three-Quarter Sleeve Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-50",
+      "category": "tops",
+      "garment": "crop top",
+      "neckline": "round/scoop",
+      "sleeves": "sleeveless",
+      "length": "cropped",
+      "silhouette": "fitted, curved side seams",
+      "waist": "fitted",
+      "details": [
+        "scoop neckline",
+        "fitted bodycon body",
+        "plain minimal design"
+      ],
+      "back": null,
+      "styleTags": [
+        "minimal",
+        "basic",
+        "everyday",
+        "versatile"
+      ],
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ],
+      "suggestedName": "Scoop-Neck Fitted Crop Top",
+      "existingName": "Long Sleeve Top",
+      "nameMismatch": false
+    },
+    {
+      "id": "t-51",
+      "category": "tops",
+      "garment": "blouse",
+      "neckline": "collared (oversized crossed sailor-style collar)",
+      "sleeves": "full puff/balloon long sleeves with ruffled cuffs",
+      "length": "hip-length",
+      "silhouette": "fitted bodice, voluminous sleeves",
+      "waist": "fitted, front hem slit",
+      "details": [
+        "oversized crossed collar",
+        "double bow ties down center front",
+        "puff sleeves",
+        "front hem slit"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "statement",
+        "voluminous",
+        "feminine"
+      ],
+      "occasions": [
+        "Festive",
+        "Party"
+      ],
+      "suggestedName": "Bow-Tie Sailor-Collar Puff-Sleeve Blouse",
+      "existingName": "Sleeveless Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-52",
+      "category": "tops",
+      "garment": "peplum top",
+      "neckline": "round/crew",
+      "sleeves": "long fitted sleeves",
+      "length": "hip-length",
+      "silhouette": "fitted bodice with asymmetric cascading peplum",
+      "waist": "seamed waist",
+      "details": [
+        "princess seams",
+        "asymmetric cascading ruffle peplum on one hip",
+        "long fitted sleeves"
+      ],
+      "back": null,
+      "styleTags": [
+        "elegant",
+        "modern",
+        "asymmetric",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Long-Sleeve Asymmetric Cascade Peplum Top",
+      "existingName": "One-Shoulder Top",
+      "nameMismatch": false
+    },
+    {
+      "id": "t-53",
+      "category": "tops",
+      "garment": "babydoll cami top",
+      "neckline": "sweetheart",
+      "sleeves": "bow-tie straps",
+      "length": "hip-length",
+      "silhouette": "fitted bodice with gathered flared peplum",
+      "waist": "seamed, gathered",
+      "details": [
+        "bow-tie shoulder straps",
+        "gathered pleated peplum",
+        "scalloped hem"
+      ],
+      "back": null,
+      "styleTags": [
+        "romantic",
+        "flirty",
+        "feminine",
+        "party"
+      ],
+      "occasions": [
+        "Party",
+        "Festive"
+      ],
+      "suggestedName": "Bow-Strap Peplum Cami Top",
+      "existingName": "Backless Top",
+      "nameMismatch": true
+    },
+    {
+      "id": "t-54",
+      "category": "tops",
+      "garment": "banded crop tank top",
+      "neckline": "round/scoop",
+      "sleeves": "sleeveless",
+      "length": "cropped",
+      "silhouette": "fitted with waistband",
+      "waist": "fitted waistband",
+      "details": [
+        "scoop neckline",
+        "fitted waistband",
+        "princess seams on back panel"
+      ],
+      "back": "lower scoop back with princess seams and slightly looser drape",
+      "styleTags": [
+        "minimal",
+        "sporty",
+        "basic",
+        "versatile"
+      ],
+      "occasions": [
+        "Everyday",
+        "Vacation"
+      ],
+      "suggestedName": "Scoop-Neck Banded Crop Top",
+      "existingName": "High-Low Hem Top",
+      "nameMismatch": true
+    }
+  ]
+}
