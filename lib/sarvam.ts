@@ -23,6 +23,8 @@
  *     `language_code=unknown` auto-detects; response includes `language_code`.
  */
 
+import { salvageTruncatedJson } from './jsonSalvage';
+
 const SARVAM_BASE = 'https://api.sarvam.ai';
 
 function apiKey(): string {
@@ -108,7 +110,17 @@ export async function chatCompletionJson<T>(
     try {
       return JSON.parse(content) as T;
     } catch (err) {
-      console.error(`[sarvam] attempt ${attempt} failed to parse JSON content:`, JSON.stringify(content));
+      // Before burning another 10-40s on a full network retry, try to salvage
+      // the truncated JSON we already have — in practice the patch content is
+      // fully present and only trailing structure got cut off. See
+      // lib/jsonSalvage.ts for the repair algorithm.
+      const salvaged = salvageTruncatedJson(content);
+      if (salvaged !== null) {
+        console.warn(`[sarvam] attempt ${attempt}: JSON truncated but salvaged successfully, skipping retry`);
+        return salvaged as T;
+      }
+
+      console.error(`[sarvam] attempt ${attempt} failed to parse JSON content (salvage failed too):`, JSON.stringify(content));
       lastError = err instanceof Error ? err : new Error('Failed to parse JSON content');
       continue;
     }

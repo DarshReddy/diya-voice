@@ -56,6 +56,7 @@ const OUTFIT_TYPE_KEYWORDS: KeywordEntry<OutfitCategory>[] = [
     keywords: [
       'short dress',
       'shortdress',
+      'frock',
       'शॉर्ट ड्रेस',
       'छोटी ड्रेस',
       'షార్ట్ డ్రెస్',

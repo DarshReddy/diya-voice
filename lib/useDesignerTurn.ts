@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { useBriefStore } from '@/lib/store/briefStore';
 import { keywordMatchBrief } from '@/lib/keywordMatch';
+import { createLatestOnlyGate } from '@/lib/latestOnly';
 
 interface TurnResponse {
   transcript: string;
@@ -41,9 +42,24 @@ export function useDesignerTurn() {
     briefRef.current = brief;
   }, [brief]);
 
+  // /api/designer/turn is still LLM-backed (unlike Plan A's now fully
+  // deterministic live-call loop), so a rapid-fire sequence of submissions
+  // (e.g. a fast double-tap, or overlapping text + push-to-talk submits)
+  // could still resolve out of order. Trailing-edge coalescing: only the
+  // response to the LATEST request is ever applied — an earlier one landing
+  // late is silently discarded rather than clobbering newer state.
+  const gateRef = useRef(createLatestOnlyGate());
+
   const handleResponse = useCallback(
-    async (res: Response) => {
+    async (res: Response, isStale: () => boolean) => {
       const data: TurnResponse = await res.json();
+
+      if (isStale()) {
+        // A newer submission has since started; this response is discarded
+        // regardless of success/failure so it can't apply a stale patch.
+        return;
+      }
+
       if (!res.ok || data.error) {
         setError(data.error ?? 'Something went wrong talking to Diya.');
         setTalkState('idle');
@@ -79,6 +95,7 @@ export function useDesignerTurn() {
       const fastPatch = keywordMatchBrief(text);
       if (Object.keys(fastPatch).length > 0) applyPatch(fastPatch);
 
+      const { isStale } = gateRef.current.next();
       setTalkState('thinking');
       try {
         const res = await fetch('/api/designer/turn', {
@@ -86,10 +103,12 @@ export function useDesignerTurn() {
           headers: { 'content-type': 'application/json' },
           body: JSON.stringify({ text, brief: briefRef.current }),
         });
-        await handleResponse(res);
+        await handleResponse(res, isStale);
       } catch {
-        setError('Could not reach Diya. Check your connection and try again.');
-        setTalkState('idle');
+        if (!isStale()) {
+          setError('Could not reach Diya. Check your connection and try again.');
+          setTalkState('idle');
+        }
       }
     },
     [applyPatch, handleResponse, setTalkState]
@@ -97,6 +116,7 @@ export function useDesignerTurn() {
 
   const submitAudio = useCallback(
     async (blob: Blob) => {
+      const { isStale } = gateRef.current.next();
       setTalkState('thinking');
       try {
         const form = new FormData();
@@ -106,10 +126,12 @@ export function useDesignerTurn() {
           method: 'POST',
           body: form,
         });
-        await handleResponse(res);
+        await handleResponse(res, isStale);
       } catch {
-        setError('Could not reach Diya. Check your connection and try again.');
-        setTalkState('idle');
+        if (!isStale()) {
+          setError('Could not reach Diya. Check your connection and try again.');
+          setTalkState('idle');
+        }
       }
     },
     [handleResponse, setTalkState]

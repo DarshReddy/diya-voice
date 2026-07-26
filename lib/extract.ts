@@ -1,13 +1,7 @@
 import { chatCompletionJson } from './sarvam';
-import {
-  buildCatalogCard,
-  OUTFIT_CATEGORIES,
-  FABRIC_FOLDER_SLUGS,
-  findSwatch,
-  findSketch,
-  findBestSwatchMatch,
-} from './catalog';
+import { buildCatalogCard, OUTFIT_CATEGORIES, FABRIC_FOLDER_SLUGS, findSwatch } from './catalog';
 import { Brief, OCCASIONS, isValidOccasion, isValidOutfitType } from './brief';
+import { enrichPatchWithCatalogMatches } from './enrichPatch';
 
 export interface ExtractResult {
   patch: Partial<Brief>;
@@ -23,15 +17,35 @@ export interface RawPatchFields {
   styleDetails: string | null;
   size: string | null;
   neededBy: string | null;
-  sketchId: string | null;
 }
+
+/** An all-null RawPatchFields, used as a fallback when JSON salvage recovers
+ * an object missing the `patch` key entirely (rare — only happens if
+ * truncation cut extremely early, before the schema's first key finished). */
+export const EMPTY_RAW_PATCH: RawPatchFields = {
+  occasion: null,
+  outfitType: null,
+  fabricFolder: null,
+  fabricFile: null,
+  color: null,
+  styleDetails: null,
+  size: null,
+  neededBy: null,
+};
 
 interface RawExtractResponse {
   patch: RawPatchFields;
   redirect: string | null;
 }
 
-/** The `patch` sub-schema, shared between the standalone /api/extract route and the merged turn pipeline. */
+/**
+ * The `patch` sub-schema, shared between the standalone /api/extract route
+ * and the merged turn pipeline. `sketchId` is intentionally NOT a field here
+ * — the LLM never picks a sketch id (it always returned null in practice
+ * anyway). Sketch selection is fully deterministic instead, via
+ * findBestSketchMatch (see lib/catalog.ts + lib/enrichPatch.ts), which also
+ * shrinks this schema and gives the model less to reason about.
+ */
 export const PATCH_JSON_SCHEMA = {
   type: 'object',
   properties: {
@@ -43,19 +57,8 @@ export const PATCH_JSON_SCHEMA = {
     styleDetails: { type: ['string', 'null'] },
     size: { type: ['string', 'null'] },
     neededBy: { type: ['string', 'null'] },
-    sketchId: { type: ['string', 'null'] },
   },
-  required: [
-    'occasion',
-    'outfitType',
-    'fabricFolder',
-    'fabricFile',
-    'color',
-    'styleDetails',
-    'size',
-    'neededBy',
-    'sketchId',
-  ],
+  required: ['occasion', 'outfitType', 'fabricFolder', 'fabricFile', 'color', 'styleDetails', 'size', 'neededBy'],
   additionalProperties: false,
 } as const;
 
@@ -85,7 +88,6 @@ export function buildExtractionInstructions(): string {
 - styleDetails: free text — any style/silhouette/detail preferences mentioned
 - size: free text size (e.g. S, M, L, XL, or measurements)
 - neededBy: free text date/deadline description
-- sketchId: only fill if the user references a specific known sketch id
 
 ${catalogCard}
 
@@ -106,11 +108,10 @@ Respond with strict JSON matching the schema. No markdown, no commentary.`;
 
 /**
  * Validates and sanitizes a raw LLM-produced patch: enum values are checked
- * against the real catalog, fabricFile is deterministically resolved (rather
- * than trusted from the model — see the comment below), and sketchId is
- * checked against real sketch ids. Shared between the standalone /api/extract
- * route and the merged turn pipeline (lib/turn.ts) so both apply identical
- * validation.
+ * against the real catalog, then fabricFile and suggestedSketchId are
+ * deterministically resolved on top (see enrichPatchWithCatalogMatches).
+ * Shared between the standalone /api/extract route and the merged turn
+ * pipeline (lib/turn.ts) so both apply identical validation.
  */
 export function sanitizePatch(raw: RawPatchFields, brief: Partial<Brief>): Partial<Brief> {
   const patch: Partial<Brief> = {};
@@ -128,33 +129,14 @@ export function sanitizePatch(raw: RawPatchFields, brief: Partial<Brief>): Parti
   }
 
   if (raw.color) patch.color = raw.color;
-
-  // Deterministic fabricFile fallback: the model is instructed to always leave
-  // fabricFile null (listing all swatch filenames in the prompt previously blew
-  // past the 4096 max_tokens ceiling on this account tier). Instead, once both
-  // a fabric folder and a color are known, find the closest color-name match
-  // among that folder's real swatches ourselves.
-  if (!patch.fabricFile) {
-    const effectiveFolder = patch.fabricFolder ?? brief.fabricFolder;
-    const effectiveColor = patch.color ?? brief.color;
-    if (effectiveFolder && effectiveColor) {
-      const match = findBestSwatchMatch(effectiveFolder, effectiveColor);
-      if (match) {
-        patch.fabricFile = match.file;
-        if (!patch.fabricFolder) patch.fabricFolder = effectiveFolder;
-      }
-    }
-  }
-
   if (raw.styleDetails) patch.styleDetails = raw.styleDetails;
   if (raw.size) patch.size = raw.size;
   if (raw.neededBy) patch.neededBy = raw.neededBy;
 
-  if (raw.sketchId && findSketch(raw.sketchId)) {
-    patch.sketchId = raw.sketchId;
-  }
-
-  return patch;
+  // Deterministic fallbacks: fabricFile (from folder+color) and
+  // suggestedSketchId (from outfitType+styleDetails/occasion) — never
+  // trusted from the model, always computed ourselves. See lib/enrichPatch.ts.
+  return enrichPatchWithCatalogMatches(patch, brief);
 }
 
 export async function extractBriefPatch(transcript: string, brief: Partial<Brief>): Promise<ExtractResult> {
@@ -169,6 +151,6 @@ export async function extractBriefPatch(transcript: string, brief: Partial<Brief
     EXTRACT_JSON_SCHEMA
   );
 
-  const patch = sanitizePatch(raw.patch, brief);
+  const patch = sanitizePatch(raw.patch ?? EMPTY_RAW_PATCH, brief);
   return { patch, redirect: raw.redirect || undefined };
 }

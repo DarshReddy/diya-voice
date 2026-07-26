@@ -338,3 +338,52 @@ export function findBestSwatchMatch(folder: string, colorText: string): SwatchLa
 
   return bestScore > 0 ? best : null;
 }
+
+/**
+ * Deterministically finds the sketch in `outfitType`'s category (sketch-labels.json)
+ * whose neckline/sleeves/length/silhouette/details/styleTags/occasions best
+ * word-overlap-match free-text `styleDetails` + `occasion`. Same philosophy as
+ * findBestSwatchMatch — the LLM never picks a sketchId (removed from its
+ * output schema entirely; less reasoning, and this is more reliable anyway).
+ * Returns null if outfitType has no sketch-labels coverage (e.g. "coord-sets",
+ * which uses coord-set-labels.json / photos instead of per-item sketches) or
+ * no word overlap is found.
+ */
+export function findBestSketchMatch(
+  outfitType: string,
+  styleDetails: string | null | undefined,
+  occasion: string | null | undefined
+): SketchLabel | null {
+  const sketches = getSketchesByCategory(outfitType);
+  if (sketches.length === 0) return null;
+
+  const needleText = [styleDetails, occasion].filter(Boolean).join(' ');
+  const needleWords = needleText
+    .toLowerCase()
+    .split(/[^a-z]+/)
+    .filter(Boolean);
+  if (needleWords.length === 0) return null;
+
+  let best: SketchLabel | null = null;
+  let bestScore = 0;
+
+  for (const sketch of sketches) {
+    const haystack = [sketch.neckline, sketch.sleeves, sketch.length, sketch.silhouette, sketch.waist, sketch.back]
+      .concat(sketch.details, sketch.styleTags, sketch.occasions)
+      .filter(Boolean)
+      .join(' ')
+      .toLowerCase();
+    const hayWords = new Set(haystack.split(/[^a-z]+/).filter(Boolean));
+
+    let score = 0;
+    for (const w of needleWords) {
+      if (hayWords.has(w)) score += 1;
+    }
+    if (score > bestScore) {
+      bestScore = score;
+      best = sketch;
+    }
+  }
+
+  return bestScore > 0 ? best : null;
+}

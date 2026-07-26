@@ -1,14 +1,15 @@
 'use client';
 
 // Plan A: live browser voice call via the Sarvam Agents SDK, wired against
-// diya-voice's real brief store, keyword pre-matcher, and /api/extract
-// route. Loaded via next/dynamic({ ssr: false }) from app/page.tsx so the SDK
-// never touches the server-render / prerender path (see the guard note near
-// the export at the bottom of this file too).
+// diya-voice's real brief store and catalog-matching helpers. Loaded
+// statically from app/page.tsx as a 'use client' component (verified safe —
+// the SDK's compiled JS guards all browser-API access behind
+// `typeof window !== "undefined"` checks or defers it to methods only
+// invoked from the start() click handler, never at module load).
 //
 // Adapted from the Plan A draft against the SDK's ACTUAL exported types
 // (inspected in node_modules/sarvam-conv-ai-sdk/dist/*.d.ts) rather than the
-// draft's educated guesses — three real differences worth flagging:
+// draft's educated guesses — differences worth flagging:
 //   1. transcriptCallback's message shape is `{ role: Role, content: string }`
 //      (Role is 'user' | 'bot'), not `{ role: string, text: string }` as the
 //      draft assumed — the field is `content`, not `text`.
@@ -23,12 +24,25 @@
 //   4. `audioLevelCallback` receives an `AudioLevel` object
 //      (`{direction, rms, peak, db, sampleRate}`), not a bare number.
 //   5. `agent.waitForConnect(timeout)` resolves to a `boolean`, not `void`.
+//
+// IMPORTANT — the live per-utterance loop is fully deterministic, no LLM:
+// two real live calls exposed sarvam-30b /api/extract firing once per
+// transcript line (the platform emits partial-then-final versions of the
+// same utterance as separate lines), which caused request pileup, degraded
+// latency (26s -> 96s), and out-of-order stale patches. sarvam-30b is no
+// longer called during the live loop at all — every transcript line is
+// processed instantly via keywordMatchBrief + enrichPatchWithCatalogMatches
+// (fabricFile from folder+color, suggestedSketchId from outfitType+style/
+// occasion), all pure/synchronous, all client-side. sarvam-30b is reserved
+// for the end-of-call /api/compose-prompt step (see README).
 
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { ConversationAgent, BrowserAudioInterface, InteractionType, AgentState } from 'sarvam-conv-ai-sdk/browser';
 import type { ServerTranscriptMsg } from 'sarvam-conv-ai-sdk/browser';
 import { useBriefStore } from '@/lib/store/briefStore';
 import { keywordMatchBrief } from '@/lib/keywordMatch';
+import { enrichPatchWithCatalogMatches } from '@/lib/enrichPatch';
+import { EMPTY_BRIEF, Brief } from '@/lib/brief';
 
 /** Static per-app config for this DIYO Sarvam Agents workspace. */
 const SARVAM_CONFIG = {
@@ -51,6 +65,9 @@ const AGENT_STATE_LABEL: Record<AgentState, string> = {
   [AgentState.ERROR]: 'Error',
 };
 
+/** Rolling accumulation of user utterances into a free-text styleDetails string, capped ~200 chars. */
+const STYLE_DETAILS_CHAR_CAP = 200;
+
 function randomIdentifier(): string {
   return `demo-${Math.random().toString(36).slice(2, 10)}`;
 }
@@ -59,11 +76,17 @@ export default function VoiceSession() {
   const brief = useBriefStore((s) => s.brief);
   const applyPatch = useBriefStore((s) => s.applyPatch);
   const pushTurn = useBriefStore((s) => s.pushTurn);
+  const resetBrief = useBriefStore((s) => s.reset);
 
   const briefRef = useRef(brief);
   useEffect(() => {
     briefRef.current = brief;
   }, [brief]);
+
+  // Rolling window of recent user utterances, joined into a styleDetails
+  // free-text string (see the module doc comment — this replaces the
+  // per-line LLM extract call that used to feed styleDetails).
+  const recentLinesRef = useRef<string[]>([]);
 
   const agentRef = useRef<ConversationAgent | null>(null);
   const [sessionState, setSessionState] = useState<SessionState>('idle');
@@ -84,21 +107,32 @@ export default function VoiceSession() {
     setError(null);
     setSessionState('connecting');
 
+    // Every new live call starts from a clean brief. Without this, a second
+    // live call in the same page session inherited the first call's fully
+    // populated slots (occasion/outfit/fabric/etc.) both as agent_variables
+    // AND as the "known so far" context for every subsequent utterance,
+    // which is the exact leak two real calls exposed. Reset the ref
+    // immediately too — the store update from resetBrief() only reaches
+    // `brief` (and this ref, via the effect above) on the next render, which
+    // is too late for the agent_variables built just below.
+    resetBrief();
+    briefRef.current = { ...EMPTY_BRIEF };
+    recentLinesRef.current = [];
+
     const agent = new ConversationAgent({
       apiKey,
       config: {
         ...SARVAM_CONFIG,
         user_identifier_type: 'custom',
         user_identifier: randomIdentifier(),
-        // Prefill: manual picks made before starting voice reach Diya so she never re-asks.
         agent_variables: {
-          occasion: briefRef.current.occasion ?? '',
-          outfit_type: briefRef.current.outfitType ?? '',
-          fabric: briefRef.current.fabricFolder ?? '',
-          color: briefRef.current.color ?? '',
-          size: briefRef.current.size ?? '',
-          needed_by: briefRef.current.neededBy ?? '',
-          style_details: briefRef.current.styleDetails ?? '',
+          occasion: '',
+          outfit_type: '',
+          fabric: '',
+          color: '',
+          size: '',
+          needed_by: '',
+          style_details: '',
           user_name: '',
           gender: '',
           call_summary: '',
@@ -111,25 +145,24 @@ export default function VoiceSession() {
         pushTurn(isUser ? 'user' : 'diya', msg.content);
         if (!isUser) return;
 
-        // Instant, deterministic chip-fill — applied synchronously the
-        // moment the transcript line arrives, before any network call.
+        // Fully deterministic, synchronous, no network call — see the
+        // module doc comment for why sarvam-30b is no longer in this loop.
         const fastPatch = keywordMatchBrief(msg.content);
-        if (Object.keys(fastPatch).length > 0) applyPatch(fastPatch);
 
-        // Background LLM extraction — never blocks or interrupts the live
-        // call; applies on top when it lands (wins on conflict, never nulls
-        // a slot the keyword matcher already filled — see mergeBrief).
-        try {
-          const res = await fetch('/api/extract', {
-            method: 'POST',
-            headers: { 'content-type': 'application/json' },
-            body: JSON.stringify({ transcript: msg.content, brief: briefRef.current }),
-          });
-          const data = await res.json();
-          if (data?.patch && Object.keys(data.patch).length > 0) applyPatch(data.patch);
-        } catch {
-          // Extraction is best-effort; the live conversation continues regardless.
+        recentLinesRef.current = [...recentLinesRef.current, msg.content.trim()].filter(Boolean);
+        while (
+          recentLinesRef.current.length > 1 &&
+          recentLinesRef.current.join(' ').length > STYLE_DETAILS_CHAR_CAP
+        ) {
+          recentLinesRef.current.shift();
         }
+        const styleDetails = recentLinesRef.current.join(' ').slice(-STYLE_DETAILS_CHAR_CAP);
+
+        const patch: Partial<Brief> = { ...fastPatch };
+        if (styleDetails) patch.styleDetails = styleDetails;
+
+        const enriched = enrichPatchWithCatalogMatches(patch, briefRef.current);
+        applyPatch(enriched);
       },
       stateCallback: (newState) => {
         setAgentState(newState);
@@ -157,7 +190,7 @@ export default function VoiceSession() {
       setSessionState('error');
       agentRef.current = null;
     }
-  }, [applyPatch, pushTurn, sessionState]);
+  }, [applyPatch, pushTurn, resetBrief, sessionState]);
 
   const stop = useCallback(async () => {
     try {

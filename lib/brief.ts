@@ -18,6 +18,13 @@ export interface Brief {
   size?: string | null;
   neededBy?: string | null;
   sketchId?: string | null;
+  /**
+   * Deterministically computed (findBestSketchMatch, never the LLM) once
+   * outfitType and (styleDetails or occasion) are known. Purely advisory —
+   * the UI highlights it in SketchPicker, but a user's manual sketchId pick
+   * always wins and is never overwritten by a suggestion.
+   */
+  suggestedSketchId?: string | null;
 }
 
 export const EMPTY_BRIEF: Brief = {
@@ -30,6 +37,7 @@ export const EMPTY_BRIEF: Brief = {
   size: null,
   neededBy: null,
   sketchId: null,
+  suggestedSketchId: null,
 };
 
 /** A brief is "complete" once the four core slots are filled, per spec. */

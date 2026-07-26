@@ -1,7 +1,10 @@
 import { chatCompletionJson } from './sarvam';
-import { PATCH_JSON_SCHEMA, buildExtractionInstructions, sanitizePatch, RawPatchFields } from './extract';
+import { PATCH_JSON_SCHEMA, buildExtractionInstructions, sanitizePatch, RawPatchFields, EMPTY_RAW_PATCH } from './extract';
 import { Brief, EMPTY_BRIEF, isBriefComplete, mergeBrief } from './brief';
 import { OUTFIT_CATEGORY_LABELS, getFabricFolder } from './catalog';
+
+/** Fallback used if JSON salvage recovers a response missing `say` entirely (rare — truncation would have to have cut off before that key finished). */
+const FALLBACK_SAY = "Sorry, could you say that again? I didn't quite catch it.";
 
 export interface TurnResult {
   patch: Partial<Brief>;
@@ -116,7 +119,7 @@ Extract the patch and write your reply now.`;
     TURN_JSON_SCHEMA
   );
 
-  const patch = sanitizePatch(raw.patch, brief);
+  const patch = sanitizePatch(raw.patch ?? EMPTY_RAW_PATCH, brief);
 
   // Computed deterministically from the actual merged brief rather than
   // trusted from the model's self-reported status — belt and suspenders,
@@ -125,5 +128,5 @@ Extract the patch and write your reply now.`;
   const mergedBrief = mergeBrief(mergeBrief(EMPTY_BRIEF, brief), patch);
   const status = isBriefComplete(mergedBrief) ? 'complete' : 'collecting';
 
-  return { patch, redirect: raw.redirect || undefined, say: raw.say, status };
+  return { patch, redirect: raw.redirect || undefined, say: raw.say || FALLBACK_SAY, status };
 }

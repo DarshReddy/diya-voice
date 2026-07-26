@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useRef } from 'react';
 import Image from 'next/image';
 import { useBriefStore } from '@/lib/store/briefStore';
 import {
@@ -16,6 +17,7 @@ import {
 export default function SketchPicker() {
   const outfitType = useBriefStore((s) => s.brief.outfitType);
   const sketchId = useBriefStore((s) => s.brief.sketchId);
+  const suggestedSketchId = useBriefStore((s) => s.brief.suggestedSketchId);
   const applyPatch = useBriefStore((s) => s.applyPatch);
 
   return (
@@ -48,6 +50,7 @@ export default function SketchPicker() {
           <SketchStrip
             category={outfitType}
             selectedId={sketchId ?? null}
+            suggestedId={sketchId ? null : (suggestedSketchId ?? null)}
             onSelect={(id) => applyPatch({ sketchId: id })}
           />
         )
@@ -61,13 +64,22 @@ export default function SketchPicker() {
 function SketchStrip({
   category,
   selectedId,
+  suggestedId,
   onSelect,
 }: {
   category: string;
   selectedId: string | null;
+  suggestedId: string | null;
   onSelect: (id: string) => void;
 }) {
   const sketches = getSketchesByCategory(category);
+  const suggestedRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (suggestedId) {
+      suggestedRef.current?.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
+    }
+  }, [suggestedId]);
 
   if (sketches.length === 0) {
     return <p className="text-sm text-maroon-950/40">No sketches catalogued for this category yet.</p>;
@@ -75,30 +87,44 @@ function SketchStrip({
 
   return (
     <div className="flex gap-3 overflow-x-auto pb-2">
-      {sketches.map((sketch) => (
-        <button
-          key={sketch.id}
-          type="button"
-          onClick={() => onSelect(sketch.id)}
-          className={`shrink-0 w-28 rounded-lg overflow-hidden border-2 transition-all ${
-            selectedId === sketch.id ? 'border-maroon-700 ring-2 ring-maroon-700/40' : 'border-transparent'
-          }`}
-        >
-          <div className="relative w-28 h-36 bg-cream-200">
-            <Image
-              src={sketchImageUrl(sketch.category, sketch.id)}
-              alt={sketchDisplayName(sketch)}
-              fill
-              sizes="112px"
-              className="object-cover"
-              unoptimized
-            />
-          </div>
-          <p className="text-[11px] leading-tight px-1 py-1 text-maroon-950/80 truncate">
-            {sketchDisplayName(sketch)}
-          </p>
-        </button>
-      ))}
+      {sketches.map((sketch) => {
+        const isSelected = selectedId === sketch.id;
+        const isSuggested = !isSelected && suggestedId === sketch.id;
+        return (
+          <button
+            key={sketch.id}
+            ref={isSuggested ? suggestedRef : undefined}
+            type="button"
+            onClick={() => onSelect(sketch.id)}
+            className={`relative shrink-0 w-28 rounded-lg overflow-hidden border-2 transition-all ${
+              isSelected
+                ? 'border-maroon-700 ring-2 ring-maroon-700/40'
+                : isSuggested
+                  ? 'border-gold-500 ring-2 ring-gold-500/50'
+                  : 'border-transparent'
+            }`}
+          >
+            {isSuggested && (
+              <span className="absolute top-1 left-1 z-10 rounded-full bg-gold-500 px-1.5 py-0.5 text-[9px] font-semibold uppercase tracking-wide text-maroon-950">
+                Suggested
+              </span>
+            )}
+            <div className="relative w-28 h-36 bg-cream-200">
+              <Image
+                src={sketchImageUrl(sketch.category, sketch.id)}
+                alt={sketchDisplayName(sketch)}
+                fill
+                sizes="112px"
+                className="object-cover"
+                unoptimized
+              />
+            </div>
+            <p className="text-[11px] leading-tight px-1 py-1 text-maroon-950/80 truncate">
+              {sketchDisplayName(sketch)}
+            </p>
+          </button>
+        );
+      })}
     </div>
   );
 }

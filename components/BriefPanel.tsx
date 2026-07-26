@@ -26,12 +26,23 @@ function displayValue(key: SlotDef['key'], value: string | null | undefined): st
 
 export default function BriefPanel() {
   const brief = useBriefStore((s) => s.brief);
+  const reset = useBriefStore((s) => s.reset);
+  const hasAnything = Object.entries(brief).some(([key, v]) => key !== 'suggestedSketchId' && Boolean(v));
 
   return (
     <section aria-label="Design brief" className="w-full">
-      <h2 className="font-display text-sm uppercase tracking-[0.18em] text-maroon-700/70 mb-3">
-        Design Brief
-      </h2>
+      <div className="flex items-center justify-between mb-3">
+        <h2 className="font-display text-sm uppercase tracking-[0.18em] text-maroon-700/70">Design Brief</h2>
+        {hasAnything && (
+          <button
+            type="button"
+            onClick={reset}
+            className="text-[11px] uppercase tracking-wide text-maroon-700/60 underline underline-offset-2 hover:text-maroon-700"
+          >
+            Start over
+          </button>
+        )}
+      </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-2.5">
         {SLOTS.map((slot) => {
           const value = displayValue(slot.key, brief[slot.key] as string | null | undefined);
